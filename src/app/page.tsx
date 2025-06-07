@@ -1,9 +1,6 @@
-export default function Home() {
-  return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-900 text-white p-4">
-      <h1 className="text-9xl font-bold text-center">
-        METAL PRODUCTS WEBSITE COMING SOON
-      </h1>
-    </div>
-  );
+import { redirect } from 'next/navigation';
+
+export default function Page() {
+  redirect('/home'); // Redirect to the Home page
+  return null; // This won't render since the redirect happens immediately
 }
