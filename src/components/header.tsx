@@ -177,91 +177,18 @@ const Header: React.FC = () => {
 
         {/* Center: Navigation */}
         <nav className="flex z-10 justify-center space-x-8">
-          {["/home", "/about", "/team", "/services", "/careers", "/blog", "/contact"].map((path) =>
-            path === "/services" ? (
-              <div
-                key={path}
-                className="relative group"
-                onMouseEnter={() => setShowDropdown(true)}
-                onMouseLeave={() => setShowDropdown(false)}
-              >
-                <div className="relative">
-                  <Link
-                    href={path}
-                    className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""}`}
-                  >
-                    SERVICES
-                  </Link>
-                  {pathname.startsWith(path) && (
-                    <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
-                  )}
-                </div>
-
-                {/* DROPDOWN MENU */}
-                {showDropdown && (
-                  <div
-                    className="absolute left-0 top-full w-40 bg-transparent backdrop-blur-sm rounded-md py-2 z-50"
-                  // Make sure there's no gap from the top of the dropdown to the bottom of the link
-                  >
-                    <Link
-                      href="/services/compliance"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Compliance
-                    </Link>
-                    <Link
-                      href="/services/financing"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Financing
-                    </Link>
-                    <Link
-                      href="/services/imaging-and-canopies"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Imaging
-                    </Link>
-                    <Link
-                      href="/services/renovation"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Renovations
-                    </Link>
-                    <Link
-                      href="/services/construction"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Construction
-                    </Link>
-                    <Link
-                      href="/services/link"
-                      className="block px-4 py-2 text-gray-700 hover:bg-[#c62931] hover:text-white rounded-md"
-                      onClick={() => setShowDropdown(false)}
-                    >
-                      Link
-                    </Link>
-                  </div>
-                )}
-              </div>
-            ) : (
-              <Link
-                key={path}
-                href={path}
-                className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""
-                  }`}
-              >
-                {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
-                {pathname.startsWith(path) && (
-                  <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
-                )}
-              </Link>
-            )
-          )}
+          {["/home", "/about", "/resources", "/contact"].map((path) => (
+            <Link
+              key={path}
+              href={path}
+              className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""}`}
+            >
+              {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
+              {pathname.startsWith(path) && (
+                <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
+              )}
+            </Link>
+          ))}
         </nav>
 
         {/* Right: Search Icon */}
