@@ -66,8 +66,6 @@ const Header: React.FC = () => {
     };
   }, [showSearch]);
 
-  const [showDropdown, setShowDropdown] = useState(false);
-
   return (
     <header
       className={`bg-transparent max-w-[2560px] fixed top-0 w-full z-30 transition-transform duration-300 ${isVisible ? "top-0" : "top-full"
