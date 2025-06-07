@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
             METAL PRODUCTS
           </p>
           <p className="text-2xl scrn-700:text-3xl scrn-900:text-4xl scrn-1000:text-4xl scrn-1200:text-5xl scrn-1500:text-6xl scrn-1700:text-6xl scrn-1800:text-8xl scrn-2300:text-8xl font-regular italic text-[#c62931] tracking-wider whitespace-nowrap">
-            HERO PAGE
+            CONTACT PAGE
           </p>
           <p className="text-xl scrn-700:text-2xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl scrn-2300:text-6xl font-regular">
             COMING SOON

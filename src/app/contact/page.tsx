@@ -1,5 +1,5 @@
 import React from 'react';
-import Hero from '@/app/home/sections/hero';
+import Hero from '@/app/contact/sections/hero';
 
 const Home: React.FC = () => {
   return (

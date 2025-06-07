@@ -139,7 +139,7 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         <nav
-          className={`absolute left-0 right-0 top-20 bg-white/30 backdrop-blur-md p-6 rounded-md z-10 transition-all duration-300 ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
+          className={`text-white absolute left-0 right-0 top-20 bg-white/30 backdrop-blur-md p-6 rounded-md z-10 transition-all duration-300 ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
             }`}
         >
           {["/home", "/about", "/resources", "/contact"].map(
@@ -179,7 +179,7 @@ const Header: React.FC = () => {
             <Link
               key={path}
               href={path}
-              className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-900 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""}`}
+              className={`capitalize scrn-750:text-xs scrn-1000:text-base text-white hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""}`}
             >
               {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
               {pathname.startsWith(path) && (
