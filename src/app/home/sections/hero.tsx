@@ -4,7 +4,7 @@ import React from 'react';
 const Hero: React.FC = () => {
   return (
     <div className="relative z-20">
-      <div className="relative flex flex-col-reverse scrn-600:flex-row scrn-600:ps-2 items-center justify-between bg-gray-900
+      <div className="relative flex flex-col-reverse scrn-600:flex-row scrn-600:ps-2 items-center justify-between bg-gray-300
       h-140
       scrn-400:h-140
       scrn-600:h-124

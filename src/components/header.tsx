@@ -159,12 +159,12 @@ const Header: React.FC = () => {
       </div>
 
       {/* Desktop Header - 3 Grid Layout */}
-      <div className="hidden scrn-1000:grid grid-cols-3 items-center px-6 py-1">
+      <div className="hidden scrn-1000:grid grid-cols-2 items-center p-6 me-12">
         {/* Left: Logo */}
         <div className="flex items-center">
           <Link href="/">
             <Image
-              src="/logos/APEC.png"
+              src="/images/logos/Logo_MPC.png"
               alt="Logo"
               width={1315}
               height={1206}
@@ -174,12 +174,12 @@ const Header: React.FC = () => {
         </div>
 
         {/* Center: Navigation */}
-        <nav className="flex z-10 justify-center space-x-8">
+        <nav className="flex z-10 justify-end space-x-24">
           {["/home", "/about", "/resources", "/contact"].map((path) => (
             <Link
               key={path}
               href={path}
-              className={`capitalize scrn-750:text-xs scrn-1000:text-base text-white hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""}`}
+              className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-800 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""}`}
             >
               {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
               {pathname.startsWith(path) && (
@@ -188,27 +188,6 @@ const Header: React.FC = () => {
             </Link>
           ))}
         </nav>
-
-        {/* Right: Search Icon */}
-        <div className="relative flex justify-end">
-          {showSearch ? (
-            <input
-              ref={searchRef}
-              type="text"
-              placeholder="Search APEC"
-              className="p-2 rounded-full border z-50 border-gray-300 focus:border-[#c62931] focus:outline-none w-48 scrn-750:w-64 transition-all duration-200"
-              autoFocus
-            />
-          ) : (
-            <button
-              onClick={() => setShowSearch(true)}
-              className="p-3 me-2 rounded-full bg-gray-100 hover:bg-[#c62931] hover:text-white transition-all duration-200 text-[#c62931]"
-              aria-label="Search"
-            >
-              <FiSearch className="text-xl" />
-            </button>
-          )}
-        </div>
       </div>
     </header>
   );
