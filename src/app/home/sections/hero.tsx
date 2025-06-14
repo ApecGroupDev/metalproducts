@@ -41,7 +41,6 @@ const Hero: React.FC = () => {
             priority
           />
         </div>
-
         {/*  Text Section */}
         <div className="text-center z-20"
         >
