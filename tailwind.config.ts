@@ -91,7 +91,7 @@ export default {
         '18xl': '26rem',
       },
       fontFamily: {
-        sans: ['Metropolis', 'Arial', 'sans-serif'],
+        sans: ['var(--font-raleway)', 'sans-serif'],
       },
       spacing: {
         '100': '18rem',
