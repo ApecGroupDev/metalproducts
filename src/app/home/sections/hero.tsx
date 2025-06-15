@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
       scrn-1600:h-228
       scrn-1700:h-248
       scrn-1800:h-260
-      scrn-1900:h-screen
+      scrn-1900:min-h-screen
       scrn-2000:h-280
       scrn-2100:h-288
       scrn-2200:h-304
@@ -30,10 +30,10 @@ const Hero: React.FC = () => {
       scrn-2400:h-324
       scrn-2500:h-339"
       >
-        <div className="absolute inset-0 z-10 -mt-48"
+        <div className="absolute inset-0 z-10 -mt-40"
         >
           <Image
-            src="/images/backgrounds/home/Hero_Homepage.png"
+            src="/images/backgrounds/home/Home_Dev_1.png"
             alt="Background"
             style={{ objectFit: 'contain' }}
             width={2786}
@@ -41,16 +41,36 @@ const Hero: React.FC = () => {
             priority
           />
         </div>
+
+        <div className="absolute z-50 w-full flex justify-center mt-164">
+          <Image
+            src="/images/backgrounds/home/Hero_Tank.png"
+            alt="Bottom Graphic"
+            width={1920}
+            height={300}
+            className="w-2/3"
+          />
+        </div>
+
         {/*  Text Section */}
-        <div className="text-center z-20"
-        >
-          <p className='text-9xl font-semibold'>
+        <div className="text-center z-40 mt-8">
+          <p
+            className="text-9xl font-bold opacity-70"
+            style={{
+              color: 'rgba(255, 255, 255, 255)',
+              textShadow: `
+      -3px 2px 2px rgba(0, 0, 0, 0.4),
+      -6px 4px 4px rgba(0, 0, 0, 0.3),
+      -9px 6px 8px rgba(0, 0, 0, 0.2),
+      -12px 8px 12px rgba(0, 0, 0, 0.1)
+    `
+            }}
+          >
             METAL <br />
             PRODUCTS <br />
             COMPANY
           </p>
         </div>
-
       </div>
     </div>
   );
