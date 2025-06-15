@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Hero: React.FC = () => {
   return (
     <div className="relative z-20">
-      <div className="relative flex flex-col-reverse scrn-600:flex-row scrn-600:ps-2 items-center justify-center bg-gray-300
+      <div className="relative flex flex-col-reverse scrn-600:flex-row scrn-600:ps-2 items-center justify-center bg-white
       h-140
       scrn-400:h-140
       scrn-600:h-124
@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
         {/*  Text Section */}
         <div className="text-center z-40 mt-8">
           <p
-            className="text-9xl font-bold opacity-70"
+            className="text-9xl font-bold opacity-90"
             style={{
               color: 'rgba(255, 255, 255, 255)',
               textShadow: `
