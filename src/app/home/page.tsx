@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '@/app/home/sections/hero';
 import History from './sections/history';
+import Resources from './sections/resources';
 
 const Home: React.FC = () => {
   return (
@@ -8,6 +9,7 @@ const Home: React.FC = () => {
       {/* Sections */}
       <Hero />
       <History />
+      <Resources />
     </div>
   );
 };
