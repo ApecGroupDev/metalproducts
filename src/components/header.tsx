@@ -68,7 +68,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`bg-transparent max-w-[2560px] fixed top-0 w-full z-30 transition-transform duration-300 ${isVisible ? "top-0" : "top-full"
+      className={`max-w-[2560px] fixed top-0 w-full z-30 transition-transform duration-300 ${isVisible ? "top-0" : "top-full"
         }`}
     >
       {/* Mobile Header */}
@@ -164,7 +164,7 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <Link href="/">
             <Image
-              src="/images/logos/Logo_MPC.png"
+              src="/images/logos/Logo_MPC_Main.png"
               alt="Logo"
               width={1315}
               height={1206}
@@ -174,7 +174,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Center: Navigation */}
-        <nav className="flex z-10 justify-end space-x-24">
+        <nav className="flex z-10 justify-end space-x-24 font-semibold">
           {["/home", "/about", "/resources", "/contact"].map((path) => (
             <Link
               key={path}
