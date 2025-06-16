@@ -1,10 +1,10 @@
 import React from 'react';
-// import Image from 'next/image';
+import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
     <div className="relative z-20">
-      <div className="relative flex flex-col-reverse scrn-600:flex-row scrn-600:ps-2 items-center justify-between bg-gray-900
+      <div className="relative flex flex-col-reverse scrn-600:flex-row scrn-600:ps-2 items-center justify-center bg-white
       h-140
       scrn-400:h-140
       scrn-600:h-124
@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
       scrn-1600:h-228
       scrn-1700:h-248
       scrn-1800:h-260
-      scrn-1900:h-272
+      scrn-1900:min-h-screen
       scrn-2000:h-280
       scrn-2100:h-288
       scrn-2200:h-304
@@ -30,44 +30,46 @@ const Hero: React.FC = () => {
       scrn-2400:h-324
       scrn-2500:h-339"
       >
-        {/* Left Text Section */}
-        <div className="scrn-1500:ms-4 scrn-2300:ms-8 -space-y-1.5 text-center mb-6 scrn-400:mb-0 scrn-600:text-left scrn-1000:pb-5 z-20 hidden scrn-600:block me-60
-        scrn-600:pt-20
-        scrn-750:pt-12
-        scrn-1000:pt-20
-        scrn-1300:pt-24
-        scrn-1800:pt-32"
+        <div className="absolute inset-0 z-10 -mt-40"
         >
-          <p className="text-xl scrn-700:text-2xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl scrn-2300:text-6xl font-bold whitespace-nowrap">
-            METAL PRODUCTS
-          </p>
-          <p className="text-2xl scrn-700:text-3xl scrn-900:text-4xl scrn-1000:text-4xl scrn-1200:text-5xl scrn-1500:text-6xl scrn-1700:text-6xl scrn-1800:text-7xl scrn-2300:text-8xl font-regular italic text-[#c62931] tracking-wider whitespace-nowrap">
-            WEBSITE
-          </p>
-          <p className="text-xl scrn-700:text-2xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl scrn-2300:text-6xl font-regular">
-            COMING SOON
-          </p>
+          <Image
+            src="/images/backgrounds/home/Home_Dev_1.png"
+            alt="Background"
+            style={{ objectFit: 'contain' }}
+            width={2786}
+            height={1718}
+            priority
+          />
         </div>
 
-        {/* Right Text Section */}
-        <div className="scrn-1500:ms-4 scrn-2300:ms-8 -space-y-1.5 text-center mb-6 scrn-400:mb-0 scrn-600:text-left scrn-1000:pb-5 z-20 hidden scrn-600:block me-auto
-        scrn-600:pt-20
-        scrn-750:pt-12
-        scrn-1000:pt-20
-        scrn-1300:pt-24
-        scrn-1800:pt-32"
-        >
-          <p className="text-xl scrn-700:text-2xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl scrn-2300:text-6xl font-bold whitespace-nowrap">
-            METAL PRODUCTS
-          </p>
-          <p className="text-2xl scrn-700:text-3xl scrn-900:text-4xl scrn-1000:text-4xl scrn-1200:text-5xl scrn-1500:text-6xl scrn-1700:text-6xl scrn-1800:text-8xl scrn-2300:text-8xl font-regular italic text-[#c62931] tracking-wider whitespace-nowrap">
-            ABOUT PAGE
-          </p>
-          <p className="text-xl scrn-700:text-2xl scrn-900:text-2xl scrn-1000:text-2xl scrn-1200:text-3xl scrn-1500:text-4xl scrn-1700:text-4xl scrn-1800:text-5xl scrn-2300:text-6xl font-regular">
-            COMING SOON
-          </p>
+        <div className="absolute z-50 w-full flex justify-center mt-164">
+          <Image
+            src="/images/backgrounds/home/Hero_Tank.png"
+            alt="Bottom Graphic"
+            width={1920}
+            height={300}
+            className="w-2/3"
+          />
         </div>
 
+        {/*  Text Section */}
+        <div className="text-center z-40 mt-40">
+          <p
+            className="text-9xl font-bold opacity-90"
+            style={{
+              color: 'rgba(255, 255, 255, 255)',
+              textShadow: `
+      -3px 2px 2px rgba(0, 0, 0, 0.4),
+      -6px 4px 4px rgba(0, 0, 0, 0.3),
+      -9px 6px 8px rgba(0, 0, 0, 0.2),
+      -12px 8px 12px rgba(0, 0, 0, 0.1)
+    `
+            }}
+          >
+            ABOUT <br />
+            US
+          </p>
+        </div>
       </div>
     </div>
   );
