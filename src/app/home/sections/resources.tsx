@@ -11,7 +11,7 @@ const Resources: React.FC = () => {
           <p className='text-red-700 text-7xl font-bold'>RESOURCES</p>
         </div>
 
-        <div className='grid grid-cols-3'>
+        <div className='grid grid-cols-3 max-w-8xl'>
           <div className="">
             <p className="text-2xl leading-relaxed font-semibold text-gray-800">
               UNDERGROUND<br />
