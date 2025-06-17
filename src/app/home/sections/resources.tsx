@@ -17,7 +17,7 @@ const Resources: React.FC = () => {
         />
       </div>
 
-      <div className="relative z-30 flex flex-col items-center justify-center text-center space-y-8 mt-40">
+      <div className="relative z-30 flex flex-col items-center justify-center text-center space-y-8 mt-20">
         {/* Title */}
         <div className="w-full justify-center">
           <p className='italic text-gray-800 text-4xl font-semibold'>OUR</p>
@@ -25,14 +25,26 @@ const Resources: React.FC = () => {
         </div>
 
         {/* Cards */}
-        <div className='grid grid-cols-3 gap-8 px-4'>
+        <div className='grid grid-cols-3 gap-8 px-4 relative'>
           {[
             { title: "UNDERGROUND\nTANKS", image: "/images/backgrounds/home/001.png" },
             { title: "ABOVE GROUND\nTANK", image: "/images/backgrounds/home/002.png" },
             { title: "OIL / WATER\nSEPARATOR", image: "/images/backgrounds/home/003.png" },
           ].map((item, index) => (
-            <div key={index}>
-              <p className="text-2xl leading-relaxed font-semibold text-gray-800 whitespace-pre-line">
+            <div key={index} className="relative">
+              {/* Spotlight inside the card */}
+              <div className="absolute inset-0 z-10 opacity-100">
+                <Image
+                  src="/images/backgrounds/home/spotlight_wide.png"
+                  alt="Spotlight"
+                  fill
+                  style={{ objectFit: 'contain' }}
+                  className="pointer-events-none"
+                />
+              </div>
+
+              {/* Text and image content */}
+              <p className="text-2xl leading-relaxed font-semibold text-gray-800 whitespace-pre-line relative z-20">
                 {item.title}
               </p>
               <Image
@@ -40,14 +52,14 @@ const Resources: React.FC = () => {
                 alt={item.title}
                 width={1920}
                 height={300}
-                className="w-120 mx-auto"
+                className="w-120 mx-auto mt-16 relative z-20"
               />
             </div>
           ))}
         </div>
 
         {/* Button */}
-        <div className="mt-4">
+        <div className="pt-16">
           <button className="relative text-lg font-semibold rounded-lg px-6 py-2 border-4 border-white bg-red-800 text-black">
             <span className="absolute inset-0 border-2 border-red-800 rounded-md -m-1"></span>
             <span className="relative z-10 px-8 text-white">Read More</span>

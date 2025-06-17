@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 const History: React.FC = () => {
   return (
-    <div className="relative z-20 bg-white py-12">
-      <div className="flex flex-col items-center justify-center text-center space-y-8">
+    <div className="relative z-20 bg-white py-32">
+      <div className="flex flex-col items-center justify-center text-center space-y-16">
         {/* Image on top */}
         <div className="w-full flex justify-center">
           <Image
