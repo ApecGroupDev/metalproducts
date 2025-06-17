@@ -18,7 +18,10 @@ const History: React.FC = () => {
 
         {/* Text Section */}
         <div className="max-w-4xl px-4">
-          <p className="text-2xl leading-relaxed font-semibold text-gray-800">
+          <p className="leading-relaxed font-semibold text-gray-800
+          scrn-1000:text-xl
+          scrn-1900:text-2xl"
+          >
             Metal Products Company was founded in 1941 as a proprietorship to <br />
             fabricate ladders and doors for Liberty Ships, which were being <br />
             built at the rate of one per day. These ships were used to support <br />

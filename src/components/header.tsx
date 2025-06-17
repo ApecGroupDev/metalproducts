@@ -159,7 +159,10 @@ const Header: React.FC = () => {
       </div>
 
       {/* Desktop Header - 3 Grid Layout */}
-      <div className="hidden scrn-1000:grid grid-cols-2 items-center p-6 me-12">
+      <div className="hidden scrn-1000:grid grid-cols-2 items-center me-12
+      scrn-1000:p-4
+      scrn-1900:p-6"
+      >
         {/* Left: Logo */}
         <div className="flex items-center">
           <Link href="/">
@@ -168,18 +171,22 @@ const Header: React.FC = () => {
               alt="Logo"
               width={1315}
               height={1206}
-              className="w-auto scrn-750:h-16 scrn-1250:h-20"
+              className="w-auto 
+              scrn-750:h-16 
+              scrn-1000:h-12
+              scrn-1250:h-20"
             />
           </Link>
         </div>
 
         {/* Center: Navigation */}
-        <nav className="flex z-10 justify-end space-x-24 font-semibold">
+        <nav className="flex z-10 justify-end scrn-1000:space-x-16 scrn-1900:space-x-24 font-semibold">
+
           {["/home", "/about", "/resources", "/contact"].map((path) => (
             <Link
               key={path}
               href={path}
-              className={`capitalize scrn-750:text-xs scrn-1000:text-base text-gray-800 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""}`}
+              className={`capitalize scrn-750:text-xs scrn-1000:text-sm scrn-1900:text-base text-gray-800 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""}`}
             >
               {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
               {pathname.startsWith(path) && (
