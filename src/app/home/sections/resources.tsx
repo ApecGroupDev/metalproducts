@@ -25,7 +25,10 @@ const Resources: React.FC = () => {
         </div>
 
         {/* Cards */}
-        <div className='grid grid-cols-3 gap-8 px-4 relative'>
+        <div className='grid grid-cols-3 gap-8 relative
+        scrn-1000:px-12
+        scrn-1900:px-4'
+        >
           {[
             { title: "UNDERGROUND\nTANKS", image: "/images/backgrounds/home/001.png" },
             { title: "ABOVE GROUND\nTANK", image: "/images/backgrounds/home/002.png" },
@@ -44,7 +47,8 @@ const Resources: React.FC = () => {
               </div>
 
               {/* Text and image content */}
-              <p className="text-2xl leading-relaxed font-semibold text-gray-800 whitespace-pre-line relative z-20">
+              <p className="leading-relaxed font-semibold text-gray-800 whitespace-pre-line relative z-20
+              scrn-1900:text-2xl">
                 {item.title}
               </p>
               <Image
@@ -52,7 +56,7 @@ const Resources: React.FC = () => {
                 alt={item.title}
                 width={1920}
                 height={300}
-                className="w-120 mx-auto mt-16 relative z-20"
+                className="mx-auto mt-16 relative z-20"
               />
             </div>
           ))}

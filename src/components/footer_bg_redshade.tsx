@@ -7,8 +7,10 @@ import LocationIcon from './locationIcon';
 const Footer: React.FC = () => {
   return (
     <footer className="relative bg-[#e3e3e3] font-inter items-end -mt-1
+    scrn-1000:h-80
     scrn-1900:h-96">
-      <div className="grid grid-cols-2 gap-8 items-end z-30 h-full">
+      <div className="grid grid-cols-2 gap-8 items-end z-30 h-full"
+      >
         {/* Background image positioned absolutely */}
         <div className="absolute inset-0">
           <Image
@@ -20,7 +22,15 @@ const Footer: React.FC = () => {
           />
         </div>
         {/* Column 1: Social Media Icons */}
-        <div className='flex flex-row ms-24 gap-x-20 p-8'>
+        <div className='flex flex-row 
+        scrn-1000:ms-8
+        scrn-1900:ms-24 
+
+        scrn-1900:gap-x-20 
+
+        scrn-1000:p-4
+        scrn-1900:p-8'
+        >
           <div className="z-10 flex flex-col items-start space-y-2 scrn-750:space-y-1 scrn-1000:space-y-2">
             <div className='text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg whitespace-nowrap space-y-1'>
               <p>For More Information</p>
@@ -106,6 +116,7 @@ const Footer: React.FC = () => {
               height={1206}
               width={1315}
               className="transition-transform duration-300 ease-in-out transform hover:scale-110 w-auto
+              scrn-1000:h-20
               scrn-1900:h-28"
             />
           </Link>
