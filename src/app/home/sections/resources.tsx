@@ -36,7 +36,7 @@ const Resources: React.FC = () => {
           ].map((item, index) => (
             <div key={index} className="relative">
               {/* Spotlight inside the card */}
-              <div className="absolute inset-0 z-10 opacity-100">
+              <div className="absolute inset-0 z-10 opacity-100 scale-125">
                 <Image
                   src="/images/backgrounds/home/spotlight_wide.png"
                   alt="Spotlight"
