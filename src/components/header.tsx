@@ -186,7 +186,7 @@ const Header: React.FC = () => {
             <Link
               key={path}
               href={path}
-              className={`capitalize scrn-750:text-xs scrn-1000:text-sm scrn-1900:text-base text-gray-800 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""}`}
+              className={`capitalize scrn-750:text-xs scrn-1000:text-sm scrn-1900:text-xl text-gray-800 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""}`}
             >
               {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
               {pathname.startsWith(path) && (
