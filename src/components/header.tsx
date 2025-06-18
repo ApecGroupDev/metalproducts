@@ -10,23 +10,9 @@ const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [showSearch, setShowSearch] = useState(false);
-  const searchRef = useRef<HTMLInputElement | null>(null);
-  const [searchOpen, setSearchOpen] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
 
   const toggleMenu = () => {
-    setIsOpen((prev) => {
-      if (!prev) setSearchOpen(false); // Close search if opening menu
-      return !prev;
-    });
-  };
-
-  const toggleSearch = () => {
-    setSearchOpen((prev) => {
-      if (!prev) setIsOpen(false); // Close menu if opening search
-      return !prev;
-    });
+    setIsOpen((prev) => !prev);
   };
 
   const handleScroll = () => {
@@ -44,27 +30,6 @@ const Header: React.FC = () => {
     };
   }, [lastScrollY]);
 
-  // Close search input when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        searchRef.current &&
-        event.target instanceof Node &&
-        !searchRef.current.contains(event.target)
-      ) {
-        setShowSearch(false);
-      }
-    };
-
-    if (showSearch) {
-      document.addEventListener("mousedown", handleClickOutside);
-    }
-
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [showSearch]);
-
   return (
     <header
       className={`max-w-[2560px] fixed top-0 w-full z-30 transition-transform duration-300 ${isVisible ? "top-0" : "top-full"
@@ -72,7 +37,7 @@ const Header: React.FC = () => {
     >
       {/* Mobile Header */}
       <div className="scrn-1000:hidden container min-w-full relative flex items-center py-4">
-        
+
         {/* left Logo */}
         <div className="absolute pt-10 ps-4 inset-0 flex items-center">
           <Link href="/">
