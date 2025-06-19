@@ -107,7 +107,8 @@ const Hero: React.FC = () => {
         scrn-1700:mt-16
         scrn-1900:mt-8
         scrn-2000:mt-0
-        scrn-2100:mt-12"
+        scrn-2100:-mt-8
+        scrn-2150:mt-12"
         >
           <p
             className="font-bold opacity-90
