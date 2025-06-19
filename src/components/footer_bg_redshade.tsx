@@ -7,10 +7,11 @@ import LocationIcon from './locationIcon';
 const Footer: React.FC = () => {
   return (
     <footer className="relative bg-[#e3e3e3] font-inter items-end -mt-1
+    h-96
     scrn-1000:h-80
-    scrn-1900:h-96">
-      <div className="grid grid-cols-2 gap-8 items-end z-30 h-full"
-      >
+    scrn-1900:h-96"
+    >
+      <div className="grid grid-cols-1 scrn-600:grid-cols-2 gap-8 items-end z-30 h-full">
         {/* Background image positioned absolutely */}
         <div className="absolute inset-0">
           <Image
@@ -22,11 +23,17 @@ const Footer: React.FC = () => {
           />
         </div>
         {/* Column 1: Social Media Icons */}
-        <div className='flex flex-row 
+        <div className='flex flex-row
         scrn-1000:ms-8
         scrn-1900:ms-24 
 
         scrn-1900:gap-x-20 
+
+        px-14
+        pb-4
+
+        scrn-600:px-0
+        scrn-600:pb-0
 
         scrn-1000:p-4
         scrn-1900:p-8'
@@ -98,7 +105,7 @@ const Footer: React.FC = () => {
               />
             </div>
           </div>
-          <div className="z-10 flex flex-col">
+          <div className="z-10 flex flex-col ms-auto">
             <div className='text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg whitespace-nowrap space-y-1'>
               <LocationIcon text="Main Office:" size={24} />
               <p className='ms-7'>725 Main Street</p>
@@ -108,7 +115,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Column 2: Logo */}
-        <div className="hidden scrn-350:flex justify-end p-12">
+        <div className="hidden scrn-600:flex justify-end p-12">
           <Link href="/">
             <Image
               src="/images/logos/Logo_MPC_NoColor.png"

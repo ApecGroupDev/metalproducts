@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const History: React.FC = () => {
   return (
-    <div className="relative z-20 bg-white py-32">
+    <div className="relative z-20 bg-white py-14 scrn-1000:py-32 border border-dashed border-b-green-500">
       <div className="flex flex-col items-center justify-center text-center space-y-16">
         {/* Image on top */}
         <div className="w-full flex justify-center">
@@ -12,19 +12,21 @@ const History: React.FC = () => {
             alt="History Graphic"
             width={1920}
             height={300}
-            className="w-2/5"
+            className="w-4/5 scrn-1000:w-2/5"
           />
         </div>
 
         {/* Text Section */}
         <div className="max-w-4xl px-4">
-          <p className="leading-relaxed font-semibold text-gray-800
+          <p className="leading-relaxed font-medium scrn-1000:font-semibold text-gray-800
+          text-base
+          text-justify
           scrn-1000:text-xl
           scrn-1900:text-2xl"
           >
-            Metal Products Company was founded in 1941 as a proprietorship to <br />
-            fabricate ladders and doors for Liberty Ships, which were being <br />
-            built at the rate of one per day. These ships were used to support <br />
+            Metal Products Company was founded in 1941 as a proprietorship to
+            fabricate ladders and doors for Liberty Ships, which were being
+            built at the rate of one per day. These ships were used to support
             supply for England in the early part of WWII.
           </p>
         </div>

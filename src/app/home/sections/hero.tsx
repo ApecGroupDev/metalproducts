@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Hero: React.FC = () => {
   return (
     <div className="relative z-20">
-      <div className="relative flex flex-col items-center justify-center bg-white
+      <div className="relative flex flex-col items-center justify-center bg-white border border-dashed border-b-green-600
       h-140
       scrn-400:h-140
       scrn-600:h-124
@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
       scrn-2400:h-324
       scrn-2500:h-339"
       >
-        <div className="absolute inset-0 z-10 
+        <div className="absolute inset-0 z-10 hidden
         scrn-1000:-mt-[4.5rem]
         scrn-1900:-mt-40"
         >
@@ -44,7 +44,22 @@ const Hero: React.FC = () => {
           />
         </div>
 
+      {/* Mobile only hero image */}
+        <div className="absolute inset-0 z-10
+        "
+        >
+          <Image
+            src="/images/backgrounds/home/Hero_Homepage_Mobile.png"
+            alt="Background"
+            style={{ objectFit: 'contain' }}
+            width={2786}
+            height={1718}
+            priority
+          />
+        </div>
+
         <div className="absolute z-50 w-full flex justify-center 
+        mt-72
         scrn-1000:mt-110
         scrn-1900:mt-164"
         >
@@ -63,6 +78,7 @@ const Hero: React.FC = () => {
         <div className="text-center z-40 mt-8">
           <p
             className="font-bold opacity-90
+            text-6xl
             scrn-1000:text-7xl
             scrn-1900:text-9xl"
             style={{
