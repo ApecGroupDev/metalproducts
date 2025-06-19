@@ -12,7 +12,7 @@ const History: React.FC = () => {
             alt="History Graphic"
             width={1920}
             height={300}
-            className="w-4/5 scrn-1000:w-2/5"
+            className="w-4/5 scrn-900:w-3/5 scrn-1000:w-2/5"
           />
         </div>
 

@@ -36,7 +36,7 @@ const Header: React.FC = () => {
         }`}
     >
       {/* Mobile Header */}
-      <div className="scrn-1000:hidden container min-w-full relative flex items-center py-4">
+      <div className="scrn-900:hidden container min-w-full relative flex items-center py-4">
 
         {/* left Logo */}
         <div className="absolute pt-10 ps-4 inset-0 flex items-center">
@@ -98,7 +98,8 @@ const Header: React.FC = () => {
       </div>
 
       {/* Desktop Header - 3 Grid Layout */}
-      <div className="hidden scrn-1000:grid grid-cols-2 items-center me-12
+      <div className="hidden scrn-900:grid grid-cols-2 items-center me-12
+      scrn-900:p-2
       scrn-1000:p-4
       scrn-1900:p-6"
       >
@@ -119,7 +120,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Center: Navigation */}
-        <nav className="flex z-10 justify-end scrn-1000:space-x-16 scrn-1900:space-x-24 font-semibold">
+        <nav className="flex z-10 justify-end scrn-900:space-x-12 scrn-1000:space-x-16 scrn-1900:space-x-24 font-semibold">
 
           {["/home", "/about", "/resources", "/contact"].map((path) => (
             <Link

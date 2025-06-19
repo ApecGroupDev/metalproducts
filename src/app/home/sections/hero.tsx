@@ -4,13 +4,15 @@ import Image from 'next/image';
 const Hero: React.FC = () => {
   return (
     <div className="relative z-20">
-      <div className="relative flex flex-col items-center justify-center bg-white border border-dashed border-b-green-600
+      <div className="relative flex flex-col items-center justify-center scrn-900:justify-normal bg-white border border-dashed border-b-green-600
       h-140
       scrn-450:h-148
       scrn-500:h-160
       scrn-550:h-168
       scrn-600:h-208
       scrn-700:h-224
+      scrn-800:h-240
+      scrn-900:h-148
       scrn-1000:min-h-screen
       scrn-1150:h-168
       scrn-1200:h-176
@@ -29,8 +31,8 @@ const Hero: React.FC = () => {
       scrn-2400:h-324
       scrn-2500:h-339"
       >
-        <div className="absolute inset-0 z-10 hidden
-        scrn-1000:-mt-[4.5rem]
+        <div className="absolute inset-0 z-10 hidden scrn-900:block
+        scrn-900:-mt-[4.5rem]
         scrn-1900:-mt-40"
         >
           <Image
@@ -44,7 +46,7 @@ const Hero: React.FC = () => {
         </div>
 
       {/* Mobile only hero image */}
-        <div className="absolute inset-0 z-10">
+        <div className="absolute inset-0 z-10 scrn-900:hidden">
           <Image
             src="/images/backgrounds/home/Hero_Homepage_Mobile.png"
             alt="Background"
@@ -62,7 +64,11 @@ const Hero: React.FC = () => {
         scrn-550:mt-118
         scrn-600:mt-112
         scrn-650:mt-118
-        scrn-1000:mt-110
+        scrn-700:mt-128
+        scrn-750:mt-136
+        scrn-800:mt-144
+        scrn-850:mt-164
+        scrn-900:mt-80
         scrn-1900:mt-164"
         >
           <Image
@@ -71,18 +77,21 @@ const Hero: React.FC = () => {
             width={1920}
             height={300}
             className="
+            scrn-900:w-4/6
             scrn-1000:w-3/5
             scrn-1900:w-2/3"
           />
         </div>
 
         {/*  Text Section */}
-        <div className="text-center z-40 mt-8">
+        <div className="text-center z-40 mt-8 scrn-650:mt-20 scrn-900:mt-40">
           <p
             className="font-bold opacity-90
             text-4xl
             scrn-400:text-6xl
             scrn-600:text-7xl
+            scrn-700:text-8xl
+            scrn-900:text-7xl
             scrn-1900:text-9xl"
             style={{
               color: 'rgba(255, 255, 255, 255)',
