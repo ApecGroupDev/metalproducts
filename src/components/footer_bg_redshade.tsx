@@ -29,7 +29,8 @@ const Footer: React.FC = () => {
 
         scrn-1900:gap-x-20 
 
-        px-14
+        px-4
+        scrn-400:px-14
         pb-4
 
         scrn-600:px-0
@@ -39,7 +40,7 @@ const Footer: React.FC = () => {
         scrn-1900:p-8'
         >
           <div className="z-10 flex flex-col items-start space-y-2 scrn-750:space-y-1 scrn-1000:space-y-2">
-            <div className='text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg whitespace-nowrap space-y-1'>
+            <div className='text-2xs scrn-400:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg whitespace-nowrap space-y-1'>
               <p>For More Information</p>
               <p>770.945.8383</p>
               <p>Sales@mtlprods.com</p>
@@ -74,7 +75,9 @@ const Footer: React.FC = () => {
                 className="transition-transform transform hover:scale-125"
               />
             </div>
-            <div className="flex scrn-750:hidden space-x-4 pb-2 scrn-400:pb-0">
+
+            {/* Icons on mobile view */}
+            <div className="flex scrn-750:hidden space-x-2 pb-0">
               <SocialIcon
                 url="https://twitter.com"
                 target="_blank"
@@ -130,7 +133,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       {/* Copyright*/}
-      <div className="py-2 bg-red-800 w-full z-50 relative">
+      <div className="py-2 px-2 bg-red-800 w-full z-50 relative">
         <p className="text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg scrn-1900:text-lg scrn-2500:text-xl text-center font-light">
           Copyright 2024–2025 © Metal Products Company. All rights reserved.
         </p>

@@ -17,11 +17,11 @@ const Resources: React.FC = () => {
         />
       </div>
 
-      <div className="relative z-30 flex flex-col items-center justify-center text-center space-y-8 mt-20">
+      <div className="relative z-30 flex flex-col items-center justify-center text-center space-y-8 scrn-400:mt-20">
         {/* Title */}
         <div className="w-full justify-center">
-          <p className='italic text-gray-800 text-5xl scrn-1000:text-4xl font-semibold'>OUR</p>
-          <p className='text-red-700 text-6xl scrn-1000:text-7xl font-bold'>RESOURCES</p>
+          <p className='italic text-gray-800 text-4xl scrn-400:text-5xl scrn-1000:text-4xl font-semibold'>OUR</p>
+          <p className='text-red-700 text-5xl scrn-400:text-6xl scrn-1000:text-7xl font-bold'>RESOURCES</p>
         </div>
 
         {/* Cards */}

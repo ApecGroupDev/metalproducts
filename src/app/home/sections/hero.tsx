@@ -78,7 +78,8 @@ const Hero: React.FC = () => {
         <div className="text-center z-40 mt-8">
           <p
             className="font-bold opacity-90
-            text-6xl
+            text-4xl
+            scrn-400:text-6xl
             scrn-1000:text-7xl
             scrn-1900:text-9xl"
             style={{
