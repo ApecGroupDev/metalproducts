@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const History: React.FC = () => {
   return (
-    <div className="relative z-20 bg-white py-14 scrn-1000:py-32 border border-dashed border-b-green-500">
+    <div className="relative z-20 bg-white py-14 scrn-400:py-20 mb-16 scrn-1000:py-32 border border-dashed border-b-green-500">
       <div className="flex flex-col items-center justify-center text-center space-y-16">
         {/* Image on top */}
         <div className="w-full flex justify-center">
@@ -17,7 +17,7 @@ const History: React.FC = () => {
         </div>
 
         {/* Text Section */}
-        <div className="max-w-4xl px-4">
+        <div className="scrn-500:max-w-md scrn-600:max-w-lg scrn-1000:max-w-4xl px-4">
           <p className="leading-relaxed font-medium scrn-1000:font-semibold text-gray-800
           text-base
           text-justify

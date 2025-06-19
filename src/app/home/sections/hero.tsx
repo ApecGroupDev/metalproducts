@@ -6,13 +6,12 @@ const Hero: React.FC = () => {
     <div className="relative z-20">
       <div className="relative flex flex-col items-center justify-center bg-white border border-dashed border-b-green-600
       h-140
-      scrn-400:h-140
-      scrn-600:h-124
-      scrn-750:h-120
-      scrn-800:h-124
-      scrn-900:h-136
-      scrn-1000:h-160
-      scrn-1100:min-h-screen
+      scrn-450:h-148
+      scrn-500:h-160
+      scrn-550:h-168
+      scrn-600:h-208
+      scrn-700:h-224
+      scrn-1000:min-h-screen
       scrn-1150:h-168
       scrn-1200:h-176
       scrn-1300:h-188
@@ -45,9 +44,7 @@ const Hero: React.FC = () => {
         </div>
 
       {/* Mobile only hero image */}
-        <div className="absolute inset-0 z-10
-        "
-        >
+        <div className="absolute inset-0 z-10">
           <Image
             src="/images/backgrounds/home/Hero_Homepage_Mobile.png"
             alt="Background"
@@ -60,6 +57,11 @@ const Hero: React.FC = () => {
 
         <div className="absolute z-50 w-full flex justify-center 
         mt-72
+        scrn-450:mt-80
+        scrn-500:mt-112
+        scrn-550:mt-118
+        scrn-600:mt-112
+        scrn-650:mt-118
         scrn-1000:mt-110
         scrn-1900:mt-164"
         >
@@ -80,7 +82,7 @@ const Hero: React.FC = () => {
             className="font-bold opacity-90
             text-4xl
             scrn-400:text-6xl
-            scrn-1000:text-7xl
+            scrn-600:text-7xl
             scrn-1900:text-9xl"
             style={{
               color: 'rgba(255, 255, 255, 255)',
