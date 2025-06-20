@@ -9,7 +9,8 @@ const Footer: React.FC = () => {
     <footer className="relative bg-[#e3e3e3] font-inter items-end -mt-1
     h-96
     scrn-1000:h-80
-    scrn-1900:h-96"
+    scrn-1900:h-96
+    scrn-"
     >
       <div className="grid grid-cols-1 scrn-600:grid-cols-2 gap-8 items-end z-30 h-full">
         {/* Background image positioned absolutely */}
@@ -24,6 +25,7 @@ const Footer: React.FC = () => {
         </div>
         {/* Column 1: Social Media Icons */}
         <div className='flex flex-row
+        scrn-600:ms-4
         scrn-1000:ms-8
         scrn-1900:ms-24 
 
@@ -33,8 +35,9 @@ const Footer: React.FC = () => {
         scrn-400:px-14
         pb-4
 
-        scrn-600:px-0
-        scrn-600:pb-0
+        scrn-600:px-2
+        scrn-600:pb-2
+        scrn-700:px-4
 
         scrn-1000:p-4
         scrn-1900:p-8'
@@ -108,7 +111,7 @@ const Footer: React.FC = () => {
               />
             </div>
           </div>
-          <div className="z-10 flex flex-col ms-auto">
+          <div className="z-10 flex flex-col ms-auto scrn-600:ms-4">
             <div className='text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg whitespace-nowrap space-y-1'>
               <LocationIcon text="Main Office:" size={24} />
               <p className='ms-7'>725 Main Street</p>
@@ -118,7 +121,10 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Column 2: Logo */}
-        <div className="hidden scrn-600:flex justify-end p-12">
+        <div className="hidden scrn-600:flex justify-end 
+        p-10
+        scrn-1000:p-12"
+        >
           <Link href="/">
             <Image
               src="/images/logos/Logo_MPC_NoColor.png"
@@ -126,6 +132,8 @@ const Footer: React.FC = () => {
               height={1206}
               width={1315}
               className="transition-transform duration-300 ease-in-out transform hover:scale-110 w-auto
+              h-12
+              scrn-700:h-14
               scrn-1000:h-20
               scrn-1900:h-28"
             />
