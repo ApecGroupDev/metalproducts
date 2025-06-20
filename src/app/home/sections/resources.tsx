@@ -28,7 +28,11 @@ const Resources: React.FC = () => {
         <div className='grid scrn-1000:grid-cols-3 gap-8 relative
         px-12
         scrn-1000:px-12
-        scrn-1900:px-12'
+        scrn-1900:px-12
+        scrn-2000:px-24
+        scrn-2200:px-32
+        scrn-2400:px-40
+        scrn-2500:px-60'
         >
           {[
             { title: "UNDERGROUND\nTANKS", image: "/images/backgrounds/home/001.png" },
