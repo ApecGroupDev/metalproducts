@@ -7,7 +7,7 @@ const Timeline: React.FC = () => {
       <div className='max-w-7xl mx-auto'>
         {/* Main Content */}
         <div className="relative z-0 mx-auto text-center text-gray-800 space-y-4 max-w-80 scrn-500:max-w-96 scrn-600:max-w-full scrn-600:px-12 scrn-1200:px-20">
-          <h2 className="text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl">Founding and Early Years <br /> <span className='text-red-600 italic'>(1941–1945)</span></h2>
+          <h2 className="text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl">Founding and Early Years <br /> <span className='text-red-600 italic font-thin'>(1941–1945)</span></h2>
           <p className="text-lg scrn-600:text-xl font-medium text-justify">
             Metal Products Company was founded in 1941 as a proprietorship to fabricate ladders and doors for Liberty Ships, which were being built at the rate of one per day. These ships were crucial in supplying England during the early part of World War II.
           </p>
@@ -26,7 +26,7 @@ const Timeline: React.FC = () => {
       <div className='max-w-7xl mx-auto'>
         {/* Main Content */}
         <div className="relative z-0 mx-auto text-center text-gray-800 space-y-4 max-w-80 scrn-500:max-w-96 scrn-600:max-w-full scrn-600:px-12 scrn-1200:px-20">
-          <h2 className="text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl">Incorporation and Growth <br className='scrn-600:hidden' /> (1950s–1960s)</h2>
+          <h2 className="text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl">Incorporation and Growth <br /> <span className='text-red-600 italic font-thin'>(1950s–1960s)</span></h2>
           <p className="text-lg scrn-600:text-xl font-medium text-justify">
             During the 1950s, the company transitioned from a proprietorship to a corporation.
           </p>
@@ -53,7 +53,7 @@ const Timeline: React.FC = () => {
       <div className='max-w-7xl mx-auto'>
         {/* Main Content */}
         <div className="relative z-0 mx-auto text-center text-gray-800 space-y-4 max-w-80 scrn-500:max-w-96 scrn-600:max-w-full scrn-600:px-12 scrn-1200:px-20">
-          <h2 className="text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl">Infrastructure Boom and Custom Tank Production <br className='scrn-600:hidden' /> (1960s–1970s)</h2>
+          <h2 className="text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl">Infrastructure Boom and Custom Tank Production <br /> <span className='text-red-600 italic font-thin'>(1960s–1970s)</span></h2>
           <p className="text-lg scrn-600:text-xl font-medium text-justify">
             With the construction of the interstate highway system, large shopping centers, and airports, the company produced:
           </p>
@@ -73,7 +73,7 @@ const Timeline: React.FC = () => {
       <div className='max-w-7xl mx-auto'>
         {/* Main Content */}
         <div className="relative z-0 mx-auto text-center text-gray-800 space-y-4 max-w-80 scrn-500:max-w-96 scrn-600:max-w-full scrn-600:px-12 scrn-1200:px-20">
-          <h2 className="text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl">Relocation and Modernization <br className='scrn-600:hidden' /> (1977–1979)</h2>
+          <h2 className="text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl">Relocation and Modernization <br /> <span className='text-red-600 italic font-thin'>(1977–1979)</span></h2>
           <p className="text-lg scrn-600:text-xl font-medium text-justify">
             As the original Atlanta facility aged, the company sought a new site with rail access.
           </p>
@@ -95,7 +95,7 @@ const Timeline: React.FC = () => {
       <div className='max-w-7xl mx-auto'>
         {/* Main Content */}
         <div className="relative z-0 mx-auto text-center text-gray-800 space-y-4 max-w-80 scrn-500:max-w-96 scrn-600:max-w-full scrn-600:px-12 scrn-1200:px-20">
-          <h2 className="text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl">Technological Advancements <br className='scrn-600:hidden' /> (1980s)</h2>
+          <h2 className="text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl">Technological Advancements <br /> <span className='text-red-600 italic font-thin'>(1980s)</span></h2>
           <p className="text-lg scrn-600:text-xl font-medium text-justify">
             By 1983, Metal Products Company became involved in advanced underground tank technologies, integrating systems from California, Illinois, and Pennsylvania.
           </p>
@@ -121,7 +121,7 @@ const Timeline: React.FC = () => {
       <div className='max-w-7xl mx-auto'>
         {/* Main Content */}
         <div className="relative z-0 mx-auto text-center text-gray-800 space-y-4 max-w-80 scrn-500:max-w-96 scrn-600:max-w-full scrn-600:px-12 scrn-1200:px-20">
-          <h2 className="text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl">Ongoing Growth and Innovation <br className='scrn-600:hidden' /> (1990s–2000s)</h2>
+          <h2 className="text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl">Ongoing Growth and Innovation <br /> <span className='text-red-600 italic font-thin'>(1990s–2000s)</span></h2>
           <p className="text-lg scrn-600:text-xl font-medium text-justify">
             Throughout the 1990s, the company:
           </p>
@@ -143,7 +143,7 @@ const Timeline: React.FC = () => {
       <div className='max-w-7xl mx-auto'>
         {/* Main Content */}
         <div className="relative z-0 mx-auto text-center text-gray-800 space-y-4 max-w-80 scrn-500:max-w-96 scrn-600:max-w-full scrn-600:px-12 scrn-1200:px-20">
-          <h2 className="text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl">Celebrating 80 Years <br className='scrn-600:hidden' /> (2021)</h2>
+          <h2 className="text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl">Celebrating 80 Years <br /> <span className='text-red-600 italic font-thin'>(2021)</span></h2>
           <p className="text-lg scrn-600:text-xl font-medium text-justify">
             In 2021, Metal Products Company proudly celebrated its 80th anniversary.
           </p>
