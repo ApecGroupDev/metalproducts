@@ -13,7 +13,7 @@ export const metadata = {
   title: 'Metal Products Website',
   description: 'Metal Products Website',
   icons: {
-    icon: '/images/logos/Logo_MPC_Main.png',
+    icon: '/images/logos/Logo_MPC_Main_Only.png',
   },
 };
 
