@@ -113,7 +113,7 @@ const Header: React.FC = () => {
         {/* Center: Navigation */}
         <nav className='flex z-10 justify-end scrn-900:space-x-12 scrn-1000:space-x-16 scrn-1900:space-x-24 font-semibold'>
 
-          {["/home", "/about", "/resources", "/contact"].map((path) => (
+          {["/home", "/about", "/resources", "/contact", "oil-and-water-separator", "underground-tanks", "above-ground-tank"].map((path) => (
             <Link
               key={path}
               href={path}
