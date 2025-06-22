@@ -15,8 +15,8 @@ const Timeline: React.FC = () => {
             The company was started by C.E. Gammage and Robert Harris, friends and Georgia Tech alumni from the class of 1927.
           </p>
           {/* Background Year (left-aligned) */}
-          <div className="absolute top-1/2 -left-40 -translate-y-1/2 -z-10 pointer-events-none">
-            <p className="text-red-200 text-[18rem] opacity-50 select-none leading-none mb-12">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none scrn-750:-left-4 scrn-750:translate-x-0">
+            <p className="text-red-200 text-10xl scrn-450:text-11xl scrn-750:text-13xl scrn-1000:text-[18rem] opacity-50 select-none leading-none mb-12">
               1941
             </p>
           </div>
@@ -42,8 +42,8 @@ const Timeline: React.FC = () => {
             <li>Phillips Petroleum</li>
           </ul>
           {/* Background Year (left-aligned) */}
-          <div className="absolute top-1/2 -right-40 -translate-y-1/2 -z-10 pointer-events-none">
-            <p className="text-red-200 text-[18rem] opacity-50 select-none leading-none mb-12">
+          <div className="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none scrn-750:-right-4 scrn-750:translate-x-0">
+            <p className="text-red-200 text-10xl scrn-450:text-11xl scrn-750:text-13xl scrn-1000:text-[18rem] opacity-50 select-none leading-none mb-12">
               1950
             </p>
           </div>
@@ -62,8 +62,8 @@ const Timeline: React.FC = () => {
             <li>1,000-gallon wagon-mounted tanks with pumping systems and filters</li>
           </ul>
           {/* Background Year (left-aligned) */}
-          <div className="absolute top-1/2 -left-40 -translate-y-1/2 -z-10 pointer-events-none">
-            <p className="text-red-200 text-[18rem] opacity-50 select-none leading-none mb-12">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none scrn-750:-left-4 scrn-750:translate-x-0">
+            <p className="text-red-200 text-10xl scrn-450:text-11xl scrn-750:text-13xl scrn-1000:text-[18rem] opacity-50 select-none leading-none mb-12">
               1960
             </p>
           </div>
@@ -84,8 +84,8 @@ const Timeline: React.FC = () => {
             The old Atlanta plant officially closed on January 1, 1979.
           </p>
           {/* Background Year (left-aligned) */}
-          <div className="absolute top-1/2 -right-40 -translate-y-1/2 -z-10 pointer-events-none">
-            <p className="text-red-200 text-[18rem] opacity-50 select-none leading-none mb-12">
+          <div className="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none scrn-750:-right-4 scrn-750:translate-x-0">
+            <p className="text-red-200 text-10xl scrn-450:text-11xl scrn-750:text-13xl scrn-1000:text-[18rem] opacity-50 select-none leading-none mb-12">
               1977
             </p>
           </div>
@@ -110,8 +110,8 @@ const Timeline: React.FC = () => {
             <li>Esso, Shell, and Texaco (in the Caribbean)</li>
           </ul>
           {/* Background Year (left-aligned) */}
-          <div className="absolute top-1/2 -left-40 -translate-y-1/2 -z-10 pointer-events-none">
-            <p className="text-red-200 text-[18rem] opacity-50 select-none leading-none mb-12">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none scrn-750:-left-4 scrn-750:translate-x-0">
+            <p className="text-red-200 text-10xl scrn-450:text-11xl scrn-750:text-13xl scrn-1000:text-[18rem] opacity-50 select-none leading-none mb-12">
               1983
             </p>
           </div>
@@ -132,8 +132,8 @@ const Timeline: React.FC = () => {
               The Suwanee plant site has been expanded five times since 1978 to meet growing demand.</li>
           </ul>
           {/* Background Year (left-aligned) */}
-          <div className="absolute top-1/2 -right-40 -translate-y-1/2 -z-10 pointer-events-none">
-            <p className="text-red-200 text-[18rem] opacity-50 select-none leading-none mb-12">
+          <div className="absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none scrn-750:-right-4 scrn-750:translate-x-0">
+            <p className="text-red-200 text-10xl scrn-450:text-11xl scrn-750:text-13xl scrn-1000:text-[18rem] opacity-50 select-none leading-none mb-12">
               1990
             </p>
           </div>
@@ -151,8 +151,8 @@ const Timeline: React.FC = () => {
             With a long-standing commitment to quality and service, the company continues to meet the demands of the environment, the petroleum industry, and safety regulations.
           </p>
           {/* Background Year (left-aligned) */}
-          <div className="absolute top-1/2 -left-40 -translate-y-1/2 -z-10 pointer-events-none">
-            <p className="text-red-200 text-[18rem] opacity-50 select-none leading-none mb-12">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none scrn-750:-left-4 scrn-750:translate-x-0">
+            <p className="text-red-200 text-10xl scrn-450:text-11xl scrn-750:text-13xl scrn-1000:text-[18rem] opacity-50 select-none leading-none mb-12">
               2021
             </p>
           </div>
