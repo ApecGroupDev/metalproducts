@@ -10,8 +10,8 @@ const raleway = Raleway({
 });
 
 export const metadata = {
-  title: 'Metal Products Website',
-  description: 'Metal Products Website',
+  title: 'Metal Products USA',
+  description: 'Metal Products USA Website',
   icons: {
     icon: '/images/logos/Logo_MPC_Main_Only.png',
   },
