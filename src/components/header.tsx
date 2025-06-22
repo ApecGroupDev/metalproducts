@@ -36,26 +36,24 @@ const Header: React.FC = () => {
         }`}
     >
       {/* Mobile Header */}
-      <div className="scrn-900:hidden container min-w-full relative flex items-center py-4">
+      <div className='scrn-900:hidden container min-w-full relative flex items-center py-4'>
 
         {/* left Logo */}
-        <div className="absolute pt-10 ps-4 inset-0 flex items-center">
+        <div className='absolute pt-10 ps-4 inset-0 flex items-center'>
           <Link href="/">
             <Image
               src="/images/logos/Logo_MPC_Main.png"
               alt="Logo"
               width={1315}
               height={1206}
-              className="h-10 w-auto"
+              className='h-10 w-auto'
             />
           </Link>
         </div>
 
         {/* Menu Button (Right) */}
         <button
-          className="absolute right-4 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20"
-          onClick={toggleMenu}
-        >
+          className='absolute right-4 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20' onClick={toggleMenu}>
           {isOpen ? (
             <span className="text-5xl">×</span>
           ) : (
@@ -98,29 +96,22 @@ const Header: React.FC = () => {
       </div>
 
       {/* Desktop Header - 3 Grid Layout */}
-      <div className="hidden scrn-900:grid grid-cols-2 items-center me-12
-      scrn-900:p-2
-      scrn-1000:p-4
-      scrn-1900:p-6"
-      >
+      <div className='hidden scrn-900:grid grid-cols-2 items-center me-12 scrn-900:p-2 scrn-1000:p-4 scrn-1900:p-6'>
         {/* Left: Logo */}
-        <div className="flex items-center">
+        <div className='flex items-center'>
           <Link href="/">
             <Image
               src="/images/logos/Logo_MPC_Main.png"
               alt="Logo"
               width={1315}
               height={1206}
-              className="w-auto 
-              scrn-750:h-16 
-              scrn-1000:h-12
-              scrn-1250:h-20"
+              className='w-auto scrn-750:h-16 scrn-1000:h-12 scrn-1250:h-20'
             />
           </Link>
         </div>
 
         {/* Center: Navigation */}
-        <nav className="flex z-10 justify-end scrn-900:space-x-12 scrn-1000:space-x-16 scrn-1900:space-x-24 font-semibold">
+        <nav className='flex z-10 justify-end scrn-900:space-x-12 scrn-1000:space-x-16 scrn-1900:space-x-24 font-semibold'>
 
           {["/home", "/about", "/resources", "/contact"].map((path) => (
             <Link
@@ -130,7 +121,7 @@ const Header: React.FC = () => {
             >
               {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
               {pathname.startsWith(path) && (
-                <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]" />
+                <span className='absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]' />
               )}
             </Link>
           ))}
