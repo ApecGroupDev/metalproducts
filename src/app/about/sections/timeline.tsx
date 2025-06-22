@@ -29,7 +29,7 @@ const Timeline: React.FC = () => {
           <h2 className='text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl'>Incorporation and Growth <br /> <span className='text-red-600 italic font-thin'>(1950s–1960s)</span></h2>
           <p className='text-lg scrn-600:text-xl font-medium text-justify'>
             During the 1950s, the company transitioned from a proprietorship to a corporation.
-          </p>
+          </p>  
           <p className='text-lg scrn-600:text-xl font-medium text-justify'>
             In this era, Metal Products Company began furnishing tanks to major petroleum companies such as:
           </p>
