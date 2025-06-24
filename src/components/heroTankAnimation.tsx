@@ -19,13 +19,13 @@ const HeroTankAnimation: React.FC = () => {
   const src = `/images/backgrounds/home/tank/Main${paddedFrame}.png`;
 
   return (
-    <div className="absolute z-50 w-full flex justify-center mt-72 scrn-450:mt-80 scrn-500:mt-112 scrn-550:mt-118 scrn-600:mt-112 scrn-650:mt-118 scrn-700:mt-128 scrn-750:mt-136 scrn-800:mt-144 scrn-850:mt-164 scrn-900:mt-80 scrn-1000:mt-80 scrn-1050:mt-96 scrn-1100:mt-120 scrn-1150:mt-128 scrn-1500:mt-160 scrn-1900:mt-120 scrn-2050:mt-180 scrn-2150:mt-208">
+    <div className='absolute z-50 w-full flex justify-center mt-72 scrn-450:mt-80 scrn-500:mt-112 scrn-550:mt-118 scrn-600:mt-112 scrn-650:mt-118 scrn-700:mt-128 scrn-750:mt-136 scrn-800:mt-144 scrn-850:mt-164 scrn-900:mt-80 scrn-1000:mt-80 scrn-1050:mt-96 scrn-1100:mt-120 scrn-1150:mt-128 scrn-1500:mt-160 scrn-1900:mt-120 scrn-2050:mt-180 scrn-2150:mt-208'>
       <img
         src={src}
         alt={`Frame ${paddedFrame}`}
         width={1920}
         height={300}
-        className="scrn-900:w-4/6 scrn-1000:w-3/5 scrn-1900:w-2/3"
+        className='scrn-900:w-4/6 scrn-1000:w-3/5 scrn-1900:w-2/3'
       />
     </div>
   );
