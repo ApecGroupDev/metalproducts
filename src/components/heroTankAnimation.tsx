@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 const HeroTankAnimation: React.FC = () => {
   const [frame, setFrame] = useState(0);
-  const totalFrames = 150;
+  const totalFrames = 292;
   const frameRate = 24;
 
   useEffect(() => {
