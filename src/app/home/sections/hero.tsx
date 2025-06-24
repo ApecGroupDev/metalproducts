@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import HeroTankAnimation from '@/components/heroTankAnimation';
 
 const Hero: React.FC = () => {
   return (
@@ -30,17 +31,20 @@ const Hero: React.FC = () => {
         </div>
 
         {/* MAIN HERO TANK */}
-        <div className="absolute z-50 w-full flex justify-center mt-72 scrn-450:mt-80 scrn-500:mt-112 scrn-550:mt-118 scrn-600:mt-112 scrn-650:mt-118 scrn-700:mt-128 scrn-750:mt-136 scrn-800:mt-144 scrn-850:mt-164 scrn-900:mt-80 scrn-1000:mt-80 scrn-1050:mt-96 scrn-1100:mt-120 scrn-1150:mt-128 scrn-1500:mt-160 scrn-1900:mt-120 scrn-2050:mt-180 scrn-2150:mt-208">
+        <HeroTankAnimation />
+
+        {/* PLACEHOLDER TANK CODE */}
+        {/* <div className="absolute z-50 w-full flex justify-center mt-72 scrn-450:mt-80 scrn-500:mt-112 scrn-550:mt-118 scrn-600:mt-112 scrn-650:mt-118 scrn-700:mt-128 scrn-750:mt-136 scrn-800:mt-144 scrn-850:mt-164 scrn-900:mt-80 scrn-1000:mt-80 scrn-1050:mt-96 scrn-1100:mt-120 scrn-1150:mt-128 scrn-1500:mt-160 scrn-1900:mt-164 scrn-2050:mt-180 scrn-2150:mt-208">
           <Image
-            src="/images/backgrounds/home/New_Tank.png"
+            src="/images/backgrounds/home/Hero_Tank.png"
             alt="Bottom Graphic"
             width={1920}
             height={300}
             className="scrn-900:w-4/6 scrn-1000:w-3/5 scrn-1900:w-2/3"/>
-        </div>
+        </div> */}
 
         {/*  Text Section */}
-        <div className="text-center z-40 mt-8 scrn-650:mt-20 scrn-900:mt-40 scrn-1000:mt-0 scrn-1050:mt-12 scrn-1100:mt-10 scrn-1150:mt-24 scrn-1300:mt-16 scrn-1500:mt-24 scrn-1700:mt-16 scrn-1900:-mt-36 scrn-2000:mt-0 scrn-2100:-mt-8 scrn-2150:mt-12">
+        <div className="text-center z-40 mt-8 scrn-650:mt-20 scrn-900:mt-40 scrn-1000:mt-0 scrn-1050:mt-12 scrn-1100:mt-10 scrn-1150:mt-24 scrn-1300:mt-16 scrn-1500:mt-24 scrn-1700:mt-16 scrn-1900:mt-8 scrn-2000:mt-0 scrn-2100:-mt-8 scrn-2150:mt-12">
           <p
             className="font-bold opacity-90 text-4xl scrn-400:text-6xl scrn-600:text-7xl scrn-700:text-8xl scrn-900:text-7xl scrn-1100:text-8xl scrn-1500:text-9xl scrn-1900:text-9xl scrn-2100:text-10xl"
             style={{
