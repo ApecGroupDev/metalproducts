@@ -21,12 +21,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${raleway.variable} text-gray-800`}>
       <head>
-        {/* Meta tags */}
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="UTF-8" />
-        <title>{metadata.title}</title>
-        <link rel="icon" href={metadata.icons.icon} />
-        <meta name="description" content={metadata.description} />
+        {/* Google Search Console */}
+        <meta
+          name=""
+          content=""
+        />
       </head>
       <body className="min-h-screen">
         {/* Render children */}
