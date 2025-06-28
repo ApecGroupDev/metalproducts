@@ -1,12 +1,33 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Resources: React.FC = () => {
+  const resources = [
+    {
+      title: 'UNDERGROUND\nTANKS',
+      image: '/images/backgrounds/home/Underground_Tank_Img.png',
+      link: '/underground-tanks',
+    },
+    {
+      title: 'ABOVE GROUND\nTANK',
+      image: '/images/backgrounds/home/Above_Ground_Tank_Img.png',
+      link: '/above-ground-tank',
+    },
+    {
+      title: 'OIL / WATER\nSEPARATOR',
+      image: '/images/backgrounds/home/Above_Ground_Tank_Img.png',
+      link: '/oil-and-water-separator',
+    },
+  ];
+
   return (
     <div className='relative z-10 bg-[#e3e3e3] py-20 -mt-1 overflow-hidden border-b-8 border-b-[#e3e3e3]'>
       <div className='absolute inset-0 z-20'>
         <Image
-          src="/images/backgrounds/home/resources.jpg"
+          src="/images/backgrounds/home/resources_new.png"
           alt="Background"
           style={{ objectFit: 'contain' }}
           width={2786}
@@ -24,12 +45,8 @@ const Resources: React.FC = () => {
 
         {/* Cards */}
         <div className='grid scrn-1000:grid-cols-3 gap-8 relative px-12 scrn-1000:px-12 scrn-1900:px-12 scrn-2000:px-24 scrn-2200:px-32 scrn-2400:px-40 scrn-2500:px-60'>
-          {[
-            { title: "UNDERGROUND\nTANKS", image: "/images/backgrounds/home/Underground_Tank_Img.png" },
-            { title: "ABOVE GROUND\nTANK", image: "/images/backgrounds/home/Above_Ground_Tank_Img.png" },
-            { title: "OIL / WATER\nSEPARATOR", image: "/images/backgrounds/home/Above_Ground_Tank_Img.png" },
-          ].map((item, index) => (
-            <div key={index} className='relative mt-20 scrn-1000:mt-0'>
+          {resources.map((item, index) => (
+            <div key={index} className='relative mt-20 scrn-1000:mt-0 flex flex-col items-center'>
               {/* Spotlight inside the card */}
               <div className='absolute inset-0 z-10 opacity-100 scale-125'>
                 <Image
@@ -52,16 +69,13 @@ const Resources: React.FC = () => {
                 height={300}
                 className='mx-auto -mt-8 relative z-20'
               />
+
+              {/* Individual Button */}
+              <Link href={item.link} className='relative z-20 mt-6'>
+                  <span className='relative z-10 px-8 text-red-600 text-lg font-medium'>Read More</span>
+              </Link>
             </div>
           ))}
-        </div>
-
-        {/* Button */}
-        <div className='pt-16'>
-          <button className='relative text-lg font-semibold rounded-lg px-6 py-2 border-4 border-white bg-red-800 text-black'>
-            <span className='absolute inset-0 border-2 border-red-800 rounded-md -m-1'></span>
-            <span className='relative z-10 px-8 text-white'>Read More</span>
-          </button>
         </div>
       </div>
     </div>

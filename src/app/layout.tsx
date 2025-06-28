@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           content=""
         />
       </head>
-      <body className="min-h-screen">
+      <body className="min-h-screen bg-[#efefef]">
         {/* Render children */}
         <div className="max-w-[2560px] mx-auto">
           {children}
