@@ -25,9 +25,9 @@ const Resources: React.FC = () => {
         {/* Cards */}
         <div className='grid scrn-1000:grid-cols-3 gap-8 relative px-12 scrn-1000:px-12 scrn-1900:px-12 scrn-2000:px-24 scrn-2200:px-32 scrn-2400:px-40 scrn-2500:px-60'>
           {[
-            { title: "UNDERGROUND\nTANKS", image: "/images/backgrounds/home/001.png" },
-            { title: "ABOVE GROUND\nTANK", image: "/images/backgrounds/home/002.png" },
-            { title: "OIL / WATER\nSEPARATOR", image: "/images/backgrounds/home/003.png" },
+            { title: "UNDERGROUND\nTANKS", image: "/images/backgrounds/home/Underground_Tank_Img.png" },
+            { title: "ABOVE GROUND\nTANK", image: "/images/backgrounds/home/Above_Ground_Tank_Img.png" },
+            { title: "OIL / WATER\nSEPARATOR", image: "/images/backgrounds/home/Above_Ground_Tank_Img.png" },
           ].map((item, index) => (
             <div key={index} className='relative mt-20 scrn-1000:mt-0'>
               {/* Spotlight inside the card */}
@@ -50,7 +50,7 @@ const Resources: React.FC = () => {
                 alt={item.title}
                 width={1920}
                 height={300}
-                className='mx-auto mt-4 scrn-1000:mt-16 relative z-20'
+                className='mx-auto -mt-8 relative z-20'
               />
             </div>
           ))}
