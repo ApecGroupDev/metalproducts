@@ -5,7 +5,7 @@ import HeroTankAnimation from '@/components/heroTankAnimation';
 const Hero: React.FC = () => {
   return (
     <div className='relative z-20'>
-      <div className='relative flex flex-col items-center justify-center scrn-900:justify-normal scrn-1000:justify-center bg-white border border-dashed border-b-green-600 h-140 scrn-450:h-148 scrn-500:h-160 scrn-550:h-168 scrn-600:h-208 scrn-700:h-224 scrn-800:h-240 scrn-900:h-148 scrn-1000:h-180 scrn-1150:h-188 scrn-1300:h-195 scrn-1350:h-208 scrn-1400:h-216 scrn-1450:h-228 scrn-1500:h-240 scrn-1650:h-272 scrn-1750:h-296 scrn-2000:h-312 scrn-2150:h-324 scrn-2350:h-360 scrn-2500:h-384'>
+      <div className='relative flex flex-col items-center justify-center scrn-900:justify-normal scrn-1000:justify-center bg-[#efefef] border border-dashed border-b-green-600 h-140 scrn-450:h-148 scrn-500:h-160 scrn-550:h-168 scrn-600:h-208 scrn-700:h-224 scrn-800:h-240 scrn-900:h-148 scrn-1000:h-180 scrn-1150:h-188 scrn-1300:h-195 scrn-1350:h-208 scrn-1400:h-216 scrn-1450:h-228 scrn-1500:h-240 scrn-1650:h-272 scrn-1750:h-296 scrn-2000:h-312 scrn-2150:h-324 scrn-2350:h-360 scrn-2500:h-384'>
         {/* Hero BG */}
         <div className='absolute inset-0 z-10 hidden scrn-900:block scrn-900:-mt-[4.5rem] scrn-1200:-mt-24 scrn-1400:-mt-28 scrn-1600:-mt-32 scrn-1750:-mt-36 scrn-1900:-mt-40 scrn-2100:-mt-48'>
           <Image

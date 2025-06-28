@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const History: React.FC = () => {
   return (
-    <div className='relative z-20 bg-white py-14 scrn-400:py-20 mb-16 scrn-1000:py-32 border border-dashed border-b-green-500'>
+    <div className='relative z-20 bg-[#efefef] py-14 scrn-400:py-20 mb-16 scrn-1000:py-32 border border-dashed border-b-green-500'>
       <div className='flex flex-col items-center justify-center text-center space-y-16'>
         {/* Image on top */}
         <div className='w-full flex justify-center'>
