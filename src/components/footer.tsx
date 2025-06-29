@@ -6,7 +6,7 @@ import LocationIcon from './locationIcon';
 
 const Footer: React.FC = () => {
   return (
-    <footer className='relative bg-white font-inter items-end -mt-1 h-96 scrn-1000:h-80 scrn-1600:h-96 scrn-1900:h-120 scrn-2250:h-128'>
+    <footer className='relative bg-[#efefef] font-inter items-end -mt-1 h-96 scrn-1000:h-80 scrn-1600:h-96 scrn-1900:h-120 scrn-2250:h-128 border-t-2 border-green-300 border-dashed'>
       <div className='grid grid-cols-1 scrn-600:grid-cols-2 gap-8 items-end z-30 h-full'>
         {/* Background image positioned absolutely */}
         <div className='absolute inset-0'>
