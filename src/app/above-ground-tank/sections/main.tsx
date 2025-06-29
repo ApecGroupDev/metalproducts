@@ -2,7 +2,7 @@ import React from 'react';
 
 const Main: React.FC = () => {
   return (
-    <div className='bg-[#efefef] py-20 px-4 sm:px-8 lg:px-16 relative overflow-hidden justify-center items-center space-y-32 border-b-2'>
+    <div className='bg-[#efefef] py-20 px-4 sm:px-8 lg:px-16 relative overflow-hidden justify-center items-center space-y-32'>
 
       <div className='max-w-7xl mx-auto'>
         {/* Main Content */}
