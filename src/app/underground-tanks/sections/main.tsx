@@ -16,7 +16,7 @@ const Main: React.FC = () => {
             certifications, ensuring compliance and long-term performance.
           </p>
           <p className='text-lg/7 scrn-600:text-xl/8 font-medium text-justify'>
-            As a third-generation, family-owned business with over eight decades of expertise, we tailor<span className='text-red-600'>underground
+            As a third-generation, family-owned business with over eight decades of expertise, we tailor <span className='text-red-600'>underground
               storage tanks</span> to meet your specific needs, supporting critical infrastructure such as highways, airports, and large-scale
             industrial projects. Our global reputation is built on delivering innovative, sustainable solutions that prioritize safety, efficiency,
             and environmental responsibility. With custom designs incorporating advanced materials and precision engineering, we address diverse
