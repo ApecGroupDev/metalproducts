@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import UndergroundTankAnimation from '@/components/undergroundTankAnimation copy';
+import UndergroundTankAnimation from '@/components/undergroundTankAnimation';
 
 const Hero: React.FC = () => {
   return (
