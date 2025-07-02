@@ -1,6 +1,5 @@
 import '../styles/globals.css';
 import { Raleway } from 'next/font/google';
-import ScrollToTopButton from '@/components/scrollToTop';
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -32,7 +31,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="max-w-[2560px] mx-auto">
           {children}
         </div>
-        <ScrollToTopButton />
       </body>
     </html>
   );
