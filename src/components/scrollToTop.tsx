@@ -1,25 +1,7 @@
 "use client";
-
-import { useEffect, useState } from 'react';
+import { FaArrowUpLong } from "react-icons/fa6";
 
 const ScrollToTopButton = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  // Show or hide the button based on scroll position
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Scroll to top function
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -28,11 +10,12 @@ const ScrollToTopButton = () => {
   };
 
   return (
-    isVisible && (
-      <button onClick={scrollToTop} className='fixed bottom-3 right-3 bg-[#c62931] text-white text-2xl rounded-full p-3 shadow-lg hover:bg-red-600 focus:outline-none transition-all duration-200 z-50 border border-white'>
-        ↑
-      </button>
-    )
+    <button
+      onClick={scrollToTop}
+      className='text-white text-3xl font-black rounded-full px-5 py-3 hover:scale-150'
+    >
+      <FaArrowUpLong/>
+    </button>
   );
 };
 
