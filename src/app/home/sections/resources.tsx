@@ -8,7 +8,7 @@ const Resources: React.FC = () => {
   const resources = [
     {
       title: 'UNDERGROUND\nTANKS',
-      image: '/images/backgrounds/home/Underground_Tank_Img.png',
+      image: '/images/backgrounds/resources/underground_tanks/Home_Dev_1012.png',
       link: '/underground-tanks',
     },
     {
@@ -18,7 +18,7 @@ const Resources: React.FC = () => {
     },
     {
       title: 'OIL / WATER\nSEPARATOR',
-      image: '/images/backgrounds/home/Above_Ground_Tank_Img.png',
+      image: '/images/backgrounds/home/Oil_Water_Separator.png',
       link: '/oil-and-water-separator',
     },
   ];
@@ -72,7 +72,7 @@ const Resources: React.FC = () => {
 
               {/* Individual Button */}
               <Link href={item.link} className='relative z-20 mt-6'>
-                  <span className='relative z-10 px-8 text-red-600 text-lg font-medium'>Read More</span>
+                <span className='relative z-10 px-8 text-red-600 text-lg font-medium'>Read More</span>
               </Link>
             </div>
           ))}
