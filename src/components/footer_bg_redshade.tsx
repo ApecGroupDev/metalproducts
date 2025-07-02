@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import LocationIcon from './locationIcon';
+import ScrollToTopButton from './scrollToTop';
 
 const Footer: React.FC = () => {
   return (
@@ -109,6 +110,10 @@ const Footer: React.FC = () => {
               className='transition-transform duration-300 ease-in-out transform hover:scale-110 w-auto h-12 scrn-700:h-14 scrn-1000:h-20 scrn-1900:h-28' />
           </Link>
         </div>
+      </div>
+      {/* Floating Scroll To Top Button Inside Footer */}
+      <div className='absolute top-40 left-1/2 transform -translate-x-1/2 z-30'>
+        <ScrollToTopButton />
       </div>
       {/* Copyright*/}
       <div className='py-2 px-2 bg-red-800 w-full z-50 relative'>
