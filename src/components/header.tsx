@@ -76,15 +76,15 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         <nav
-          className={`text-white absolute left-0 right-0 top-20 bg-white/30 backdrop-blur-md p-6 rounded-md z-10 transition-all duration-300 ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
+          className={`text-white absolute left-0 right-0 top-20 bg-white/60 backdrop-blur-md p-6 rounded-md z-10 transition-all duration-300 ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
             }`}
         >
-          {["/home", "/about", "/resources", "/contact"].map(
+          {["/home", "/about", "/contact"].map(
             (path) => (
               <Link
                 key={path}
                 href={path}
-                className={`block text-lg font-medium tracking-widest text-gray-800 hover:text-[#c62931] py-2 ${pathname.startsWith(path) ? "text-[#c62931]" : ""
+                className={`block text-lg font-medium tracking-widest text-black hover:text-[#c62931] py-2 ${pathname.startsWith(path) ? "text-[#c62931]" : ""
                   }`}
                 onClick={() => setIsOpen(false)}
               >
