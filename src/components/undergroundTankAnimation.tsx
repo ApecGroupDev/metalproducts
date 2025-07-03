@@ -20,24 +20,21 @@ const UndergroundTankAnimation: React.FC = () => {
 
   return (
     <div className='absolute z-50 w-full flex justify-center 
-    mt-72 
-    scrn-450:mt-80 
-    scrn-500:mt-112 
-    scrn-550:mt-80 
-    scrn-600:mt-112 
-    scrn-650:mt-118 
-    scrn-700:mt-128 
-    scrn-750:mt-128 
-    scrn-800:mt-132
-    scrn-850:mt-136
-    scrn-900:mt-64
-    scrn-1000:mt-80 
-    scrn-1050:mt-96
-    scrn-1300:mt-120
-    scrn-1500:mt-120
-    scrn-1900:mt-24
-    scrn-2000:mt-132 
-    scrn-2200:mt-144'>
+    mt-48 
+    scrn-500:mt-52  
+    scrn-600:mt-56 
+    scrn-700:mt-72
+    scrn-800:mt-80
+    scrn-900:mt-32
+    scrn-1000:mt-36
+    scrn-1050:mt-48
+    scrn-1100:mt-52
+    scrn-1200:mt-60
+    scrn-1300:mt-64
+    scrn-1500:mt-72
+    scrn-1900:mt-40
+    scrn-2000:mt-44 
+    scrn-2200:mt-48'>
       <img
         src={src}
         alt={`Frame ${paddedFrame}`}

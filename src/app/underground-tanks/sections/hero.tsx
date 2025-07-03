@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
                 -12px 8px 12px rgba(0, 0, 0, 0.1)`
             }}
           >
-            UNDER- <br />
+            UNDER <br />
             GROUND <br />
             TANKS
           </p>
