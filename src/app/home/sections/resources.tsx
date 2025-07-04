@@ -12,7 +12,7 @@ const Resources: React.FC = () => {
       link: '/underground-tanks',
     },
     {
-      title: 'ABOVE GROUND\nTANK',
+      title: 'ABOVE GROUND\nTANKS',
       image: '/images/backgrounds/home/Above_Ground_Tank_Img.png',
       link: '/above-ground-tank',
     },
