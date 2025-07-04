@@ -6,7 +6,7 @@ const pdfFiles = [
   { name: 'Plasteel Composite Installation', file: 'Plasteel_Installation_Instrs.pdf' },
   { name: 'ELUTRON Warranty', file: 'Elutron_Warranty001.pdf' },
   { name: 'Plasteel Composite Warranty', file: 'Warranty_PS.pdf' },
-  { name: 'ELUTRON Flyer', file: 'file5.pdf' },
+  { name: 'ELUTRON Flyer', file: 'PlasteelBrochure04_07_2017.pdf' },
   { name: 'Plasteel Composite Flyer', file: 'PS_DW_FLYER_022824.pdf' },
   {
     name: 'Florida EQ# 333',
