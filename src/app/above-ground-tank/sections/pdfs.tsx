@@ -8,7 +8,7 @@ const pdfFiles = [
   { name: 'UL 142 Warranty', file: 'AST_STD_LIMITED_WARRANTY.pdf' },
   { name: 'Flameshield Warranty', file: 'Flameshield_Warranty_Dec_10.pdf' },
   { name: 'Fireguard Warranty', file: 'FG_warranty.pdf' },
-  { name: 'UL 142 Double wall flyer', file: 'pdf.pdf' },
+  { name: 'UL 142 Double wall flyer', file: 'AST-UL142-101424.pdf' },
   { name: 'Flameshield Flyer', file: 'Flameshield_Product_Sheet.pdf' },
   { name: 'Fireguard flyer', file: 'Fireguard_09_09.pdf' },
   {
