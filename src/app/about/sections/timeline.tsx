@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Timeline: React.FC = () => {
   return (
@@ -29,7 +30,7 @@ const Timeline: React.FC = () => {
           <h2 className='text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl'>Incorporation and Growth <br /> <span className='text-red-600 italic font-thin'>(1950s–1960s)</span></h2>
           <p className='text-lg scrn-600:text-xl font-medium text-justify'>
             During the 1950s, the company transitioned from a proprietorship to a corporation.
-          </p>  
+          </p>
           <p className='text-lg scrn-600:text-xl font-medium text-justify'>
             In this era, Metal Products Company began furnishing tanks to major petroleum companies such as:
           </p>
@@ -41,7 +42,7 @@ const Timeline: React.FC = () => {
             <li>Gulf</li>
             <li>Phillips Petroleum</li>
           </ul>
-          {/* Background Year (left-aligned) */}
+          {/* Background Year (right-aligned) */}
           <div className='absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none scrn-750:-right-4 scrn-750:translate-x-0'>
             <p className='text-red-200 text-10xl scrn-450:text-11xl scrn-750:text-13xl scrn-1000:text-[18rem] opacity-50 select-none leading-none mb-12'>
               1950
@@ -83,7 +84,7 @@ const Timeline: React.FC = () => {
           <p className='text-lg scrn-600:text-xl font-medium text-justify'>
             The old Atlanta plant officially closed on January 1, 1979.
           </p>
-          {/* Background Year (left-aligned) */}
+          {/* Background Year (right-aligned) */}
           <div className='absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none scrn-750:-right-4 scrn-750:translate-x-0'>
             <p className='text-red-200 text-10xl scrn-450:text-11xl scrn-750:text-13xl scrn-1000:text-[18rem] opacity-50 select-none leading-none mb-12'>
               1977
@@ -131,7 +132,7 @@ const Timeline: React.FC = () => {
             <li>Added oil/water separators for both aboveground and underground use
               The Suwanee plant site has been expanded five times since 1978 to meet growing demand.</li>
           </ul>
-          {/* Background Year (left-aligned) */}
+          {/* Background Year (right-aligned) */}
           <div className='absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none scrn-750:-right-4 scrn-750:translate-x-0'>
             <p className='text-red-200 text-10xl scrn-450:text-11xl scrn-750:text-13xl scrn-1000:text-[18rem] opacity-50 select-none leading-none mb-12'>
               1990
@@ -154,6 +155,42 @@ const Timeline: React.FC = () => {
           <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none scrn-750:-left-4 scrn-750:translate-x-0'>
             <p className='text-red-200 text-10xl scrn-450:text-11xl scrn-750:text-13xl scrn-1000:text-[18rem] opacity-50 select-none leading-none mb-12'>
               2021
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className='max-w-7xl mx-auto'>
+        {/* Main Content */}
+        <div className='relative z-0 mx-auto text-center text-gray-800 space-y-4 max-w-80 scrn-500:max-w-96 scrn-600:max-w-full scrn-600:px-12 scrn-1200:px-20'>
+          <h2 className='text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl'>Acquired by Ali Husain <br /> <span className='text-red-600 italic font-thin'>(2023)</span></h2>
+          <p className='text-lg scrn-600:text-xl font-medium text-justify'>
+            In May of 2023, after three generations of ownership by Gammage family, Metal Products Company (formerly owned by GA Tanks) sold its assets to Ali Husain.
+          </p>
+          <p className='text-lg scrn-600:text-xl font-medium text-justify'>
+            New management brought new enthusiasm to the work force, protocols and production efficiencies.
+
+            Today, the company continues to operate at full capacity producing quality underground and above ground storage tanks using Elutron technology to a variety to customers throughout southeast and other parts of the country.
+          </p>
+          {/* Background Year (right-aligned) */}
+          <div className='absolute top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none scrn-750:-right-4 scrn-750:translate-x-0'>
+            <p className='text-red-200 text-10xl scrn-450:text-11xl scrn-750:text-13xl scrn-1000:text-[18rem] opacity-50 select-none leading-none mb-12'>
+              2023
+            </p>
+          </div>
+          {/* Team Photo */}
+          <div className="pt-6">
+            <div className="relative mx-auto w-full max-w-4xl h-[300px] sm:h-[400px] lg:h-[500px] rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/about/Team.jpg"
+                alt="Metal Products Company Team - 2023"
+                fill
+                className="object-cover"
+                priority={false}
+              />
+            </div>
+            <p className="mt-4 text-sm text-gray-600 italic text-center">
+              Metal Products Company team – 2023
             </p>
           </div>
         </div>
