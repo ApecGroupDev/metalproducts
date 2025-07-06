@@ -1,9 +1,13 @@
-import React from 'react';
-import Image from 'next/image';
+'use client';
+
+import React, { useState } from "react";
+import Image from "next/image";
 
 const Timeline: React.FC = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
-    <div className='bg-white py-20 px-4 sm:px-8 lg:px-16 relative overflow-hidden justify-center items-center space-y-32'>
+    <div className='bg-[#efefef] py-20 px-4 sm:px-8 lg:px-16 relative overflow-hidden justify-center items-center space-y-32'>
 
       <div className='max-w-7xl mx-auto'>
         {/* Main Content */}
@@ -178,21 +182,40 @@ const Timeline: React.FC = () => {
               2023
             </p>
           </div>
-          {/* Team Photo */}
+          {/* Team Photo with basic modal */}
           <div className="pt-6">
-            <div className="relative mx-auto w-full max-w-4xl h-[300px] sm:h-[400px] lg:h-[500px] rounded-xl overflow-hidden shadow-lg">
+            <div
+              onClick={() => setShowModal(true)}
+              className="relative mx-auto w-full max-w-4xl h-[300px] sm:h-[400px] lg:h-[500px] rounded-xl overflow-hidden shadow-lg cursor-zoom-in"
+            >
               <Image
                 src="/images/about/Team.jpg"
                 alt="Metal Products Company Team - 2023"
                 fill
                 className="object-cover"
-                priority={false}
               />
             </div>
             <p className="mt-4 text-sm text-gray-600 italic text-center">
-              Metal Products Company team – 2023
+              Click to enlarge – Metal Products Company team – 2023
             </p>
           </div>
+
+          {/* Modal for enlarged image */}
+          {showModal && (
+            <div
+              className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center"
+              onClick={() => setShowModal(false)} // click anywhere to close
+            >
+              <div className="relative w-[90vw] max-w-5xl h-[90vh]">
+                <Image
+                  src="/images/about/Team.jpg"
+                  alt="Metal Products Company Team - Fullscreen"
+                  fill
+                  className="object-contain rounded-lg"
+                />
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
