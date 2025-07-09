@@ -1,10 +1,26 @@
 'use client';
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const Timeline: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
+
+  // Close modal on scroll
+  useEffect(() => {
+    if (!showModal) return;
+
+    const handleScroll = () => {
+      setShowModal(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup when modal is closed
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [showModal]);
 
   return (
     <div className='bg-[#efefef] py-20 px-4 sm:px-8 lg:px-16 relative overflow-hidden justify-center items-center space-y-32'>
@@ -164,7 +180,7 @@ const Timeline: React.FC = () => {
         </div>
       </div>
 
-      <div className='max-w-7xl mx-auto'>
+      <div className='max-w-7xl mx-auto pb-60'>
         {/* Main Content */}
         <div className='relative z-0 mx-auto text-center text-gray-800 space-y-4 max-w-80 scrn-500:max-w-96 scrn-600:max-w-full scrn-600:px-12 scrn-1200:px-20'>
           <h2 className='text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl'>Acquired by Ali Husain <br /> <span className='text-red-600 italic font-thin'>(2023)</span></h2>
@@ -206,7 +222,7 @@ const Timeline: React.FC = () => {
               className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center"
               onClick={() => setShowModal(false)} // click anywhere to close
             >
-              <div className="relative w-[90vw] max-w-5xl h-[90vh]">
+              <div className="relative w-full h-full">
                 <Image
                   src="/images/about/Team.jpg"
                   alt="Metal Products Company Team - Fullscreen"

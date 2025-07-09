@@ -16,10 +16,10 @@ const HeroTankAnimation: React.FC = () => {
   }, []);
 
   const paddedFrame = frame.toString().padStart(3, '0'); // Main000.png
-  const src = `/images/backgrounds/home/tank/Main${paddedFrame}.png`;
+  const src = `/images/backgrounds/home/Tank/Main002${paddedFrame}.png`;
 
   return (
-    <div className='absolute z-50 w-full flex justify-center 
+    <div className='absolute z-50 w-full flex justify-center me-8 scrn-700:me-10
     mt-72 
     scrn-450:mt-80 
     scrn-500:mt-112 
