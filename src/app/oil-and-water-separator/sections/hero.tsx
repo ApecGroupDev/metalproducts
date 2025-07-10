@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import HeroTankAnimation from '@/components/heroTankAnimation';
+import OilWaterSeparatorAnimation from '@/components/oilWaterSeparatorAnimation';
 
 const Hero: React.FC = () => {
   return (
@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
         </div>
 
         {/* MAIN HERO TANK */}
-        <HeroTankAnimation />
+        <OilWaterSeparatorAnimation />
 
         {/*  Text Section */}
         <div className='text-center z-40 mt-8 scrn-650:mt-20 scrn-900:mt-40 scrn-1000:mt-0 scrn-1050:mt-12 scrn-1100:mt-0 scrn-1300:mt-12 scrn-1500:-mt-16 scrn-1700:-mt-24 scrn-1900:-mt-40'>
