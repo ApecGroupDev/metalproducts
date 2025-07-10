@@ -9,10 +9,16 @@ const MainContact: React.FC = () => {
       <div className='grid mx-4 scrn-600:grid-cols-2 scrn-350:max-w-xs scrn-400:max-w-sm scrn-600:max-w-xl scrn-700:max-w-2xl scrn-850:max-w-3xl scrn-1000:max-w-4xl scrn-1200:max-w-5xl scrn-1400:max-w-6xl scrn-1500:max-w-7xl scrn-1700:max-w-8xl scrn-2000:max-w-9xl scrn-600:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24 scrn-800:pt-0 scrn-900:pt-0 scrn-1000:pt-0 scrn-1500:pt-24'>
         <div className='h-auto space-y-3 scrn-400:space-y-3 scrn-450:space-y-3 scrn-500:space-y-4 scrn-550:space-y-4 scrn-600:space-y-4 scrn-1200:space-y-12 scrn-400:pt-8 scrn-450:pt-8 scrn-500:pt-4 scrn-600:pt-16 scrn-750:pt-8 scrn-1000:pt-20 scrn-1600:pt-32'>
           <span className='text-[#c62931] font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl'>
-            CONTACT US NOW!
+            Let’s Talk — We’ve Been Building Trust Since 1941
           </span>
-          <p className="text-gray-800 text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam et eius nam, delectus ea quas.</p>
-          <p className="text-gray-900 text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti adipisci facere, commodi necessitatibus molestiae suscipit quisquam dolorum.</p>
+          <p className="text-gray-800 text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl">
+            If you're working on a fueling project — whether it's a new gas station, an upgrade, or environmental compliance — you’ve come to the right place.
+          </p>
+          <p className="text-gray-900 text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl">
+            We’ve been manufacturing tanks and separators for over <span className="text-red-600 font-medium">80 years</span>, serving everyone from small contractors
+            to major brands like <span className="text-red-600 font-medium">Shell</span>, <span className="text-red-600 font-medium">Texaco</span>,
+            <span className="text-red-600 font-medium">Amoco</span>, and <span className="text-red-600 font-medium">QuikTrip</span>.
+          </p>
         </div>
         <div className='relative rounded-3xl shadow-2xl mt-6 scrn-400:mt-6 scrn-450:mt-6 scrn-500:mt-8 scrn-550:mt-8 scrn-750:mt-0'>
           <div className='absolute inset-0 bg-white/30 backdrop-blur-md rounded-3xl z-0'></div>
@@ -38,7 +44,7 @@ const MainContact: React.FC = () => {
         <div className="w-4/5 mx-auto h-[300px] scrn-600:h-[400px] scrn-1000:h-[500px] rounded-xl overflow-hidden shadow-2xl">
           <iframe
             title="Google Map Location"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5011.67651875407!2d-84.19470589570368!3d33.86058479924011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a60d37eeaeb9%3A0x378e67f08f914808!2sAtlanta%20Petroleum%20Equipment%20Co!5e1!3m2!1sen!2sph!4v1752030680100!5m2!1sen!2sph"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8249.398695663318!2d-84.07398252633338!3d34.05086149163947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f597a14f929c43%3A0x571bf2f1a4b46a31!2sMetal%20Products%20Inc!5e1!3m2!1sen!2sph!4v1752131936533!5m2!1sen!2sph"
             width="100%"
             height="100%"
             style={{ border: 0 }}
