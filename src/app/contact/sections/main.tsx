@@ -9,13 +9,13 @@ const MainContact: React.FC = () => {
       <div className='grid mx-4 scrn-600:grid-cols-2 scrn-350:max-w-xs scrn-400:max-w-sm scrn-600:max-w-xl scrn-700:max-w-2xl scrn-850:max-w-3xl scrn-1000:max-w-4xl scrn-1200:max-w-5xl scrn-1400:max-w-6xl scrn-1500:max-w-7xl scrn-1700:max-w-8xl scrn-2000:max-w-9xl scrn-600:gap-x-6 scrn-750:gap-x-10 scrn-1200:gap-x-24 scrn-800:pt-0 scrn-900:pt-0 scrn-1000:pt-0 scrn-1500:pt-24'>
         <div className='h-auto space-y-3 scrn-400:space-y-3 scrn-450:space-y-3 scrn-500:space-y-4 scrn-550:space-y-4 scrn-600:space-y-4 scrn-1200:space-y-12 scrn-400:pt-8 scrn-450:pt-8 scrn-500:pt-4 scrn-600:pt-16 scrn-750:pt-8 scrn-1000:pt-20 scrn-1600:pt-32'>
           <span className='text-[#c62931] font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl'>
-            Let’s Talk — We’ve Been Building Trust Since 1941
+            Let's Talk — We've Been Building Trust Since 1941
           </span>
           <p className="text-gray-800 text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl">
-            If you're working on a fueling project — whether it's a new gas station, an upgrade, or environmental compliance — you’ve come to the right place.
+            If you're working on a fueling project — whether it's a new gas station, an upgrade, or environmental compliance — you've come to the right place.
           </p>
           <p className="text-gray-900 text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl">
-            We’ve been manufacturing tanks and separators for over <span className="text-red-600 font-medium">80 years</span>, serving everyone from small contractors
+            We've been manufacturing tanks and separators for over <span className="text-red-600 font-medium">80 years</span>, serving everyone from small contractors
             to major brands like <span className="text-red-600 font-medium">Shell</span>, <span className="text-red-600 font-medium">Texaco</span>,
             <span className="text-red-600 font-medium">Amoco</span>, and <span className="text-red-600 font-medium">QuikTrip</span>.
           </p>
