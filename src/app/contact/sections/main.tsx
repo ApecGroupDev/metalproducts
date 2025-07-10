@@ -12,7 +12,7 @@ const MainContact: React.FC = () => {
             CONTACT US NOW!
           </span>
           <p className="text-gray-800 text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam et eius nam, delectus ea quas.</p>
-        <p className="text-gray-900 text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti adipisci facere, commodi necessitatibus molestiae suscipit quisquam dolorum.</p>
+          <p className="text-gray-900 text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti adipisci facere, commodi necessitatibus molestiae suscipit quisquam dolorum.</p>
         </div>
         <div className='relative rounded-3xl shadow-2xl mt-6 scrn-400:mt-6 scrn-450:mt-6 scrn-500:mt-8 scrn-550:mt-8 scrn-750:mt-0'>
           <div className='absolute inset-0 bg-white/30 backdrop-blur-md rounded-3xl z-0'></div>
@@ -29,6 +29,24 @@ const MainContact: React.FC = () => {
           <span className='scrn-300:text-base scrn-450:text-xl scrn-600:text-2xl scrn-750:text-3xl scrn-800:text-3xl scrn-900:text-3xl scrn-1000:text-4xl scrn-1200:text-5xl scrn-1500:text-5xl scrn-1700:text-6xl scrn-1900:text-6xl scrn-2000:text-7xl'>
           </span>
         </p>
+      </div>
+      {/* Google Maps Section */}
+      <div className="w-full mt-12 px-4 scrn-600:px-10 scrn-800:px-20">
+        <h2 className="text-center text-xl font-semibold text-gray-800 mb-4 scrn-600:text-2xl scrn-1000:text-3xl">
+          Find Us on Google Maps
+        </h2>
+        <div className="w-4/5 mx-auto h-[300px] scrn-600:h-[400px] scrn-1000:h-[500px] rounded-xl overflow-hidden shadow-2xl">
+          <iframe
+            title="Google Map Location"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5011.67651875407!2d-84.19470589570368!3d33.86058479924011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a60d37eeaeb9%3A0x378e67f08f914808!2sAtlanta%20Petroleum%20Equipment%20Co!5e1!3m2!1sen!2sph!4v1752030680100!5m2!1sen!2sph"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
     </div>
   );
