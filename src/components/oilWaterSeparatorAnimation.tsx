@@ -32,7 +32,7 @@ const OilWaterSeparatorAnimation: React.FC = () => {
     scrn-1200:mt-60
     scrn-1300:mt-64
     scrn-1500:mt-72
-    scrn-1900:mt-40
+    scrn-1900:mt-128
     scrn-2000:mt-60
     scrn-2300:mt-72'>
       <img
@@ -40,7 +40,7 @@ const OilWaterSeparatorAnimation: React.FC = () => {
         alt={`Frame ${paddedFrame}`}
         width={1920}
         height={300}
-        className='scrn-900:w-4/6 scrn-1000:w-6/7 scrn-1900:w-6/7'
+        className='scrn-900:w-4/6 scrn-1000:w-6/7 scrn-1900:w-5/7 scale-90'
       />
     </div>
   );
