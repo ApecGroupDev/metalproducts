@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       {/* Floating Scroll To Top Button Inside Footer */}
-      <div className='absolute top-40 left-1/2 transform -translate-x-1/2 z-30'>
+      <div className='absolute top-40 scrn-2250:top-48 left-1/2 transform -translate-x-1/2 z-30'>
         <ScrollToTopButton />
       </div>
       {/* Copyright*/}
