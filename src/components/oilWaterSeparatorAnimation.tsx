@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 const OilWaterSeparatorAnimation: React.FC = () => {
   const [frame, setFrame] = useState(0);
-  const totalFrames = 292;
+  const totalFrames = 183;
   const frameRate = 24;
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const OilWaterSeparatorAnimation: React.FC = () => {
   }, []);
 
   const paddedFrame = frame.toString().padStart(3, '0'); // Main000.png
-  const src = `/images/backgrounds/resources/oil_and_water_separator/Main${paddedFrame}.png`;
+  const src = `/images/backgrounds/resources/oil_and_water_separator/OilSeprator${paddedFrame}.png`;
 
   return (
     <div className='absolute z-50 w-full flex justify-center 
