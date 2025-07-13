@@ -1,22 +1,51 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 const UndergroundTankAnimation: React.FC = () => {
-  const [frame, setFrame] = useState(0);
   const totalFrames = 231;
   const frameRate = 24;
+  const [frame, setFrame] = useState(0);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const imagesRef = useRef<HTMLImageElement[]>([]);
 
+  const firstFrameSrc = '/images/backgrounds/resources/underground_tanks/Home_Dev_1000.png';
+
+  // Preload images
   useEffect(() => {
+    let loadedCount = 0;
+    const images: HTMLImageElement[] = [];
+
+    for (let i = 0; i < totalFrames; i++) {
+      const paddedFrame = i.toString().padStart(3, '0');
+      const img = new Image();
+      img.src = `/images/backgrounds/resources/underground_tanks/Home_Dev_1${paddedFrame}.png`;
+      img.onload = () => {
+        loadedCount++;
+        if (loadedCount === totalFrames) {
+          setImagesLoaded(true);
+        }
+      };
+      images.push(img);
+    }
+
+    imagesRef.current = images;
+  }, []);
+
+  // Play animation after preload
+  useEffect(() => {
+    if (!imagesLoaded) return;
+
     const interval = setInterval(() => {
-      setFrame(prev => (prev + 1) % totalFrames); // loop 0 -> 149
+      setFrame(prev => (prev + 1) % totalFrames);
     }, 1000 / frameRate);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [imagesLoaded]);
 
-  const paddedFrame = frame.toString().padStart(3, '0'); // Main000.png
-  const src = `/images/backgrounds/resources/underground_tanks/Home_Dev_1${paddedFrame}.png`;
+  const currentSrc = imagesLoaded
+    ? imagesRef.current[frame].src
+    : firstFrameSrc;
 
   return (
     <div className='absolute z-50 w-full flex justify-center 
@@ -34,10 +63,11 @@ const UndergroundTankAnimation: React.FC = () => {
     scrn-1500:mt-72
     scrn-1900:mt-40
     scrn-2000:mt-44 
-    scrn-2200:mt-48'>
+    scrn-2200:mt-48'
+    >
       <img
-        src={src}
-        alt={`Frame ${paddedFrame}`}
+        src={currentSrc}
+        alt={`Frame ${frame}`}
         width={1920}
         height={300}
         className='scrn-900:w-4/6 scrn-1000:w-3/5 scrn-1900:w-2/3'
