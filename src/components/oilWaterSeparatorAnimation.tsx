@@ -3,13 +3,13 @@
 import React, { useEffect, useState, useRef } from 'react';
 
 const OilWaterSeparatorAnimation: React.FC = () => {
-  const totalFrames = 183;
+  const totalFrames = 286;
   const frameRate = 24;
   const [frame, setFrame] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const imagesRef = useRef<HTMLImageElement[]>([]);
 
-  const firstFrameSrc = '/images/backgrounds/resources/oil_and_water_separator/OilSeprator000.png';
+  const firstFrameSrc = '/images/backgrounds/resources/oil_and_water_separator/Main000.png';
 
   // Preload images
   useEffect(() => {
@@ -19,7 +19,7 @@ const OilWaterSeparatorAnimation: React.FC = () => {
     for (let i = 0; i < totalFrames; i++) {
       const paddedFrame = i.toString().padStart(3, '0');
       const img = new Image();
-      img.src = `/images/backgrounds/resources/oil_and_water_separator/OilSeprator${paddedFrame}.png`;
+      img.src = `/images/backgrounds/resources/oil_and_water_separator/Main${paddedFrame}.png`;
       img.onload = () => {
         loadedCount++;
         if (loadedCount === totalFrames) {
