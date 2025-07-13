@@ -9,7 +9,7 @@ const HeroTankAnimation: React.FC = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const imagesRef = useRef<HTMLImageElement[]>([]);
 
-  const firstFrameSrc = '/images/backgrounds/home/Tank/Main002000.png';
+  const firstFrameSrc = '/images/backgrounds/home/Tank/Main000.png';
 
   // Preload images once
   useEffect(() => {
@@ -19,7 +19,7 @@ const HeroTankAnimation: React.FC = () => {
     for (let i = 0; i < totalFrames; i++) {
       const paddedFrame = i.toString().padStart(3, '0');
       const img = new Image();
-      img.src = `/images/backgrounds/home/Tank/Main002${paddedFrame}.png`;
+      img.src = `/images/backgrounds/home/Tank/Main${paddedFrame}.png`;
       img.onload = () => {
         loadedCount++;
         if (loadedCount === totalFrames) {
