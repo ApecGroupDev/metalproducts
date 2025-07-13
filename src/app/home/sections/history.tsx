@@ -19,7 +19,7 @@ const History: React.FC = () => {
 
         {/* Text Section */}
         <div className='scrn-500:max-w-md scrn-600:max-w-lg scrn-1000:max-w-4xl px-4'>
-          <p className='leading-relaxed font-medium scrn-1000:font-semibold text-gray-800 text-base text-justify scrn-1000:text-xl scrn-1900:text-2xl'>
+          <p className='leading-relaxed text-center font-medium scrn-1000:font-semibold text-gray-800 text-base scrn-1000:text-xl scrn-1900:text-2xl'>
             Metal Products Company was founded in 1941 as a proprietorship to
             fabricate ladders and doors for Liberty Ships, which were being
             built at the rate of one per day. These ships were used to support
@@ -30,8 +30,8 @@ const History: React.FC = () => {
         {/* Button with double border */}
         <div className='mt-4'>
           <Link href="/about">
-            <button className='relative text-lg font-semibold rounded-lg px-6 py-2 border-4 border-white bg-red-800 text-black hover:bg-red-600'>
-              <span className='absolute inset-0 border-2 border-red-800 hover:border-red-600 rounded-md -m-1'></span>
+            <button className='relative text-lg font-semibold rounded-lg px-6 py-2 border-4 border-white bg-[#ec1c24] text-black hover:bg-red-600'>
+              <span className='absolute inset-0 border-2 border-[#ec1c24] hover:border-red-600 rounded-md -m-1'></span>
               <span className='relative z-10 px-8 text-white'>Full Story</span>
             </button>
           </Link>
