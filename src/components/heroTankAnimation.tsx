@@ -9,6 +9,8 @@ const HeroTankAnimation: React.FC = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
   const imagesRef = useRef<HTMLImageElement[]>([]);
 
+  const firstFrameSrc = '/images/backgrounds/home/Tank/Main002000.png';
+
   // Preload images once
   useEffect(() => {
     let loadedCount = 0;
@@ -41,10 +43,14 @@ const HeroTankAnimation: React.FC = () => {
     return () => clearInterval(interval);
   }, [imagesLoaded]);
 
+  const currentSrc = imagesLoaded
+    ? imagesRef.current[frame].src
+    : firstFrameSrc;
+
   return (
     <div
       className='absolute z-50 w-full flex justify-center me-8 scrn-700:me-10
-      mt-72  
+      mt-72 
       scrn-450:mt-80 
       scrn-500:mt-112 
       scrn-550:mt-80 
@@ -63,17 +69,13 @@ const HeroTankAnimation: React.FC = () => {
       scrn-2000:mt-132 
       scrn-2200:mt-144'
     >
-      {imagesLoaded ? (
-        <img
-          src={imagesRef.current[frame].src}
-          alt={`Frame ${frame}`}
-          width={1920}
-          height={300}
-          className='scrn-900:w-4/6 scrn-1000:w-3/5 scrn-1900:w-2/3'
-        />
-      ) : (
-        <p>Loading animation...</p>
-      )}
+      <img
+        src={currentSrc}
+        alt={`Frame ${frame}`}
+        width={1920}
+        height={300}
+        className='scrn-900:w-4/6 scrn-1000:w-3/5 scrn-1900:w-2/3'
+      />
     </div>
   );
 };
