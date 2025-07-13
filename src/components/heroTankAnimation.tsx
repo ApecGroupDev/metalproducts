@@ -5,15 +5,21 @@ import React, { useEffect, useState } from 'react';
 const HeroTankAnimation: React.FC = () => {
   const [frame, setFrame] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
-  const totalFrames = 292;
+  const totalFrames = 50;
   const frameRate = 24;
+
+  const originalTotalFrames = 292;
+  const sampleStep = Math.floor(originalTotalFrames / totalFrames); // e.g., 5
+
+  const sampledFrames = Array.from({ length: totalFrames }, (_, i) => i * sampleStep);
 
   useEffect(() => {
     let loadedCount = 0;
     const images: HTMLImageElement[] = [];
 
-    for (let i = 0; i < totalFrames; i++) {
-      const padded = i.toString().padStart(3, '0');
+    for (let i = 0; i < sampledFrames.length; i++) {
+      const originalFrame = sampledFrames[i];
+      const padded = originalFrame.toString().padStart(3, '0');
       const img = new Image();
       img.src = `/images/backgrounds/home/Tank/Main002${padded}.png`;
       img.onload = () => {
@@ -39,7 +45,8 @@ const HeroTankAnimation: React.FC = () => {
     return () => clearInterval(interval);
   }, [imagesLoaded]);
 
-  const paddedFrame = frame.toString().padStart(3, '0');
+  const currentOriginalFrame = sampledFrames[frame];
+  const paddedFrame = currentOriginalFrame.toString().padStart(3, '0');
   const src = `/images/backgrounds/home/Tank/Main002${paddedFrame}.png`;
 
   return (
