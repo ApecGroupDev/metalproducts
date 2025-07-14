@@ -18,7 +18,7 @@ const Resources: React.FC = () => {
     },
     {
       title: 'OIL / WATER\nSEPARATOR',
-      image: '/images/backgrounds/home/OilSeparator.png',
+      image: '/images/backgrounds/home/Oil_Water_Separator.png',
       link: '/oil-and-water-separator',
     },
   ];
