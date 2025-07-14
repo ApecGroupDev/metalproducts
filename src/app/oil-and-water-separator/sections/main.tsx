@@ -4,7 +4,7 @@ const Main: React.FC = () => {
   return (
     <div className='bg-[#efefef] py-20 px-4 sm:px-8 lg:px-16 relative overflow-hidden justify-center items-center space-y-32'>
 
-      <div className='max-w-7xl mx-auto'>
+      <div className='max-w-7xl mx-auto mt-12'>
         {/* Main Content */}
         <div className='relative z-0 mx-auto text-center text-gray-800 space-y-4 max-w-80 scrn-500:max-w-96 scrn-600:max-w-full scrn-600:px-12 scrn-1200:px-20'>
           <p className='text-lg/7 scrn-600:text-xl/8 font-medium text-justify'>
