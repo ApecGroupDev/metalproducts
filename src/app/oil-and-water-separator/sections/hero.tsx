@@ -5,7 +5,7 @@ import OilWaterSeparatorAnimation from '@/components/oilWaterSeparatorAnimation'
 const Hero: React.FC = () => {
   return (
     <div className='relative z-20'>
-      <div className='relative flex flex-col items-center justify-center scrn-900:justify-normal scrn-1000:justify-center bg-[#efefef] border border-dashed border-b-green-600 
+      <div className='relative flex flex-col items-center justify-center scrn-900:justify-normal scrn-1000:justify-center bg-[#efefef] 
       h-140 
       scrn-450:h-148 
       scrn-500:h-160 
