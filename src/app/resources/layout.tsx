@@ -1,4 +1,4 @@
-import Footer from '@/components/footer';
+import Footer from '@/components/footer_bg_redshade';
 import Header from '@/components/header';
 
 export default function AboutLayout({ children }: { children: React.ReactNode }) {

@@ -1,13 +1,13 @@
 import React from 'react';
 import Hero from './sections/hero';
-import Timeline from './sections/timeline';
+import Resources from './sections/resources';
 
 const Home: React.FC = () => {
   return (
     <div className='flex flex-col'>
       {/* Sections */}
       <Hero />
-      <Timeline/>
+      <Resources/>
     </div>
   );
 };
