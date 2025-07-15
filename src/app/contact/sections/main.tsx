@@ -15,9 +15,9 @@ const MainContact: React.FC = () => {
             If you&apos;re working on a fueling project — whether it&apos;s a new gas station, an upgrade, or environmental compliance — you&apos;ve come to the right place.
           </p>
           <p className="text-gray-900 text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl">
-            W&apos;ve been manufacturing tanks and separators for over <span className="text-red-600 font-medium">80 years</span>, serving everyone from small contractors
+            We&apos;ve been manufacturing tanks and separators for over <span className="text-red-600 font-medium">80 years</span>, serving everyone from small contractors
             to major brands like <span className="text-red-600 font-medium">Shell</span>, <span className="text-red-600 font-medium">Texaco</span>,
-            <span className="text-red-600 font-medium">Amoco</span>, and <span className="text-red-600 font-medium">QuikTrip</span>.
+            <span className="text-red-600 font-medium"> Amoco</span> and <span className="text-red-600 font-medium">QuikTrip</span>.
           </p>
         </div>
         <div className='relative rounded-3xl shadow-2xl mt-6 scrn-400:mt-6 scrn-450:mt-6 scrn-500:mt-8 scrn-550:mt-8 scrn-750:mt-0'>
