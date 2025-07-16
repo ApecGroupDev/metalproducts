@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import BorderButton from '@/components/borderButton';
+import BorderButtonWithDesc from '@/components/borderButtonWithDesc';
 
 const Resources: React.FC = () => {
   const resources = [
@@ -10,8 +10,16 @@ const Resources: React.FC = () => {
       title: 'UNDERGROUND\nTANKS',
       image: '/images/backgrounds/resources/underground_tanks/Home_Dev_1012.png',
       pdfs: [
-        { name: 'ELUTRON Installation', file: 'Elutron_Install_Instructions.pdf' },
-        { name: 'Plasteel Composite Installation', file: 'Plasteel_Installation_Instrs.pdf' },
+        {
+          name: 'ELUTRON Installation',
+          file: 'Elutron_Install_Instructions.pdf',
+          description: 'Detailed instructions for installing ELUTRON underground tanks.',
+        },
+        {
+          name: 'Plasteel Composite Installation',
+          file: 'Plasteel_Installation_Instrs.pdf',
+          description: 'Guide for installing Plasteel composite underground tanks.',
+        },
         { name: 'ELUTRON Warranty', file: 'Elutron_Warranty001.pdf' },
         { name: 'Plasteel Composite Warranty', file: 'Warranty_PS.pdf' },
         { name: 'ELUTRON Flyer', file: 'PlasteelBrochure04_07_2017.pdf' },
@@ -106,19 +114,20 @@ const Resources: React.FC = () => {
                 <div className="flex flex-wrap justify-center gap-4 mt-8">
                   {item.pdfs.map((pdf, pdfIndex) => {
                     const isExternal = pdf.file.startsWith('http');
-                    const href = isExternal
-                      ? pdf.file
-                      : `/pdfs/${pdf.file}`;
+                    const href = isExternal ? pdf.file : `/pdfs/${pdf.file}`;
 
                     return (
                       <a
-                        className='mt-auto'
+                        className="mt-auto"
                         key={pdfIndex}
                         href={href}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <BorderButton label={pdf.name} />
+                        <BorderButtonWithDesc
+                          label={pdf.name}
+                          description={pdf.description || ''} // Pass description here
+                        />
                       </a>
                     );
                   })}
