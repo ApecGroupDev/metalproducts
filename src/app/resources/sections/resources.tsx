@@ -10,26 +10,49 @@ const Resources: React.FC = () => {
       title: 'UNDERGROUND\nTANKS',
       image: '/images/backgrounds/resources/underground_tanks/Home_Dev_1012.png',
       pdfs: [
-        { name: 'Installation Guide', file: 'AquaClean_O&M_Generic.pdf' },
-        { name: 'Checklist', file: 'AquaClean_Checklist.pdf' },
+        { name: 'ELUTRON Installation', file: 'Elutron_Install_Instructions.pdf' },
+        { name: 'Plasteel Composite Installation', file: 'Plasteel_Installation_Instrs.pdf' },
+        { name: 'ELUTRON Warranty', file: 'Elutron_Warranty001.pdf' },
+        { name: 'Plasteel Composite Warranty', file: 'Warranty_PS.pdf' },
+        { name: 'ELUTRON Flyer', file: 'PlasteelBrochure04_07_2017.pdf' },
+        { name: 'Plasteel Composite Flyer', file: 'PS_DW_FLYER_022824.pdf' },
+        {
+          name: 'Florida EQ# 333',
+          file: 'https://floridadep.gov/waste/permitting-compliance-assistance/documents/storage-tank-equipment-registration-list',
+        },
       ],
     },
     {
       title: 'ABOVE GROUND\nTANKS',
       image: '/images/backgrounds/home/Above_Ground_Tank_Img.png',
       pdfs: [
-        { name: 'Design Info', file: 'SEPARATORS_THAT_WORK-web.pdf' },
-        { name: 'Brochure', file: 'AquaClean_Brochure_web.pdf' },
+        { name: 'UL 142 Installation', file: 'Installation_Instructions-R912.pdf' },
+        { name: 'Flameshield Installation', file: 'Installation_Instructions.pdf' },
+        { name: 'Fireguard Installation', file: 'Installation_Instructions.pdf' },
+        { name: 'UL 142 Warranty', file: 'AST_STD_LIMITED_WARRANTY.pdf' },
+        { name: 'Flameshield Warranty', file: 'Flameshield_Warranty_Dec_10.pdf' },
+        { name: 'Fireguard Warranty', file: 'FG_warranty.pdf' },
+        { name: 'UL 142 Double wall flyer', file: 'AST-UL142-101424.pdf' },
+        { name: 'Flameshield Flyer', file: 'Flameshield_Product_Sheet.pdf' },
+        { name: 'Fireguard flyer', file: 'Fireguard_09_09.pdf' },
+        {
+          name: 'Florida EQ# 342',
+          file: 'https://floridadep.gov/waste/permitting-compliance-assistance/documents/storage-tank-equipment-registration-list',
+        },
       ],
     },
     {
       title: 'OIL / WATER\nSEPARATOR',
       image: '/images/backgrounds/home/Oil_Water_Separator.png',
       pdfs: [
-        { name: 'Low Flow (15PPM)', file: 'LF_15.pdf' },
-        { name: 'Low Flow (10PPM)', file: 'lf_10.pdf' },
-        { name: 'High Flow (15PPM)', file: 'Hf_15.pdf' },
-        { name: 'High Flow (10PPM)', file: 'Hf_10.pdf' },
+        { name: 'OWS Installation', file: 'AquaClean_O&M_Generic.pdf' },
+        { name: 'OWS Checklist', file: 'AquaClean_Checklist.pdf' },
+        { name: 'Design Info', file: 'SEPARATORS_THAT_WORK-web.pdf' },
+        { name: 'Low Flow (15PPM) units', file: 'LF_15.pdf' },
+        { name: 'Low Flow (10PPM) units', file: 'lf_10.pdf' },
+        { name: 'High Flow (15PPM) units', file: 'Hf_15.pdf' },
+        { name: 'High Flow (10PPM) units', file: 'Hf_10.pdf' },
+        { name: 'AquaClean Brochure', file: 'AquaClean_Brochure_web.pdf' },
         { name: 'Accessories', file: '64358249435378456110422c_900126_rev2002.pdf' },
       ],
     },
@@ -54,7 +77,29 @@ const Resources: React.FC = () => {
                 alt={item.title}
                 width={1920}
                 height={300}
-                className='mx-auto -mt-24 relative z-20'
+                className='mx-auto 
+                -mt-16 
+                scrn-450:-mt-24 
+                scrn-500:-mt-32 
+                scrn-600:-mt-36 
+                scrn-700:-mt-44 
+                scrn-800:-mt-48 
+                scrn-900:-mt-56 
+                scrn-1000:-mt-20 
+                scrn-1300:-mt-28
+                scrn-1600:-mt-36
+
+                relative z-20 
+
+                scrn-1000:h-52
+                scrn-1100:h-56
+                scrn-1200:h-60
+                scrn-1300:h-72
+                scrn-1400:h-80
+                scrn-1600:h-96
+                scrn-1650:h-96
+                scrn-1700:h-116
+                scrn-1900:h-118'
               />
               <div>
                 {/* PDF Buttons */}
@@ -63,7 +108,7 @@ const Resources: React.FC = () => {
                     const isExternal = pdf.file.startsWith('http');
                     const href = isExternal
                       ? pdf.file
-                      : `/pdfs/oil_and_water_separator/${pdf.file}`;
+                      : `/pdfs/${pdf.file}`;
 
                     return (
                       <a
