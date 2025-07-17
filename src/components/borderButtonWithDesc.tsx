@@ -5,7 +5,7 @@ import React from 'react';
 interface BorderButtonProps {
   label: string;
   subLabel?: string;
-  description?: string; // New prop for the description
+  description?: string; 
   onClick?: () => void;
   className?: string;
   type?: 'button' | 'submit' | 'reset';
@@ -20,7 +20,7 @@ const BorderButtonWithDesc: React.FC<BorderButtonProps> = ({
   type = 'button',
 }) => {
   return (
-    <div className={`flex flex-col items-center space-y-2 mt-4 ${className}`}>
+    <div className={`flex flex-col items-center space-y-2 mt-5 ${className}`}>
       <button
         type={type}
         onClick={onClick}
