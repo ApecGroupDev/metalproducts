@@ -5,7 +5,7 @@ import React from 'react';
 interface BorderButtonProps {
   label: string;
   subLabel?: string;
-  description?: string; 
+  description?: string;
   onClick?: () => void;
   className?: string;
   type?: 'button' | 'submit' | 'reset';
@@ -35,8 +35,6 @@ const BorderButtonWithDesc: React.FC<BorderButtonProps> = ({
       {description && (
         <p className="text-base text-gray-800 text-center max-w-60 max-h-12 overflow-auto thin-scrollbar">{description}</p>
       )}
-
-      <hr className="w-60 border-t border-gray-800" />
     </div>
   );
 };
