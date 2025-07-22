@@ -33,7 +33,7 @@ const BorderButtonWithDesc: React.FC<BorderButtonProps> = ({
       </button>
 
       {description && (
-        <p className="text-base text-gray-800 text-center max-w-60 max-h-12 overflow-auto thin-scrollbar">{description}</p>
+        <p className="text-base text-gray-800 text-center max-w-60 h-20 overflow-auto thin-scrollbar">{description}</p>
       )}
     </div>
   );
