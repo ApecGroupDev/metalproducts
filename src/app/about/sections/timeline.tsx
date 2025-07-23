@@ -180,7 +180,7 @@ const Timeline: React.FC = () => {
         </div>
       </div>
 
-      <div className='max-w-7xl mx-auto pb-60'>
+      <div className='max-w-7xl mx-auto'>
         {/* Main Content */}
         <div className='relative z-0 mx-auto text-center text-gray-800 space-y-4 max-w-80 scrn-500:max-w-96 scrn-600:max-w-full scrn-600:px-12 scrn-1200:px-20'>
           <h2 className='text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl'>Acquired by Ali Husain <br /> <span className='text-red-600 italic font-thin'>(2023)</span></h2>
@@ -232,6 +232,25 @@ const Timeline: React.FC = () => {
               </div>
             </div>
           )}
+        </div>
+      </div>
+
+      <div className='max-w-7xl mx-auto pb-60'>
+        {/* Main Content */}
+        <div className='relative z-0 mx-auto text-center text-gray-800 space-y-4 max-w-80 scrn-500:max-w-96 scrn-600:max-w-full scrn-600:px-12 scrn-1200:px-20'>
+          <h2 className='text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl'>Celebrating 80 Years <br /> <span className='text-red-600 italic font-thin'>(2025)</span></h2>
+          <p className='text-lg scrn-600:text-xl font-medium text-justify'>
+            As of 2025 the production is now in full swing with increased efficiency of production of tanks based on customer's needs. All lines of production with improved overhead cranes are preparing tanks exceeding customer's expectations. Additional staff is now well trained ready to take on orders from customers as they continue to pour in.
+          </p>
+          <p className='text-lg scrn-600:text-xl font-medium text-justify'>
+            We are delighted to participate in this robust economy producing products for customers to begin their fueling using our tanks. We appreciate our customers to have their trust in us and we are committed to providing the best service at the speed they expect from us.
+          </p>
+          {/* Background Year (left-aligned) */}
+          <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 pointer-events-none scrn-750:-left-4 scrn-750:translate-x-0'>
+            <p className='text-red-200 text-10xl scrn-450:text-11xl scrn-750:text-13xl scrn-1000:text-[18rem] opacity-50 select-none leading-none mb-12'>
+              2025
+            </p>
+          </div>
         </div>
       </div>
 
