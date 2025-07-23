@@ -240,7 +240,7 @@ const Timeline: React.FC = () => {
         <div className='relative z-0 mx-auto text-center text-gray-800 space-y-4 max-w-80 scrn-500:max-w-96 scrn-600:max-w-full scrn-600:px-12 scrn-1200:px-20'>
           <h2 className='text-xl font-semibold scrn-600:font-bold scrn-600:text-2xl'>Celebrating 80 Years <br /> <span className='text-red-600 italic font-thin'>(2025)</span></h2>
           <p className='text-lg scrn-600:text-xl font-medium text-justify'>
-            As of 2025 the production is now in full swing with increased efficiency of production of tanks based on customer's needs. All lines of production with improved overhead cranes are preparing tanks exceeding customer's expectations. Additional staff is now well trained ready to take on orders from customers as they continue to pour in.
+            As of 2025 the production is now in full swing with increased efficiency of production of tanks based on customer&apos;s needs. All lines of production with improved overhead cranes are preparing tanks exceeding customer&apos;s expectations. Additional staff is now well trained ready to take on orders from customers as they continue to pour in.
           </p>
           <p className='text-lg scrn-600:text-xl font-medium text-justify'>
             We are delighted to participate in this robust economy producing products for customers to begin their fueling using our tanks. We appreciate our customers to have their trust in us and we are committed to providing the best service at the speed they expect from us.
