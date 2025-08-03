@@ -25,7 +25,11 @@ const Footer: React.FC = () => {
             <div className='text-2xs scrn-400:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg whitespace-nowrap space-y-1'>
               <p>For More Information</p>
               <p>770.945.8383</p>
-              <p className='font-medium'>anil@metalproductsusa.com</p>
+              <p className='font-medium'>
+                <a href='mailto:sales@metalproductsusa.com' className='hover:underline'>
+                  sales@metalproductsusa.com
+                </a>
+              </p>
             </div>
             <div className='hidden scrn-750:flex space-x-1 scale-110'>
               <SocialIcon
