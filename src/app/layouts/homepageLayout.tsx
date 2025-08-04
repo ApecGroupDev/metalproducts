@@ -1,7 +1,7 @@
 // components/layouts/HomePageLayout.tsx
 
 import Header from '@/components/header';
-import Footer from '@/components/footer';
+import Footer from '@/components/footer_bg_redshade';
 
 export default function HomePageLayout({ children }: { children: React.ReactNode }) {
   return (
