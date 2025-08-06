@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Header from '@/components/header';
 import Footer from '@/components/footer_bg_redshade';
-import Image from 'next/image';
 
 export default function NotFound() {
   return (
@@ -15,7 +14,7 @@ export default function NotFound() {
             <p className='text-gray-800 px-4 flex flex-col'>
               <span className='text-gray-800 text-9xl scrn-700:text-10xl scrn-900:font-extrabold scrn-900:text-gray-900 scrn-900:text-12xl scrn-1000:text-[16rem]'>404</span> <br />
               <span className='text-red-600 font-bold text-3xl scrn-500:text-4xl scrn-700:text-5xl scrn-900:text-7xl scrn-1100:text-8xl'>Page Not Found</span> <br />
-              <span className='text-xl scrn-700:text-2xl'>The page you're looking for does not exist.</span>
+              <span className='text-xl scrn-700:text-2xl'>The page you&apos;re looking for does not exist.</span>
             </p>
             <Link
               href="/"
