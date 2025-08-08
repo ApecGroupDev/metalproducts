@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import { Raleway } from 'next/font/google';
 import { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="max-w-[2560px] mx-auto">
           {children}
         </div>
+        {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
   );
