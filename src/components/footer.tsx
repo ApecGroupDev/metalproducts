@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                 className='transition-transform transform hover:scale-125'
               />
               <SocialIcon
-                url="https://www.linkedin.com"
+                url="https://www.linkedin.com/company/metalproducts-company/"
                 target="_blank"
                 style={{ height: 40, width: 40 }}
                 bgColor="transparent"
@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
                 className='transition-transform transform hover:scale-125'
               />
               <SocialIcon
-                url="https://www.linkedin.com"
+                url="https://www.linkedin.com/company/metalproducts-company/"
                 target="_blank"
                 style={{ height: 28, width: 28, borderRadius: 8 }}
                 bgColor="transparent"
