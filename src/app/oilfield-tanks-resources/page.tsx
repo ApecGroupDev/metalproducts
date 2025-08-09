@@ -4,10 +4,10 @@ import Resources from './sections/resources';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Oil-Water Separators Built to Last – USA Made",
-  description: "Discover premium oil-water separators made in the USA, ideal for industrial and commercial applications. Ships nationwide.",
+  title: "Reliable Oilfield Tanks for Storage & Safety",
+  description: "Find oilfield tanks made for secure storage and environmental safety. Designed to handle demanding oilfield conditions.",
   alternates: {
-    canonical: 'https://www.metalproductsusa.com/oil-and-water-separator',
+    canonical: 'https://www.metalproductsusa.com/oilfield-tanks-resources',
   },
 };
 
