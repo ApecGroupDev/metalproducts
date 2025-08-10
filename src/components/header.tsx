@@ -79,7 +79,7 @@ const Header: React.FC = () => {
           className={`text-white absolute left-0 right-0 top-20 bg-white/60 backdrop-blur-md p-6 rounded-md z-10 transition-all duration-300 ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
             }`}
         >
-          {["/home", "/about", "/contact"].map(
+          {["/home", "/about", "resources", "/contact"].map(
             (path) => (
               <Link
                 key={path}
@@ -112,19 +112,29 @@ const Header: React.FC = () => {
 
         {/* Center: Navigation */}
         <nav className='flex z-10 justify-end scrn-900:space-x-12 scrn-1000:space-x-16 scrn-1900:space-x-24 font-semibold'>
+          {[
+            { label: "HOME", path: "/" },
+            { label: "ABOUT", path: "/about" },
+            { label: "RESOURCES", path: "/oilfield-tanks-resources" },
+            { label: "CONTACT", path: "/contact" }
+          ].map(({ label, path }) => {
+            const isActive = path === "/"
+              ? pathname === "/" // exact match for home
+              : pathname.startsWith(path);
 
-          {["/home", "/about", "/resources", "/contact"].map((path) => (
-            <Link
-              key={path}
-              href={path}
-              className={`capitalize scrn-750:text-xs scrn-1000:text-sm scrn-1900:text-xl text-gray-800 hover:text-[#c62931] transition-colors duration-200 relative ${pathname.startsWith(path) ? "text-red-800" : ""}`}
-            >
-              {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
-              {pathname.startsWith(path) && (
-                <span className='absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]' />
-              )}
-            </Link>
-          ))}
+            return (
+              <Link
+                key={path}
+                href={path}
+                className={`capitalize scrn-750:text-xs scrn-1000:text-sm scrn-1900:text-xl text-gray-800 hover:text-[#c62931] transition-colors duration-200 relative ${isActive ? "text-red-800" : ""}`}
+              >
+                {label}
+                {isActive && (
+                  <span className='absolute left-0 right-0 bottom-0 h-0.5 bg-[#c62931]' />
+                )}
+              </Link>
+            );
+          })}
         </nav>
       </div>
     </header>
