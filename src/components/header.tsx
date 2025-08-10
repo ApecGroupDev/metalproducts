@@ -55,7 +55,10 @@ const Header: React.FC = () => {
 
         {/* Menu Button (Right) */}
         <button
-          className='absolute right-4 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20' onClick={toggleMenu}>
+          className='absolute right-4 top-10 transform -translate-y-1/2 text-[#c62931] focus:outline-none z-20'
+          onClick={toggleMenu}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+        >
           {isOpen ? (
             <span className="text-5xl">×</span>
           ) : (
