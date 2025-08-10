@@ -79,19 +79,28 @@ const Header: React.FC = () => {
           className={`text-white absolute left-0 right-0 top-20 bg-white/60 backdrop-blur-md p-6 rounded-md z-10 transition-all duration-300 ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
             }`}
         >
-          {["/home", "/about", "resources", "/contact"].map(
-            (path) => (
+          {[
+            { label: "HOME", path: "/" },
+            { label: "ABOUT", path: "/about" },
+            { label: "RESOURCES", path: "/oilfield-tanks-resources" },
+            { label: "CONTACT", path: "/contact" }
+          ].map(({ label, path }) => {
+            const isActive = path === "/"
+              ? pathname === "/" // exact match for home
+              : pathname.startsWith(path);
+
+            return (
               <Link
                 key={path}
                 href={path}
-                className={`block text-lg font-medium tracking-widest text-black hover:text-[#c62931] py-2 ${pathname.startsWith(path) ? "text-[#c62931]" : ""
+                className={`block text-lg font-medium tracking-widest text-black hover:text-[#c62931] py-2 ${isActive ? "text-[#c62931]" : ""
                   }`}
                 onClick={() => setIsOpen(false)}
               >
-                {path === "/" ? "HOME" : path.replace("/", "").toUpperCase()}
+                {label}
               </Link>
-            )
-          )}
+            );
+          })}
         </nav>
       </div>
 
