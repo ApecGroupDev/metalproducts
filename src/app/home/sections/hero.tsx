@@ -37,8 +37,8 @@ const Hero: React.FC = () => {
             src="/images/backgrounds/home/Home_Dev_1.png"
             alt="Background"
             style={{ objectFit: 'contain' }}
-            width={2786}
-            height={1718}
+            width={2560}
+            height={1579}
             priority
           />
         </div>
@@ -49,8 +49,8 @@ const Hero: React.FC = () => {
             src="/images/backgrounds/home/Hero_Homepage_Mobile.png"
             alt="Background"
             style={{ objectFit: 'contain' }}
-            width={2786}
-            height={1718}
+            width={900}
+            height={556}
             priority
           />
         </div>
