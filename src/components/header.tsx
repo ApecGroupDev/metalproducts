@@ -46,8 +46,8 @@ const Header: React.FC = () => {
             <Image
               src="/images/logos/Logo_MPC_Main.png"
               alt="Logo"
-              width={1315}
-              height={1206}
+              width={583}
+              height={186}
               className='h-10 w-auto'
             />
           </Link>
@@ -117,8 +117,8 @@ const Header: React.FC = () => {
             <Image
               src="/images/logos/Logo_MPC_Main.png"
               alt="Logo"
-              width={1315}
-              height={1206}
+              width={583}
+              height={186}
               className='w-auto scrn-750:h-16 scrn-1000:h-12 scrn-1250:h-20'
             />
           </Link>
