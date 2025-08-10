@@ -9,7 +9,7 @@ const Header: React.FC = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [, setLastScrollY] = useState(0);
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
