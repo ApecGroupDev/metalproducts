@@ -17,9 +17,11 @@ const Header: React.FC = () => {
 
   const handleScroll = () => {
     if (typeof window !== "undefined") {
-      const currentScrollY = window.scrollY;
-      setIsVisible(lastScrollY > currentScrollY || currentScrollY < 10);
-      setLastScrollY(currentScrollY);
+      setLastScrollY((prevLastScrollY) => {
+        const currentScrollY = window.scrollY;
+        setIsVisible(prevLastScrollY > currentScrollY || currentScrollY < 10);
+        return currentScrollY;
+      });
     }
   };
 
@@ -28,7 +30,7 @@ const Header: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lastScrollY]);
+  }, []);
 
   return (
     <header
