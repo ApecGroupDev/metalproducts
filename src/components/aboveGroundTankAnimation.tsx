@@ -81,6 +81,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 const AboveGroundTankAnimation: React.FC = () => {
   const staticImageSrc = '/images/backgrounds/resources/above_ground_tanks/Home_Dev_1000.png'; // Use any frame you'd like here
@@ -103,7 +104,7 @@ const AboveGroundTankAnimation: React.FC = () => {
       scrn-2000:mt-60
       scrn-2300:mt-72'
     >
-      <img
+      <Image
         src={staticImageSrc}
         alt="Above Ground Tank"
         width={1920}
