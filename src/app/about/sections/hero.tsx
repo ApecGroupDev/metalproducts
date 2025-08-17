@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
         {/* Hero BG */}
         <div className='absolute inset-0 z-10 hidden scrn-900:block scrn-900:-mt-[4.5rem] scrn-1200:-mt-24 scrn-1400:-mt-28 scrn-1600:-mt-32 scrn-1750:-mt-36 scrn-1900:-mt-40 scrn-2100:-mt-48'>
           <Image
-            src="/images/backgrounds/home/Home_Dev_1.png"
+            src="/images/backgrounds/home/Hero_Home.webp"
             alt="Background"
             style={{ objectFit: 'contain' }}
             width={2786}
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
         {/* Mobile only hero image */}
         <div className='absolute inset-0 z-10 scrn-900:hidden'>
           <Image
-            src="/images/backgrounds/home/Hero_Homepage_Mobile.png"
+            src="/images/backgrounds/home/Hero_Home_Mobile.webp"
             alt="Background"
             style={{ objectFit: 'contain' }}
             width={2786}
