@@ -9,7 +9,7 @@ const History: React.FC = () => {
         {/* Image on top */}
         <div className='w-full flex justify-center'>
           <Image
-            src="/images/backgrounds/home/HISTORY.png"
+            src="/images/backgrounds/home/HISTORY.webp"
             alt="History Graphic"
             width={1920}
             height={300}
