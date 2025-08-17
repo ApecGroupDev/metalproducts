@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
         {/* Mobile only hero image */}
         <div className='absolute inset-0 z-10 scrn-900:hidden'>
           <Image
-            src="/images/backgrounds/home/Hero_Homepage_Mobile.png"
+            src="/images/backgrounds/home/Hero_Home_Mobile.webp"
             alt="Background"
             style={{ objectFit: 'contain' }}
             width={900}
