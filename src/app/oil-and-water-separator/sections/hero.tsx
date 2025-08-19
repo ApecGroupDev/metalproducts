@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
               scrn-2500:mt-208
             '>
           <Image
-            src='/images/backgrounds/resources/oil_and_water_separator/Main139.png'
+            src='/images/backgrounds/resources/Oil-and-Water-Separator-Main.webp'
             alt="Oil and Water Separator"
             width={1920}
             height={300}
