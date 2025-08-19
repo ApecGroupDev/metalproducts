@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
               scrn-2300:mt-72'
         >
           <Image
-            src='/images/backgrounds/resources/above_ground_tanks/Home_Dev_1000.png'
+            src='/images/backgrounds/resources/Above-Ground-Tank-Main.webp'
             alt="Above Ground Tank"
             width={1920}
             height={300}
