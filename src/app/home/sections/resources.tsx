@@ -8,17 +8,17 @@ const Resources: React.FC = () => {
   const resources = [
     {
       title: 'UNDERGROUND\nTANKS',
-      image: '/images/backgrounds/resources/underground_tanks/Home_Dev_1012.png',
+      image: '/images/backgrounds/home/resources/Resources-Underground-Tanks.webp',
       link: '/underground-tanks',
     },
     {
       title: 'ABOVE GROUND\nTANKS',
-      image: '/images/backgrounds/home/Above_Ground_Tank_Img.png',
+      image: '/images/backgrounds/home/resources/Resources-Above-Ground-Tank.webp',
       link: '/above-ground-tank',
     },
     {
       title: 'OIL / WATER\nSEPARATOR',
-      image: '/images/backgrounds/home/Oil_Water_Separator.png',
+      image: '/images/backgrounds/home/resources/Resources-Oil-and-Water-Separator.webp',
       link: '/oil-and-water-separator',
     },
   ];
