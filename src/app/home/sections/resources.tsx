@@ -50,7 +50,7 @@ const Resources: React.FC = () => {
               {/* Spotlight inside the card */}
               <div className='absolute inset-0 z-10 opacity-100 scale-125'>
                 <Image
-                  src="/images/backgrounds/home/spotlight_wide.png"
+                  src="/images/backgrounds/home/Spotlight.webp"
                   alt="Spotlight"
                   fill
                   style={{ objectFit: 'contain' }}
