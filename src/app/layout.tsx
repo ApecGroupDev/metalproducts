@@ -28,8 +28,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* Google Search Console */}
         <meta
-          name=""
-          content=""
+          name="google-site-verification"
+          content="ab17f-mm4AqpK64XXFbo8c1RFFRPUqDxVcIQ4YVOI80"
         />
       </head>
       <body className="min-h-screen bg-[#efefef]">
