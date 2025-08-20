@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         {/* Background image positioned absolutely */}
         <div className='absolute inset-0'>
           <Image
-            src="/images/backgrounds/footer/Background_Footer.png"
+            src="/images/backgrounds/footer/Background_Footer.webp"
             alt="Footer Background"
             fill
             priority
