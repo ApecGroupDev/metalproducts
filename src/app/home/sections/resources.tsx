@@ -27,7 +27,7 @@ const Resources: React.FC = () => {
     <div className='relative z-10 bg-[#e3e3e3] py-20 -mt-1 overflow-hidden border-b-8 border-b-[#e3e3e3]'>
       <div className='absolute inset-0 z-20'>
         <Image
-          src="/images/backgrounds/home/resources_new.png"
+          src="/images/backgrounds/home/Background_Resources.webp"
           alt="Background"
           style={{ objectFit: 'contain' }}
           width={2786}
