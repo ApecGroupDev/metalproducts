@@ -2,6 +2,7 @@ import '../styles/globals.css';
 import { Raleway } from 'next/font/google';
 import { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/next';
+import Script from 'next/script';
 
 const raleway = Raleway({
   subsets: ['latin'],
@@ -37,6 +38,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="max-w-[2560px] mx-auto">
           {children}
         </div>
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-5Y0YVX1DPN"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5Y0YVX1DPN');
+          `}
+        </Script>
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>
