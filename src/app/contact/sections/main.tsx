@@ -11,13 +11,13 @@ const MainContact: React.FC = () => {
           <span className='text-[#c62931] font-semibold text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl'>
             Let&apos;s Talk — We&apos;ve Been Building Trust Since 1941
           </span>
-          <p className="text-gray-800 text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl">
+          <p className='text-gray-800 text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl'>
             If you&apos;re working on a fueling project — whether it&apos;s a new gas station, an upgrade, or environmental compliance — you&apos;ve come to the right place.
           </p>
-          <p className="text-gray-900 text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl">
-            We&apos;ve been manufacturing tanks and separators for over <span className="text-red-600 font-medium">80 years</span>, serving everyone from small contractors
-            to major brands like <span className="text-red-600 font-medium">Shell</span>, <span className="text-red-600 font-medium">Texaco</span>,
-            <span className="text-red-600 font-medium"> Amoco</span> and <span className="text-red-600 font-medium">QuikTrip</span>.
+          <p className='text-gray-900 text-sm scrn-500:text-base scrn-800:text-xl scrn-1500:text-3xl scrn-1700:text-4xl scrn-1900:text-4xl scrn-2000:text-5xl'>
+            We&apos;ve been manufacturing tanks and separators for over <span className='text-red-600 font-medium' >80 years</span>, serving everyone from small contractors
+            to major brands like <span className='text-red-600 font-medium'>Shell</span>, <span className='text-red-600 font-medium'>Texaco</span>,
+            <span className='text-red-600 font-medium'> Amoco</span> and <span className='text-red-600 font-medium'>QuikTrip</span>.
           </p>
         </div>
         <div className='relative rounded-3xl shadow-2xl mt-6 scrn-400:mt-6 scrn-450:mt-6 scrn-500:mt-8 scrn-550:mt-8 scrn-750:mt-0'>
@@ -37,11 +37,11 @@ const MainContact: React.FC = () => {
         </p>
       </div>
       {/* Google Maps Section */}
-      <div className="w-full mt-12 px-4 scrn-600:px-10 scrn-800:px-20">
-        <h2 className="text-center text-xl font-semibold text-gray-800 mb-4 scrn-600:text-2xl scrn-1000:text-3xl">
+      <div className='w-full mt-12 px-4 scrn-600:px-10 scrn-800:px-20'>
+        <h2 className='text-center text-xl font-semibold text-gray-800 mb-4 scrn-600:text-2xl scrn-1000:text-3xl'>
           Find Us on Google Maps
         </h2>
-        <div className="w-4/5 mx-auto h-[300px] scrn-600:h-[400px] scrn-1000:h-[500px] rounded-xl overflow-hidden shadow-2xl">
+        <div className='w-4/5 mx-auto h-[300px] scrn-600:h-[400px] scrn-1000:h-[500px] rounded-xl overflow-hidden shadow-2xl'>
           <iframe
             title="Google Map Location"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8249.398695663318!2d-84.07398252633338!3d34.05086149163947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f597a14f929c43%3A0x571bf2f1a4b46a31!2sMetal%20Products%20Inc!5e1!3m2!1sen!2sph!4v1752131936533!5m2!1sen!2sph"
