@@ -24,7 +24,9 @@ const Footer: React.FC = () => {
           <div className='z-10 flex flex-col items-start space-y-2 scrn-750:space-y-1 scrn-1000:space-y-2'>
             <div className='text-2xs scrn-400:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg whitespace-nowrap space-y-1'>
               <p>For More Information</p>
-              <p>770.945.8383</p>
+              <p>
+                <a href="tel:855-444-2732">770.945.8383</a>
+              </p>
               <p className='font-medium'>
                 <a href='mailto:sales@metalproductsusa.com' className='hover:underline'>
                   sales@metalproductsusa.com
@@ -125,7 +127,7 @@ const Footer: React.FC = () => {
           Copyright 2024–2025 © Metal Products Company. All rights reserved.
         </p>
       </div>
-    </footer>
+    </footer >
   );
 };
 
