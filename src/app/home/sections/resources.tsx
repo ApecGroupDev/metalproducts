@@ -71,8 +71,8 @@ const Resources: React.FC = () => {
               />
 
               {/* Individual Button */}
-              <Link href={item.link} className="relative z-20 mt-auto pt-8">
-                <span className="relative z-10 px-8 text-red-600 text-lg font-medium text-center block leading-snug">
+              <Link href={item.link} className='relative z-20 mt-auto pt-8'>
+                <span className='relative z-10 px-8 text-red-600 text-lg font-medium text-center block leading-snug'>
                   Learn more about {item.title}
                 </span>
               </Link>
