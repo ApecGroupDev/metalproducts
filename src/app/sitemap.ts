@@ -4,7 +4,7 @@ import type { MetadataRoute } from 'next'
 export const revalidate = 86400 // Re-generate daily
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.theapecgroup.com'
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.metalproductsusa.com/'
 
   return [
     {
@@ -28,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/resources`,
+      url: `${baseUrl}/oilfield-tanks-resources`,
       lastModified: new Date(),
     },
     {
