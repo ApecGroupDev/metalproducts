@@ -14,6 +14,7 @@ const raleway = Raleway({
 export const metadata: Metadata = {
   title: 'Metal Products Company',
   description: 'Metal Products Company is a premier tank manufacturer building dependable and durable tanks. We manufacture single-wall and double-wall aboveground tanks, Plasteel Elutron, Flameshield and Firegaurd tanks, as well as oil-water separators.  Metal Products specializes in building storage tanks for retail, commercial, and government fueling facilities.',
+  robots: 'index, follow',
   icons: {
     icon: '/images/logos/Logo_MPC_Main_Only.png',
   },
