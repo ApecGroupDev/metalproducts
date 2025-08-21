@@ -3,34 +3,10 @@ import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative z-20">
-      <div className="relative flex flex-col items-center justify-center scrn-900:justify-normal scrn-1000:justify-center bg-[#efefef] h-140 
-      scrn-450:h-148 
-      scrn-500:h-160 
-      scrn-550:h-180 
-      scrn-600:h-208 
-      scrn-700:h-224 
-      scrn-750:h-232
-      scrn-800:h-248
-      scrn-900:h-160
-      scrn-1000:h-180 
-      scrn-1100:h-195
-      scrn-1300:h-224
-      scrn-1350:h-228 
-      scrn-1400:h-232
-      scrn-1450:h-236
-      scrn-1500:h-260
-      scrn-1650:h-272 
-      scrn-1750:h-312 
-      scrn-2000:h-316 
-      scrn-2100:h-320
-      scrn-2150:h-324
-      scrn-2200:h-339
-      scrn-2300:h-368
-      scrn-2400:h-384
-      scrn-2450:h-416">
+    <div className='relative z-20'>
+      <div className='relative flex flex-col items-center justify-center scrn-900:justify-normal scrn-1000:justify-center bg-[#efefef] h-140 scrn-450:h-148 scrn-500:h-160 scrn-550:h-180 scrn-600:h-208 scrn-700:h-224 scrn-750:h-232 scrn-800:h-248 scrn-900:h-160 scrn-1000:h-180 scrn-1100:h-195 scrn-1300:h-224 scrn-1350:h-228 scrn-1400:h-232 scrn-1450:h-236 scrn-1500:h-260 scrn-1650:h-272 scrn-1750:h-312 scrn-2000:h-316 scrn-2100:h-320 scrn-2150:h-324 scrn-2200:h-339 scrn-2300:h-368 scrn-2400:h-384 scrn-2450:h-416'>
         {/* Hero BG */}
-        <div className="absolute inset-0 z-10 hidden scrn-900:block scrn-900:-mt-[4.5rem] scrn-1200:-mt-24 scrn-1400:-mt-28 scrn-1600:-mt-32 scrn-1750:-mt-36 scrn-1900:-mt-40 scrn-2100:-mt-48">
+        <div className='absolute inset-0 z-10 hidden scrn-900:block scrn-900:-mt-[4.5rem] scrn-1200:-mt-24 scrn-1400:-mt-28 scrn-1600:-mt-32 scrn-1750:-mt-36 scrn-1900:-mt-40 scrn-2100:-mt-48'>
           <Image
             src="/images/backgrounds/home/Hero_Home.webp"
             alt="Background"
@@ -42,7 +18,7 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Mobile only hero image */}
-        <div className="absolute inset-0 z-10 scrn-900:hidden">
+        <div className='absolute inset-0 z-10 scrn-900:hidden'>
           <Image
             src="/images/backgrounds/home/Hero_Home_Mobile.webp"
             alt="Background"
@@ -54,23 +30,7 @@ const Hero: React.FC = () => {
         </div>
 
         {/* MAIN HERO TANK */}
-        <div className='absolute z-50 w-full flex justify-center 
-              mt-48 
-              scrn-500:mt-52  
-              scrn-600:mt-56 
-              scrn-700:mt-72
-              scrn-800:mt-80
-              scrn-900:mt-32
-              scrn-1000:mt-36
-              scrn-1050:mt-48
-              scrn-1100:mt-52
-              scrn-1200:mt-60
-              scrn-1300:mt-64
-              scrn-1500:mt-72
-              scrn-1900:mt-40
-              scrn-2000:mt-60
-              scrn-2300:mt-72'
-        >
+        <div className='absolute z-50 w-full flex justify-center mt-48 scrn-500:mt-52 scrn-600:mt-56 scrn-700:mt-72 scrn-800:mt-80 scrn-900:mt-32 scrn-1000:mt-36 scrn-1050:mt-48 scrn-1100:mt-52 scrn-1200:mt-60 scrn-1300:mt-64 scrn-1500:mt-72 scrn-1900:mt-40 scrn-2000:mt-60 scrn-2300:mt-72'>
           <Image
             src='/images/backgrounds/resources/Above-Ground-Tank-Main.webp'
             alt="Above Ground Tank"
@@ -81,9 +41,9 @@ const Hero: React.FC = () => {
         </div>
 
         {/*  Text Section */}
-        <div className="text-center z-40 mt-8 scrn-650:mt-20 scrn-900:mt-40 scrn-1000:mt-0 scrn-1050:mt-12 scrn-1100:mt-10 scrn-1300:mt-16 scrn-1500:mt-16 scrn-1700:mt-16 scrn-1900:-mt-36 scrn-2000:mt-0 scrn-2100:-mt-8 scrn-2150:mt-0">
+        <div className='text-center z-40 mt-8 scrn-650:mt-20 scrn-900:mt-40 scrn-1000:mt-0 scrn-1050:mt-12 scrn-1100:mt-10 scrn-1300:mt-16 scrn-1500:mt-16 scrn-1700:mt-16 scrn-1900:-mt-36 scrn-2000:mt-0 scrn-2100:-mt-8 scrn-2150:mt-0'>
           <p
-            className="font-bold opacity-90 text-4xl scrn-400:text-6xl scrn-600:text-7xl scrn-700:text-8xl scrn-900:text-7xl scrn-1100:text-8xl scrn-1500:text-9xl scrn-1900:text-9xl scrn-2100:text-10xl"
+            className='font-bold opacity-90 text-4xl scrn-400:text-6xl scrn-600:text-7xl scrn-700:text-8xl scrn-900:text-7xl scrn-1100:text-8xl scrn-1500:text-9xl scrn-1900:text-9xl scrn-2100:text-10xl'
             style={{
               color: 'rgba(255, 255, 255, 255)',
               textShadow: `
