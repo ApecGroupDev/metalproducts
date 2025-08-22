@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     <footer className='relative bg-[#e3e3e3] text-white font-inter items-end -mt-1 h-96 scrn-1000:h-80 scrn-1600:h-96 scrn-1900:h-120 scrn-2250:h-128'>
       <div className='grid grid-cols-1 scrn-600:grid-cols-2 gap-8 items-end z-30 h-full'>
         {/* Background image positioned absolutely */}
-        <div className="absolute inset-0">
+        <div className='absolute inset-0'>
           <Image
             src="/images/backgrounds/footer/Background_Footer.webp"
             alt="Footer Background"
