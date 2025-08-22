@@ -176,40 +176,17 @@ const Resources: React.FC = () => {
                 alt={item.title}
                 width={1920}
                 height={300}
-                className='mx-auto 
-                -mt-16 
-                scrn-450:-mt-24 
-                scrn-500:-mt-32 
-                scrn-600:-mt-36 
-                scrn-700:-mt-44 
-                scrn-800:-mt-48 
-                scrn-900:-mt-56 
-                scrn-1000:-mt-20 
-                scrn-1300:-mt-28
-                scrn-1600:-mt-36
-
-                relative z-20 
-
-                scrn-1000:h-52
-                scrn-1100:h-56
-                scrn-1200:h-60
-                scrn-1300:h-72
-                scrn-1400:h-80
-                scrn-1600:h-96
-                scrn-1650:h-96
-                scrn-1700:h-116
-                scrn-1900:h-118'
-              />
+                className='mx-auto relative z-20 -mt-16 scrn-450:-mt-24 scrn-500:-mt-32 scrn-600:-mt-36 scrn-700:-mt-44 scrn-800:-mt-48 scrn-900:-mt-56 scrn-1000:-mt-20 scrn-1300:-mt-28 scrn-1600:-mt-36 scrn-1000:h-52 scrn-1100:h-56 scrn-1200:h-60 scrn-1300:h-72 scrn-1400:h-80 scrn-1600:h-96 scrn-1700:h-116 scrn-1900:h-118' />
               <div>
                 {/* PDF Buttons */}
-                <div className="flex flex-wrap justify-center gap-4 mt-8">
+                <div className='flex flex-wrap justify-center gap-4 mt-8'>
                   {item.pdfs.map((pdf, pdfIndex) => {
                     const isExternal = pdf.file.startsWith('http');
                     const href = isExternal ? pdf.file : `/pdfs/${pdf.file}`;
 
                     return (
                       <a
-                        className="mt-auto"
+                        className='mt-auto'
                         key={pdfIndex}
                         href={href}
                         target="_blank"
