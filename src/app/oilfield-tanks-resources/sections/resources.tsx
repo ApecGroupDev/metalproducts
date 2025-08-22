@@ -9,7 +9,7 @@ const Resources: React.FC = () => {
   const resources = [
     {
       title: 'UNDERGROUND\nTANKS',
-      image: '/images/backgrounds/resources/underground_tanks/Home_Dev_1012.png',
+      image: '/images/backgrounds/resources/Underground-Tanks-Main.webp',
       pdfs: [
         {
           name: 'ELUTRON Installation',
@@ -50,7 +50,7 @@ const Resources: React.FC = () => {
     },
     {
       title: 'ABOVE GROUND\nTANKS',
-      image: '/images/backgrounds/home/Above_Ground_Tank_Img.png',
+      image: '/images/backgrounds/resources/Above-Ground-Tank-Main.webp',
       pdfs: [
         {
           name: 'UL 142 Installation',
@@ -106,7 +106,7 @@ const Resources: React.FC = () => {
     },
     {
       title: 'OIL / WATER\nSEPARATOR',
-      image: '/images/backgrounds/home/Oil_Water_Separator.png',
+      image: '/images/backgrounds/resources/Oil-and-Water-Separator-Main.webp',
       pdfs: [
         {
           name: 'OWS Installation',
