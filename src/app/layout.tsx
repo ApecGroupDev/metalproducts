@@ -40,9 +40,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           content="ab17f-mm4AqpK64XXFbo8c1RFFRPUqDxVcIQ4YVOI80"
         />
       </head>
-      <body className="min-h-screen bg-[#efefef]">
+      <body className='min-h-screen bg-[#efefef]'>
         {/* Render children */}
-        <div className="max-w-[2560px] mx-auto">
+        <div className='max-w-[2560px] mx-auto'>
           {children}
         </div>
         {/* Google Analytics */}
