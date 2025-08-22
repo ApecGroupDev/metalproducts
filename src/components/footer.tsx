@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             <div className='text-2xs scrn-400:text-xs scrn-1250:text-sm scrn-1500:text-base scrn-1700:text-lg whitespace-nowrap space-y-1'>
               <p>For More Information</p>
               <p>
-                <a href="tel:855-444-2732">770.945.8383</a>
+                <a href="tel:770-945-8383">770-945-8383</a>
               </p>
               <p className='font-medium'>
                 <a href='mailto:sales@metalproductsusa.com' className='hover:underline'>
