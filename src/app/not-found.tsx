@@ -4,7 +4,7 @@ import Footer from '@/components/footer_bg_redshade';
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col bg-[#e3e3e3] min-h-screen justify-between">
+    <div className='flex flex-col bg-[#e3e3e3] min-h-screen justify-between'>
       <Header />
       <div className='relative z-20'>
         <div className='relative flex flex-col items-center justify-center scrn-900:justify-normal scrn-1000:justify-center bg-[#e3e3e3]'>
@@ -18,7 +18,7 @@ export default function NotFound() {
             </p>
             <Link
               href="/"
-              className="mt-6 tracking-wide inline-block px-4 py-1 rounded-2xl outline outline-red-600 text-gray-700 text-lg scrn-1500:text-2xl hover:text-white hover:bg-red-600 hover:scale-105 transform transition duration-300"
+              className='mt-6 tracking-wide inline-block px-4 py-1 rounded-2xl outline outline-red-600 text-gray-700 text-lg scrn-1500:text-2xl hover:text-white hover:bg-red-600 hover:scale-105 transform transition duration-300'
             >
               RETURN TO HOMEPAGE
             </Link>
