@@ -24,16 +24,16 @@ const BorderButtonWithDesc: React.FC<BorderButtonProps> = ({
       <button
         type={type}
         onClick={onClick}
-        className="relative font-semibold rounded-lg w-60 h-16 border-4 border-white bg-[#ec1c24] text-black flex items-center justify-center"
+        className='relative font-semibold rounded-lg w-60 h-16 border-4 border-white bg-[#ec1c24] text-black flex items-center justify-center'
       >
-        <span className="absolute inset-0 border-2 border-[#ec1c24] rounded-md -m-1"></span>
-        <span className="relative z-10 px-8 text-white">
+        <span className='absolute inset-0 border-2 border-[#ec1c24] rounded-md -m-1'></span>
+        <span className='relative z-10 px-8 text-white'>
           {subLabel || label}
         </span>
       </button>
 
       {description && (
-        <p className="text-base text-gray-800 text-center max-w-60 h-20 overflow-auto thin-scrollbar">{description}</p>
+        <p className='text-base text-gray-800 text-center max-w-60 h-20 overflow-auto thin-scrollbar'>{description}</p>
       )}
     </div>
   );
