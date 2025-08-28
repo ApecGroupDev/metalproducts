@@ -13,7 +13,7 @@ Disallow: /checkout
 Disallow: /*?*
 Allow: /
 
-Sitemap: ${process.env.NEXT_PUBLIC_SITE_URL || 'https://metalproductsusa.com'}/sitemap.xml
+Sitemap: ${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.metalproductsusa.com'}/sitemap.xml
   `.trim()
 
   return new NextResponse(body, {
