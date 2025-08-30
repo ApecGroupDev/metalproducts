@@ -1,20 +1,18 @@
 import '../styles/globals.css';
 import { Raleway } from 'next/font/google';
-import { Metadata } from 'next';
+import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next';
 import Script from 'next/script';
 
 const raleway = Raleway({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'], // choose the weights you need
+  weight: ['400', '500', '600', '700'],
   variable: '--font-raleway',
   display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: 'Top Tank Manufacturers | Metal Products USA',
-  description: 'Explore USA-made industrial storage tanks from Metal Products USA—trusted manufacturers serving energy, agriculture, fuel, and commercial industries.',
-  robots: 'index, follow',
+  metadataBase: new URL('https://www.metalproductsusa.com'),
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -22,10 +20,6 @@ export const metadata: Metadata = {
       { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
     ],
     apple: '/apple-touch-icon.png',
-  },
-  metadataBase: new URL('https://www.metalproductsusa.com'),
-  alternates: {
-    canonical: '/',
   },
 };
 
