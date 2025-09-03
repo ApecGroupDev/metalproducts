@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
 
         {/*  Text Section */}
         <div className='text-center z-40 mt-8 scrn-650:mt-20 scrn-900:mt-40 scrn-1000:mt-0 scrn-1050:mt-12 scrn-1100:mt-0 scrn-1300:mt-12 scrn-1500:-mt-16 scrn-1700:-mt-24 scrn-1900:-mt-40'>
-          <p
+          <h1
             className='font-bold opacity-90 text-4xl scrn-400:text-6xl scrn-600:text-7xl scrn-700:text-8xl scrn-900:text-7xl scrn-1100:text-8xl scrn-1500:text-9xl scrn-1900:text-9xl scrn-2100:text-10xl'
             style={{
               color: 'rgba(255, 255, 255, 255)',
@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
             METAL <br />
             PRODUCTS <br />
             COMPANY
-          </p>
+          </h1>
         </div>
       </div>
     </div>
