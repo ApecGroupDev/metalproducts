@@ -7,6 +7,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "Above Ground Gas Tanks – Industrial Strength",
   description: "Get high-quality above ground gas tanks made for tough jobs. Corrosion-resistant, secure, and easy to maintain.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.metalproductsusa.com/above-ground-tank',
   },
