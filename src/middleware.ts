@@ -3,7 +3,11 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
 const goneUrls = [
-  '/resources',
+  '/sample-page',
+  '/home',
+  '/hello-world',
+  '/category/uncategorized',
+  '/feed',
 ]
 
 export function middleware(request: NextRequest) {
@@ -74,6 +78,10 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    '/resources',
+    '/sample-page',
+    '/home',
+    '/hello-world',
+    '/category/uncategorized',
+    '/feed',
   ],
 }
