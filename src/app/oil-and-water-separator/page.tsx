@@ -7,6 +7,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "Oil-Water Separators Built to Last – USA Made",
   description: "Discover premium oil-water separators made in the USA, ideal for industrial and commercial applications. Ships nationwide.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.metalproductsusa.com/oil-and-water-separator',
   },
