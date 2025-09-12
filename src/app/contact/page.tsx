@@ -6,6 +6,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "Talk to Trusted Tank Manufacturers – Contact Us",
   description: "Need a tank built to spec? Contact Metal Products USA today for expert support and fast response times.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.metalproductsusa.com/contact',
   },
