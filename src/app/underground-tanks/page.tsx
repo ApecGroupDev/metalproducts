@@ -7,6 +7,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: "Underground Storage Tanks Built for Industry",
   description: "Get heavy-duty underground storage tanks that meet EPA standards and perform in the toughest environments.",
+  robots: 'index,follow',
   alternates: {
     canonical: 'https://www.metalproductsusa.com/underground-tanks',
   },
@@ -18,7 +19,7 @@ const Home: React.FC = () => {
       {/* Sections */}
       <Hero />
       <Main />
-      <PDFs/>
+      <PDFs />
     </div>
   );
 };
