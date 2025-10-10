@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Header from '@/components/header';
-import Footer from '@/components/footer_bg_redshade';
+import FooterNew from '@/components/footerNew';
 
 export default function NotFound() {
   return (
@@ -25,7 +25,7 @@ export default function NotFound() {
           </div>
         </div>
       </div>
-      <Footer />
+      <FooterNew />
     </div>
   );
 }
