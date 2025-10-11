@@ -36,7 +36,7 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"
-        } bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-[0_1px_6px_rgba(0,0,0,0.08)]`}
+        } bg-white/70 backdrop-blur-md border-b border-gray-200 shadow-[0_1px_6px_rgba(0,0,0,0.08)]`}
     >
       {/* Subtle red accent bar */}
       <div className="h-[2px] bg-gradient-to-r from-[#c62931] via-[#c62931]/70 to-transparent" />
