@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
         </motion.div>
 
         {/* Hero Tank Image */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, delay: 0.2 }}
@@ -76,7 +76,7 @@ const Hero: React.FC = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
