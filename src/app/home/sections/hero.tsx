@@ -1,66 +1,84 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Hero: React.FC = () => {
   return (
-    <div className='relative z-20'>
-      <div className='relative flex flex-col items-center justify-center scrn-900:justify-normal scrn-1000:justify-center bg-[#efefef] h-140 scrn-450:h-148 scrn-500:h-160 scrn-550:h-180 scrn-600:h-208 scrn-700:h-224 scrn-750:h-232 scrn-800:h-248 scrn-900:h-160 scrn-1000:h-180 scrn-1100:h-195 scrn-1300:h-224 scrn-1350:h-228 scrn-1400:h-232 scrn-1450:h-236 scrn-1500:h-260 scrn-1650:h-272 scrn-1750:h-312 scrn-2000:h-316 scrn-2100:h-320 scrn-2150:h-324 scrn-2200:h-339 scrn-2300:h-368 scrn-2400:h-384 scrn-2450:h-416'>
-        {/* Hero BG */}
-        <div className='absolute inset-0 z-10 hidden scrn-900:block scrn-900:-mt-[4.5rem] scrn-1200:-mt-24 scrn-1400:-mt-28 scrn-1600:-mt-32 scrn-1750:-mt-36 scrn-1900:-mt-40 scrn-2100:-mt-48'>
-          <Image
-            src="/images/backgrounds/home/Hero_Home.webp"
-            alt="Background"
-            style={{ objectFit: 'contain' }}
-            width={2560}
-            height={1579}
-            priority
-          />
-        </div>
-
-        {/* Mobile only hero image */}
-        <div className='absolute inset-0 z-10 scrn-900:hidden'>
-          <Image
-            src="/images/backgrounds/home/Hero_Home_Mobile.webp"
-            alt="Background"
-            style={{ objectFit: 'contain' }}
-            width={900}
-            height={556}
-            priority
-            fetchPriority='high'
-          />
-        </div>
-        {/* MAIN HERO TANK */}
-        <div
-          className='absolute z-50 w-full flex justify-center me-8 scrn-700:me-10 mt-72 scrn-450:mt-80 scrn-500:mt-112 scrn-550:mt-80 scrn-600:mt-112 scrn-650:mt-118 scrn-700:mt-128 scrn-800:mt-132 scrn-850:mt-136 scrn-900:mt-64 scrn-1000:mt-80 scrn-1050:mt-96 scrn-1300:mt-120 scrn-2000:mt-132 scrn-2200:mt-144'>
-          <Image
-            src='/images/backgrounds/resources/Landing-Page-Tank.webp'
-            alt="Tank"
-            width={1920}
-            height={300}
-            className='scrn-900:w-4/6 scrn-1000:w-3/5 scrn-1900:w-2/3'
-          />
-        </div>
-
-        {/*  Text Section */}
-        <div className='text-center z-40 mt-8 scrn-650:mt-20 scrn-900:mt-40 scrn-1000:mt-0 scrn-1050:mt-12 scrn-1100:mt-0 scrn-1300:mt-12 scrn-1500:-mt-16 scrn-1700:-mt-24 scrn-1900:-mt-40'>
-          <h1
-            className='font-bold opacity-90 text-4xl scrn-400:text-6xl scrn-600:text-7xl scrn-700:text-8xl scrn-900:text-7xl scrn-1100:text-8xl scrn-1500:text-9xl scrn-1900:text-9xl scrn-2100:text-10xl'
-            style={{
-              color: 'rgba(255, 255, 255, 255)',
-              textShadow: `
-                -3px 2px 2px rgba(0, 0, 0, 0.4),
-                -6px 4px 4px rgba(0, 0, 0, 0.3),
-                -9px 6px 8px rgba(0, 0, 0, 0.2),
-                -12px 8px 12px rgba(0, 0, 0, 0.1)`
-            }}
-          >
-            METAL <br />
-            PRODUCTS <br />
-            COMPANY
-          </h1>
-        </div>
+    <section className="relative bg-[#f5f5f5] overflow-hidden">
+      {/* Background Image - Workshop (Desktop + Mobile Unified) */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/backgrounds/home/Hero_Home_New.webp"
+          alt="Metal Fabrication Workshop"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Gradient overlays for text contrast & brand tone */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/55 to-transparent"></div>
+        <div className="absolute inset-0 bg-[rgba(198,41,49,0.15)] mix-blend-multiply"></div>
       </div>
-    </div>
+
+      {/* Main Container */}
+      <div className="relative z-20 max-w-[1440px] mx-auto flex flex-col scrn-1000:flex-row items-center justify-between px-6 scrn-800:px-12 pt-32 pb-20 scrn-1000:pt-48 scrn-1000:pb-32">
+
+        {/* Text Section */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className="text-center scrn-1000:text-left max-w-xl"
+        >
+          <h1 className="text-5xl scrn-500:text-6xl scrn-900:text-7xl font-extrabold text-white leading-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">
+            Top Tank Manufacturers – Made in the USA
+          </h1>
+          <div className="mt-6 h-[4px] w-28 bg-[#c62931] mx-auto scrn-1000:mx-0 rounded-full"></div>
+
+          <p className="mt-8 text-gray-200 text-lg scrn-700:text-xl font-light max-w-md mx-auto scrn-1000:mx-0 leading-relaxed">
+            Precision. Durability. Innovation.
+            Building the backbone of America’s fuel and industrial infrastructure.
+          </p>
+
+          <div className="mt-10 flex flex-col scrn-500:flex-row items-center scrn-1000:items-start gap-4 justify-center scrn-1000:justify-start">
+            <Link
+              href="/about-us"
+              className="px-8 py-3 bg-[#c62931] text-white font-semibold rounded-full shadow-md hover:bg-[#a91f27] transition-all duration-300"
+            >
+              Learn More
+            </Link>
+            <Link
+              href="/contact-us"
+              className="px-8 py-3 border border-white text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300"
+            >
+              Contact Us
+            </Link>
+          </div>
+        </motion.div>
+
+        {/* Hero Tank Image */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.2, delay: 0.2 }}
+          className="mt-16 scrn-1000:mt-0 scrn-1000:w-[55%] relative flex justify-center"
+        >
+          <div className="relative w-full scrn-600:w-4/5 scrn-1200:w-3/4">
+            <Image
+              src="/images/backgrounds/resources/Landing-Page-Tank.webp"
+              alt="Metal Tank"
+              width={1200}
+              height={600}
+              className="object-contain"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
+          </div>
+        </motion.div>
+      </div>
+    </section>
   );
 };
 
