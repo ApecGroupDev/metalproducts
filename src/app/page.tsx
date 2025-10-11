@@ -4,6 +4,11 @@ import History from '@/app/home/sections/history';
 import Resources from '@/app/home/sections/resources';
 import HomePageLayout from './layouts/homepageLayout';
 import type { Metadata } from 'next'
+import AboutSection from './home/sections/about';
+import WhyChooseSection from './home/sections/whyChoose';
+import FAQTrust from './home/sections/faqtrust';
+import FAQSection from './home/sections/faqsection';
+import ContactCTA from './home/sections/cta';
 
 export const metadata: Metadata = {
   title: 'Top Tank Manufacturers | Metal Products USA',
@@ -20,8 +25,13 @@ const Home: React.FC = () => {
       <div className='flex flex-col'>
         {/* Sections */}
         <Hero />
+        <AboutSection />
         <History />
+        <WhyChooseSection />
         <Resources />
+        <FAQTrust />
+        <FAQSection />
+        <ContactCTA />
       </div>
     </HomePageLayout>
   );

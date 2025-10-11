@@ -24,63 +24,55 @@ const Resources: React.FC = () => {
   ];
 
   return (
-    <div className='relative z-10 bg-[#e3e3e3] py-20 -mt-1 overflow-hidden border-b-8 border-b-[#e3e3e3]'>
-      <div className='absolute inset-0 z-20'>
-        <Image
-          src="/images/backgrounds/home/Background_Resources.webp"
-          alt="Background"
-          style={{ objectFit: 'contain' }}
-          width={2786}
-          height={1718}
-          priority
-        />
+    <section className="relativ py-28 border-b-[#e3e3e3] max-w-[1440px] mx-auto px-8 scrn-800:px-12 scrn-1200:px-20">
+      {/* Header */}
+      <div className="text-center mb-20">
+        <h2 className="text-gray-900 text-5xl scrn-600:text-6xl scrn-1000:text-7xl font-extrabold tracking-tight">
+          OUR <span className="text-[#c62931]">RESOURCES</span>
+        </h2>
+        <div className="mt-5 w-24 h-[4px] bg-[#c62931] mx-auto rounded-full"></div>
       </div>
 
-      <div className='relative z-30 flex flex-col items-center justify-center text-center space-y-8 scrn-400:mt-20'>
-        {/* Title */}
-        <div className='w-full justify-center'>
-          <p className='italic text-gray-800 text-4xl scrn-400:text-5xl scrn-1000:text-4xl font-semibold'>OUR</p>
-          <p className='text-red-700 text-5xl scrn-400:text-6xl scrn-1000:text-7xl font-bold'>RESOURCES</p>
-        </div>
-
-        {/* Cards */}
-        <div className='grid scrn-1000:grid-cols-3 gap-8 relative px-12 scrn-1000:px-12 scrn-1900:px-12 scrn-2000:px-24 scrn-2200:px-32 scrn-2400:px-40 scrn-2500:px-60'>
-          {resources.map((item, index) => (
-            <div key={index} className='relative mt-20 scrn-1000:mt-0 flex flex-col items-center'>
-              {/* Spotlight inside the card */}
-              <div className='absolute inset-0 z-10 opacity-100 scale-125'>
-                <Image
-                  src="/images/backgrounds/home/Spotlight.webp"
-                  alt="Spotlight"
-                  fill
-                  style={{ objectFit: 'contain' }}
-                  className='pointer-events-none'
-                />
-              </div>
-
-              {/* Text and image content */}
-              <p className='leading-relaxed font-semibold text-gray-800 whitespace-pre-line relative z-20 text-xl scrn-1000:text-2xl scrn-1900:text-2xl'>
-                {item.title}
-              </p>
+      {/* Resource Grid */}
+      <div className="grid scrn-800:grid-cols-3 gap-14 scrn-1200:gap-16">
+        {resources.map((item, i) => (
+          <div
+            key={i}
+            className="group flex flex-col items-center text-center bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+          >
+            {/* Image */}
+            <div className="relative w-full h-80 scrn-800:h-96 overflow-hidden bg-gray-50">
               <Image
                 src={item.image}
                 alt={item.title}
-                width={1920}
-                height={300}
-                className='mx-auto -mt-8 relative z-20'
+                fill
+                className="object-contain transition-transform duration-500 group-hover:scale-105"
               />
+            </div>
 
-              {/* Individual Button */}
-              <Link href={item.link} className='relative z-20 mt-auto pt-8'>
-                <span className='relative z-10 px-8 text-red-600 text-lg font-medium text-center block leading-snug'>
-                  Learn more about {item.title}
-                </span>
+            {/* Title */}
+            <div className="px-8 pt-10 pb-6">
+              <p className="text-gray-900 font-semibold text-2xl scrn-600:text-3xl scrn-1200:text-4xl whitespace-pre-line leading-snug tracking-wide">
+                {item.title}
+              </p>
+            </div>
+
+            {/* Divider */}
+            <div className="w-12 h-[3px] bg-[#c62931] mb-6 transition-all duration-300 group-hover:w-20"></div>
+
+            {/* Learn More Link */}
+            <div className="pb-12">
+              <Link
+                href={item.link}
+                className="inline-block text-[#c62931] font-semibold text-lg scrn-600:text-xl hover:text-black transition-colors duration-300"
+              >
+                Learn more →
               </Link>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 
