@@ -44,13 +44,13 @@ const Hero: React.FC = () => {
 
           <div className="mt-10 flex flex-col scrn-500:flex-row items-center scrn-1000:items-start gap-4 justify-center scrn-1000:justify-start">
             <Link
-              href="/about-us"
+              href="/oilfield-tanks-resources"
               className="px-8 py-3 bg-[#c62931] text-white font-semibold rounded-full shadow-md hover:bg-[#a91f27] transition-all duration-300"
             >
               Learn More
             </Link>
             <Link
-              href="/contact-us"
+              href="/contact"
               className="px-8 py-3 border border-white text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300"
             >
               Contact Us
