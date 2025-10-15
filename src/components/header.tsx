@@ -42,7 +42,7 @@ const Header: React.FC = () => {
       <div className="h-[2px] bg-gradient-to-r from-[#c62931] via-[#c62931]/70 to-transparent" />
 
       {/* Desktop Header */}
-      <div className="hidden scrn-750:flex items-center justify-between max-w-[1440px] mx-auto px-8 scrn-1000:px-16 py-2">
+      <div className="hidden scrn-750:flex items-center justify-between max-w-[2560px] mx-auto px-8 scrn-1000:px-16 py-2">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
