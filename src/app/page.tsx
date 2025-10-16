@@ -30,8 +30,8 @@ const Home: React.FC = () => {
         <WhyChooseSection />
         <Resources />
         <FAQTrust />
-        <FAQSection />
         <ContactCTA />
+        <FAQSection />
       </div>
     </HomePageLayout>
   );
