@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const ContactCTA: React.FC = () => {
   return (
-    <section className="relative bg-[#0c0c0c] text-white py-20 scrn-800:py-24 overflow-hidden">
+    <section className="relative bg-gradient-to-b from-[#111] via-[#161616] to-[#1A1A1A] text-white py-20 scrn-800:py-24 overflow-hidden">
       {/* Subtle Metal Texture */}
       <div className="absolute inset-0 bg-[url('/images/backgrounds/textures/metal-pattern.webp')] bg-cover bg-center opacity-10"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
