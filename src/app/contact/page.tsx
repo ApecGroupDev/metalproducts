@@ -2,6 +2,11 @@ import React from 'react';
 import Hero from './sections/hero';
 import MainContact from './sections/main';
 import { Metadata } from 'next';
+import GoogleMaps from './sections/googleMaps';
+import ContactIntro from './sections/contactIntro';
+import CTA from './sections/cta';
+import ContactInsights from './sections/insights';
+import FAQSectionContact from './sections/faqsection';
 
 export const metadata: Metadata = {
   title: "Talk to Trusted Tank Manufacturers – Contact Us",
@@ -17,7 +22,12 @@ const Home: React.FC = () => {
     <div className='flex flex-col'>
       {/* Sections */}
       <Hero />
-      <MainContact/>
+      <ContactIntro />
+      <CTA />
+      <MainContact />
+      <ContactInsights />
+      <GoogleMaps />
+      <FAQSectionContact />
     </div>
   );
 };
