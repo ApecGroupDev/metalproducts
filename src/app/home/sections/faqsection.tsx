@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
 import Accordion from '@/components/accordionFaqs';
 
 const faqs = [
@@ -33,12 +32,6 @@ const faqs = [
 ];
 
 const FAQSection: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
-  const toggleFAQ = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
   return (
     <section className="relative bg-[#f5f5f5] py-24 border-gray-300">
       <div className="max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
