@@ -36,7 +36,7 @@ const ContactIntro: React.FC = () => {
           viewport={{ once: true, amount: 0.3 }}
           className="mt-8 text-gray-800 text-lg scrn-600:text-xl leading-relaxed mx-auto scrn-1000:mx-0"
         >
-          Whether you're designing a new aboveground, underground, oil-water separator, or oilfield tank—or need expert guidance on tank specification—{" "}
+          Whether you’re designing a new aboveground, underground, oil-water separator, or oilfield tank—or need expert guidance on tank specification—{" "}
           <span className="font-semibold text-[#c62931]">Metal Products USA</span> is ready to assist.
           With a legacy of reliability since 1941, our team brings decades of manufacturing expertise to every conversation.
         </motion.p>
