@@ -29,7 +29,8 @@ const Header: React.FC = () => {
   const navLinks = [
     { label: "HOME", path: "/" },
     { label: "ABOUT", path: "/about" },
-    { label: "RESOURCES", path: "/oilfield-tanks-resources" },
+    // { label: "TANKS", path: "/oilfield-tanks-resources" },
+    { label: "RESOURCES", path: "/resources" },
     { label: "CONTACT", path: "/contact" },
   ];
 
@@ -64,8 +65,8 @@ const Header: React.FC = () => {
                 key={path}
                 href={path}
                 className={`relative uppercase text-sm scrn-1000:text-base transition-all duration-300 ${isActive
-                    ? "text-[#c62931]"
-                    : "text-[#111] hover:text-[#c62931]"
+                  ? "text-[#c62931]"
+                  : "text-[#111] hover:text-[#c62931]"
                   }`}
               >
                 {label}
@@ -120,8 +121,8 @@ const Header: React.FC = () => {
       {/* Mobile Nav */}
       <div
         className={`scrn-750:hidden absolute top-full left-0 right-0 bg-white border-t border-gray-200 shadow-lg transform transition-all duration-300 ${isOpen
-            ? "opacity-100 scale-y-100"
-            : "opacity-0 scale-y-0 pointer-events-none"
+          ? "opacity-100 scale-y-100"
+          : "opacity-0 scale-y-0 pointer-events-none"
           } origin-top`}
       >
         <nav className="flex flex-col items-center py-6 space-y-4">
@@ -134,8 +135,8 @@ const Header: React.FC = () => {
                 href={path}
                 onClick={() => setIsOpen(false)}
                 className={`uppercase text-lg font-medium tracking-wider transition-colors duration-300 ${isActive
-                    ? "text-[#c62931]"
-                    : "text-[#111] hover:text-[#c62931]"
+                  ? "text-[#c62931]"
+                  : "text-[#111] hover:text-[#c62931]"
                   }`}
               >
                 {label}
