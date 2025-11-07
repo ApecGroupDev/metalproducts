@@ -43,40 +43,20 @@ const Hero: React.FC = () => {
           </p>
 
           <div className="mt-10 flex flex-col scrn-500:flex-row items-center scrn-1000:items-start gap-4 justify-center scrn-1000:justify-start">
-            <Link
-              href="/about-us"
+            <button
+              onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
               className="px-8 py-3 bg-[#c62931] text-white font-semibold rounded-full shadow-md hover:bg-[#a91f27] transition-all duration-300"
             >
               Learn More
-            </Link>
+            </button>
             <Link
-              href="/contact-us"
+              href="#ContactPageForm"
               className="px-8 py-3 border border-white text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300"
             >
               Contact Us
             </Link>
           </div>
         </motion.div>
-
-        {/* Hero Tank Image */}
-        {/* <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.2, delay: 0.2 }}
-          className="mt-16 scrn-1000:mt-0 scrn-1000:w-[55%] relative flex justify-center"
-        >
-          <div className="relative w-full scrn-600:w-4/5 scrn-1200:w-3/4">
-            <Image
-              src="/images/backgrounds/resources/Landing-Page-Tank.webp"
-              alt="Metal Tank"
-              width={1200}
-              height={600}
-              className="object-contain"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent rounded-2xl pointer-events-none"></div>
-          </div>
-        </motion.div> */}
       </div>
     </section>
   );
