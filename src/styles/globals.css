@@ -16,6 +16,7 @@
 
 html {
   font-family: var(--font-raleway), sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
