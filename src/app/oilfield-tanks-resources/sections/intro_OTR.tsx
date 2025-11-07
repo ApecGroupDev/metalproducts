@@ -47,11 +47,11 @@ const Intro_OTR: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }} 
           className="mt-6 text-gray-800 text-lg scrn-600:text-xl leading-relaxed mx-auto scrn-1000:mx-0"
         >
           Made in the USA, our tanks are built to handle the toughest conditions—whether you’re storing drilling fluids,
-          crude oil, or delivery supplies. With decades of experience, we're the partner you can count on to keep operations
+          crude oil, or delivery supplies. With decades of experience, we’re the partner you can count on to keep operations
           running smoothly, safely, and responsibly.
         </motion.p>
       </div>
