@@ -45,7 +45,7 @@ const MainContact: React.FC = () => {
           viewport={{ once: true }}
           className="w-full scrn-1200:w-[50%]"
         >
-          <div id="ContactPageForm" className="relative bg-white rounded-2xl shadow-xl p-8 scrn-800:p-10 scrn-1000:p-12">
+          <div id="ContactPageForm" className="relative bg-white rounded-2xl shadow-xl p-8 scrn-800:p-10 scrn-1000:p-12 scroll-mt-24">
             <h3 className="text-2xl scrn-600:text-3xl font-extrabold text-[#c62931] mb-6">
               For More Information
             </h3>
