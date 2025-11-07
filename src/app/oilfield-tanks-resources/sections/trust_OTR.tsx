@@ -30,7 +30,7 @@ const Trust_OTR: React.FC = () => {
           </p>
 
           {/* Feature Grid */}
-          <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left mb-16">
+          <div className="grid scrn-600:grid-cols-2 scrn-1000:grid-cols-4 gap-8 text-left mb-16">
             <TrustPoint icon={ShieldCheck} text="Trust informed by history — since 1941" />
             <TrustPoint icon={Award} text="UL-listed manufacturing standards" />
             <TrustPoint icon={Handshake} text="PEI memberships and industry partnerships" />
