@@ -1,7 +1,13 @@
 import React from 'react';
-import Hero from './sections/hero';
-import Resources from './sections/resources';
 import { Metadata } from 'next';
+import Hero_OTR from './sections/hero_OTR';
+import Intro_OTR from './sections/intro_OTR';
+import Features_OTR from './sections/features_OTR';
+import Benefits_OTR from './sections/benefits_OTR';
+import CTA from '../contact/sections/cta';
+import Resources from '../home/sections/resources';
+import Trust_OTR from './sections/trust_OTR';
+import FAQ_OTR from './sections/faq_OTR';
 
 export const metadata: Metadata = {
   title: "Reliable Oilfield Tanks for Storage & Safety",
@@ -16,8 +22,14 @@ const Home: React.FC = () => {
   return (
     <div className='flex flex-col'>
       {/* Sections */}
-      <Hero />
+      <Hero_OTR />
+      <Intro_OTR />
+      <Features_OTR />
+      <Benefits_OTR />
       <Resources />
+      <CTA />
+      <Trust_OTR />
+      <FAQ_OTR />
     </div>
   );
 };
