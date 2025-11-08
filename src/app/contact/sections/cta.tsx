@@ -47,7 +47,7 @@ const CTA: React.FC = () => {
         </motion.p>
 
         {/* Contact Info Grid */}
-        <div className="grid scrn-600:grid-cols-3 gap-6 scrn-800:gap-8 mb-12 text-center scrn-1000:text-left">
+        <div className="grid scrn-900:grid-cols-3 gap-6 scrn-800:gap-8 mb-12 text-center scrn-1000:text-left">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
