@@ -39,19 +39,19 @@ const Hero_About: React.FC = () => {
 
           <p className="mt-8 text-gray-200 text-lg scrn-700:text-xl font-light max-w-3xl mx-auto scrn-1000:mx-0 leading-relaxed">
             <span className='text-xl scrn-700:text-2xl font-semibold'>A Legacy of American Manufacturing</span><br />
-            Since 1941, Metal Products Company has been Building Trust through durable, 
-            American-made tanks. Our roots began in wartime America, and over the decades, 
-            we’ve grown into one of the nation’s most respected tank manufacturers, 
+            Since 1941, Metal Products Company has been Building Trust through durable,
+            American-made tanks. Our roots began in wartime America, and over the decades,
+            we’ve grown into one of the nation’s most respected tank manufacturers,
             serving industries from petroleum and energy to agriculture, government, and beyond.
           </p>
 
           <div className="mt-10 flex flex-col scrn-500:flex-row items-center scrn-1000:items-start gap-4 justify-center scrn-1000:justify-start">
-            <Link
-              href="/oilfield-tanks-resources"
+            <button
+              onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
               className="px-8 py-3 bg-[#c62931] text-white font-semibold rounded-full shadow-md hover:bg-[#a91f27] transition-all duration-300"
             >
               Learn More
-            </Link>
+            </button>
             <Link
               href="/contact"
               className="px-8 py-3 border border-white text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300"
