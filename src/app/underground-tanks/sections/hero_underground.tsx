@@ -45,7 +45,7 @@ const Hero_Underground: React.FC = () => {
             Engineered for resilience and crafted in the U.S., our tanks stand up to harsh environmental conditions while keeping safety top of mind.
           </p>
           <p className="mt-8 text-gray-200 text-lg scrn-700:text-xl font-light max-w-3xl mx-auto scrn-1000:mx-0 leading-relaxed">
-            Whether you're installing at gas stations, industrial sites, or government facilities, our tanks are designed to meet
+            Whether you’re installing at gas stations, industrial sites, or government facilities, our tanks are designed to meet
             <span className="font-semibold"> EPA standards</span> and deliver long-lasting performance.
           </p>
 
