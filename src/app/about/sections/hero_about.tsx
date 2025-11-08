@@ -11,7 +11,7 @@ const Hero_About: React.FC = () => {
       {/* Background Image - Workshop (Desktop + Mobile Unified) */}
       <div className="absolute inset-0">
         <Image
-          src="/images/backgrounds/about/Hero_About2.webp"
+          src="/images/backgrounds/about/Hero_About.webp"
           alt="Metal Fabrication Workshop"
           fill
           className="object-cover object-center"
