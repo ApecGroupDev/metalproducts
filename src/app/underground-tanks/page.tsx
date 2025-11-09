@@ -9,6 +9,7 @@ import Trust_Underground from './sections/trust_underground';
 import PDFs_Underground from './sections/pdfs_underground';
 import CTA from '../contact/sections/cta';
 import FAQ_Underground from './sections/faq_underground';
+import UndergroundTankSchema from '@/components/schema/UndergroundTanksSchema';
 
 export const metadata: Metadata = {
   title: "Underground Storage Tanks Built for Industry",
@@ -23,6 +24,7 @@ const Home: React.FC = () => {
   return (
     <div className='flex flex-col'>
       {/* Sections */}
+      <UndergroundTankSchema />
       <Hero_Underground />
       <Choose_Underground />
       <Features_Underground />
