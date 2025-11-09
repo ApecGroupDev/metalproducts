@@ -24,7 +24,7 @@ const Features_Separator: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl scrn-750:text-4xl font-extrabold mb-4">
-            Key Features You'll Appreciate
+            Key Features You’ll Appreciate
           </h2>
           <div className="h-[3px] w-24 bg-[#c62931] mx-auto rounded-full"></div>
         </motion.div>
