@@ -7,135 +7,131 @@ export default function HomeSchema() {
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": "https://geopetroleum.com#website",
-        "url": "https://geopetroleum.com",
-        "name": "Geo Petroleum",
-        "publisher": { "@id": "https://geopetroleum.com#organization" },
+        "@id": "https://www.metalproductsusa.com#website",
+        "url": "https://www.metalproductsusa.com",
+        "name": "Metal Products Company",
+        "publisher": { "@id": "https://www.metalproductsusa.com#organization" },
         "inLanguage": "en-US"
       },
       {
         "@type": "Organization",
-        "@id": "https://geopetroleum.com#organization",
-        "name": "Geo Petroleum",
-        "url": "https://geopetroleum.com",
+        "@id": "https://www.metalproductsusa.com#organization",
+        "name": "Metal Products Company",
+        "url": "https://www.metalproductsusa.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://geopetroleum.com/logo.png"
+          "url": "https://www.metalproductsusa.com/logo.png"
         },
         "sameAs": [
-          "https://www.linkedin.com/company/geopetroleum",
-          "https://www.facebook.com/geopetroleum"
-        ]
+          "https://www.linkedin.com/company/metalproductscompany",
+          "https://www.facebook.com/metalproductsusa"
+        ],
+        "foundingDate": "1941",
+        "slogan": "Let's Talk — We've Been Building Trust Since 1941"
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://geopetroleum.com#localbusiness",
-        "name": "Geo Petroleum",
-        "url": "https://geopetroleum.com",
-        "telephone": "000-000-0000",
-        "email": "info@geopetroleum.com",
+        "@id": "https://www.metalproductsusa.com#localbusiness",
+        "name": "Metal Products Company",
+        "url": "https://www.metalproductsusa.com",
+        "telephone": "+1-770-945-8383",
+        "email": "sales@metalproductsusa.com",
         "description":
-          "Houston-based petroleum and environmental company offering risk assessment, compliance, canopy imaging, and fuel tank manufacturing across Texas and the Southeast.",
+          "Metal Products Company provides USA-made aboveground, underground, oil-water separator, oilfield, and specialty tank manufacturing services trusted since 1941.",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://geopetroleum.com/logo.png"
+          "url": "https://www.metalproductsusa.com/logo.png"
         },
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "505 Garden Oaks Blvd",
-          "addressLocality": "Houston",
-          "addressRegion": "TX",
-          "postalCode": "77018",
+          "streetAddress": "725 Main Street",
+          "addressLocality": "Suwanee",
+          "addressRegion": "GA",
+          "postalCode": "30024",
           "addressCountry": "US"
         },
         "areaServed": [
-          { "@type": "Place", "name": "Houston" },
-          { "@type": "Place", "name": "Texas" },
-          { "@type": "Place", "name": "Southeast USA" }
+          { "@type": "Country", "name": "United States" }
         ],
-        "memberOf": [
-          {
-            "@type": "Organization",
-            "name": "Petroleum Equipment Institute (PEI)",
-            "sameAs": "https://pei.org/"
-          },
-          {
-            "@type": "Organization",
-            "name": "Texas Food & Fuel Association",
-            "sameAs": "https://www.tffa.com/"
-          },
-          {
-            "@type": "Organization",
-            "name": "Greater Houston Retailers Cooperative Association (GHRA)",
-            "sameAs": "https://www.ghraonline.com/"
-          }
-        ],
-        "slogan":
-          "One-Stop-Shop for All Your Petroleum & Environmental Solutions",
-        "foundingDate": "2000",
-        "missionStatement":
-          "Delivering safe, compliant, and cost-effective petroleum and environmental services across Texas and the Southeast.",
-        "sameAs": [
-          "https://www.linkedin.com/company/geopetroleum",
-          "https://www.facebook.com/geopetroleum"
-        ],
+        "foundingDate": "1941",
+        "slogan": "Let's Talk — We've Been Building Trust Since 1941",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://geopetroleum.com"
+          "@id": "https://www.metalproductsusa.com"
         }
       },
       {
         "@type": "Service",
-        "@id": "https://geopetroleum.com#petroleumService",
-        "serviceType": "Petroleum and Environmental Solutions",
-        "provider": { "@id": "https://geopetroleum.com#localbusiness" },
-        "areaServed": [
-          { "@type": "Place", "name": "Houston" },
-          { "@type": "Place", "name": "Texas" },
-          { "@type": "Place", "name": "Southeast USA" }
-        ],
+        "@id": "https://www.metalproductsusa.com#tankManufacturingService",
+        "serviceType":
+          "Aboveground, Underground, Oil-Water Separator, Oilfield and Specialty Tank Manufacturing",
+        "provider": {
+          "@id": "https://www.metalproductsusa.com#localbusiness"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        },
         "description":
-          "Comprehensive petroleum and environmental services — from risk assessment and compliance management to canopy imaging and tank fabrication.",
+          "High-quality, USA-made tanks built for durability, corrosion resistance, and compliance—crafted by Metal Products Company since 1941.",
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://geopetroleum.com"
+          "@id": "https://www.metalproductsusa.com"
         }
       },
       {
         "@type": "FAQPage",
-        "@id": "https://geopetroleum.com#faq",
+        "@id": "https://www.metalproductsusa.com#faq",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Who do you serve?",
+            "name": "What types of tanks do you produce?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text":
-                "We serve fuel retailers, distributors, fleet operators, municipalities, and industrial clients across Texas and the Southeast."
+                "We offer aboveground, underground, oilfield, oil-water separators, and specialty systems like Fireguard® and Flameshield®."
             }
           },
           {
             "@type": "Question",
-            "name": "Are you one of Houston’s leading environmental companies?",
+            "name": "Can I get help selecting the right tank?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text":
-                "Yes — Geo Petroleum is recognized among top Houston environmental companies, known for innovation, safety, and reliability."
+                "Absolutely—we provide custom proposals and engineering support to match your operational needs."
             }
           },
           {
             "@type": "Question",
-            "name": "Do you offer environmental services outside Houston?",
+            "name": "Do you ship nationwide?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text":
-                "Absolutely — we offer comprehensive environmental services in Texas and neighboring states, providing inspection, compliance, and remediation expertise."
+                "Yes—our tanks are manufactured in Georgia and shipped across the United States."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a custom tank take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Typical lead time is 6–12 weeks depending on specifications and compliance requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer warranties or support post-sale?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text":
+                "Yes—our products come with trusted performance assurances and customer support."
             }
           }
         ],
         "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "https://geopetroleum.com"
+          "@id": "https://www.metalproductsusa.com"
         }
       }
     ]
