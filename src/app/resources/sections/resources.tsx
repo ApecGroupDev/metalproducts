@@ -181,19 +181,20 @@ const ResourcesMain: React.FC = () => {
         });
       },
       {
-        // This defines when a section counts as "active"
-        rootMargin: "-30% 0px -65% 0px", // activates when section ~35% from top
+        rootMargin: "-30% 0px -65% 0px",
         threshold: 0,
       }
     );
 
-    // Observe each section
-    sectionsRef.current.forEach((section) => {
+    // ✅ Copy ref values into a stable variable
+    const currentSections = [...sectionsRef.current];
+
+    currentSections.forEach((section) => {
       if (section) observer.observe(section);
     });
 
     return () => {
-      sectionsRef.current.forEach((section) => {
+      currentSections.forEach((section) => {
         if (section) observer.unobserve(section);
       });
     };
@@ -231,8 +232,8 @@ const ResourcesMain: React.FC = () => {
                   onClick={() => scrollToSection(item.id)}
                   aria-current={activeSection === item.id ? 'true' : 'false'}
                   className={`w-full text-left px-4 py-3 rounded-xl font-medium transition-colors duration-300 ${activeSection === item.id
-                      ? 'bg-gradient-to-r from-[#c62931]/20 to-[#c62931]/10 text-[#c62931] shadow-sm'
-                      : 'hover:bg-[#c62931]/10 text-gray-700 hover:text-[#c62931]'
+                    ? 'bg-gradient-to-r from-[#c62931]/20 to-[#c62931]/10 text-[#c62931] shadow-sm'
+                    : 'hover:bg-[#c62931]/10 text-gray-700 hover:text-[#c62931]'
                     }`}
                 >
                   {item.title}
