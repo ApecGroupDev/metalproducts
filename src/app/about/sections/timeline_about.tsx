@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const history = [
   {
@@ -115,11 +116,16 @@ const Timeline_About: React.FC = () => {
 
           <div className="relative max-w-[1440px] mx-auto px-6 scrn-750:px-12">
             <div className="overflow-hidden rounded-2xl shadow-md border border-gray-200">
-              <img
-                src="/images/about/Team_About.webp"
-                alt="Metal Products USA Team"
-                className="w-full h-[400px] scrn-750:h-[500px] object-cover hover:scale-[1.02] transition-transform duration-700"
-              />
+              <div className="relative w-full h-[400px] scrn-750:h-[500px]">
+                <Image
+                  src="/images/about/Team_About.webp"
+                  alt="Metal Products USA Team"
+                  fill
+                  sizes="(max-width: 750px) 100vw, 1440px"
+                  className="object-cover hover:scale-[1.02] transition-transform duration-700"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </motion.div>
