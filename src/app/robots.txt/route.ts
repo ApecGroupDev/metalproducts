@@ -11,6 +11,14 @@ Disallow: /register
 Disallow: /cart
 Disallow: /checkout
 Disallow: /*?*
+
+# Block specific files from indexing
+Disallow: /pdfs/Flameshield_Product_Sheet.pdf
+Disallow: /_next/static/media/630c17af355fa44e-s.p.woff2
+Disallow: /pdfs/lf_10.pdf
+Disallow: /pdfs/64358249435378456110422c_900126_rev2002.pdf
+
+# Everything else allowed
 Allow: /
 
 Sitemap: ${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.metalproductsusa.com'}/sitemap.xml
