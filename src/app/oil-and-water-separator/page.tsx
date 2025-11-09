@@ -10,6 +10,7 @@ import PDFs_Separator from './sections/pdfs_separator';
 import Concerns_Separator from './sections/concerns_separator';
 import Trust_Separator from './sections/trust_separator';
 import FAQ_Separator from './sections/faq_separator';
+import OilWaterSeparatorSchema from '@/components/schema/OilWaterSeparatorSchema';
 
 export const metadata: Metadata = {
   title: "Oil-Water Separators Built to Last – USA Made",
@@ -24,6 +25,7 @@ const Home: React.FC = () => {
   return (
     <div className='flex flex-col'>
       {/* Sections */}
+      <OilWaterSeparatorSchema />
       <Hero_Separator />
       <Intro_Separator />
       <Choose_Separator />
