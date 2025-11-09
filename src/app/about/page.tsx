@@ -5,6 +5,7 @@ import Timeline_About from './sections/timeline_about';
 import Commitment_About from './sections/commitment_about';
 import CTA from '../contact/sections/cta';
 import FAQ_About from './sections/faq_about';
+import AboutPageSchema from '@/components/schema/AboutSchema';
 
 export const metadata: Metadata = {
   title: "About Metal Products USA – Tank Manufacturers",
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
   return (
     <div className='flex flex-col'>
       {/* Sections */}
+      <AboutPageSchema />
       <Hero_About />
       <Timeline_About />
       <Commitment_About />
