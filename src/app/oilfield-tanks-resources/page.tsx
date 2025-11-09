@@ -8,6 +8,7 @@ import CTA from '../contact/sections/cta';
 import Resources from '../home/sections/resources';
 import Trust_OTR from './sections/trust_OTR';
 import FAQ_OTR from './sections/faq_OTR';
+import OilfieldTankSchema from '@/components/schema/OilfieldTanksSchema';
 
 export const metadata: Metadata = {
   title: "Reliable Oilfield Tanks for Storage & Safety",
@@ -22,6 +23,7 @@ const Home: React.FC = () => {
   return (
     <div className='flex flex-col'>
       {/* Sections */}
+      <OilfieldTankSchema />
       <Hero_OTR />
       <Intro_OTR />
       <Features_OTR />
