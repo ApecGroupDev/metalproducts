@@ -7,6 +7,7 @@ import ContactIntro from './sections/contactIntro';
 import CTA from './sections/cta';
 import ContactInsights from './sections/insights';
 import FAQSectionContact from './sections/faqsection';
+import ContactPageSchema from '@/components/schema/ContactSchema';
 
 export const metadata: Metadata = {
   title: "Talk to Trusted Tank Manufacturers – Contact Us",
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
   return (
     <div className='flex flex-col'>
       {/* Sections */}
+      <ContactPageSchema />
       <Hero />
       <ContactIntro />
       <CTA />
