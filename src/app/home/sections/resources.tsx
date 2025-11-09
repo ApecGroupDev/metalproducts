@@ -14,7 +14,7 @@ const Resources: React.FC = () => {
     {
       title: 'ABOVE GROUND\nTANKS',
       image: '/images/backgrounds/home/resources/Resources-Above-Ground-Tank.webp',
-      link: '/above-ground-tank',
+      link: '/above-ground-tanks',
     },
     {
       title: 'OIL / WATER\nSEPARATOR',
