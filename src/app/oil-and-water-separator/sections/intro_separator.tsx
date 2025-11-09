@@ -33,7 +33,7 @@ const Intro_Separator: React.FC = () => {
             When it comes to managing <span className="font-semibold text-[#c62931]">oily wastewater</span> and 
             <span className="font-semibold text-[#c62931]"> stormwater runoff</span>, nothing beats decades of expertise 
             paired with precision engineering. At <span className="font-semibold">Metal Products Company</span>, 
-            we've been building dependable, <span className="font-semibold">USA-made oil-water separators</span> since 1941. 
+            we’ve been building dependable, <span className="font-semibold">USA-made oil-water separators</span> since 1941. 
             That legacy of reliability ensures your facility gets a system engineered for both 
             <span className="font-semibold"> compliance and durability</span>.
           </p>
