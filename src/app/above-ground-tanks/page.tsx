@@ -9,6 +9,7 @@ import CTA from '../contact/sections/cta';
 import Concerns_AboveGround from './sections/concerns_aboveground';
 import Trust_AboveGround from './sections/trust_aboveground';
 import FAQ_AboveGround from './sections/faq_aboveground';
+import AboveGroundTankSchema from '@/components/schema/AboveGroundTanksSchema';
 
 export const metadata: Metadata = {
   title: "Above Ground Gas Tanks – Industrial Strength",
@@ -23,6 +24,7 @@ const Home: React.FC = () => {
   return (
     <div className='flex flex-col'>
       {/* Sections */}
+      <AboveGroundTankSchema />
       <Hero_AboveGround />
       <Intro_AboveGround />
       <Choose_AboveGround />
