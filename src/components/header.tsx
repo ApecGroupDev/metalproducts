@@ -13,15 +13,13 @@ const Header: React.FC = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const handleScroll = () => {
-    if (typeof window !== "undefined") {
+  useEffect(() => {
+    const handleScroll = () => {
       const currentScrollY = window.scrollY;
       setIsVisible(lastScrollY > currentScrollY || currentScrollY < 10);
       setLastScrollY(currentScrollY);
-    }
-  };
+    };
 
-  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
