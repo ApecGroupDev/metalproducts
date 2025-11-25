@@ -49,7 +49,7 @@ const pdfIndex = [
 const PDFs_Underground: React.FC = () => {
   return (
     <section className="relative py-24 bg-gradient-to-b from-[#fafafa] to-[#f3f3f3] text-gray-900 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-6 scrn-750:px-12">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -58,7 +58,7 @@ const PDFs_Underground: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl scrn-750:text-4xl font-extrabold text-[#c62931] mb-3">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[#c62931] mb-3">
             Downloadable Resources
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -69,7 +69,7 @@ const PDFs_Underground: React.FC = () => {
         {/* Resource Grid */}
         {pdfIndex.map((item, index) => (
           <div key={index}>
-            <div className="grid grid-cols-1 scrn-750:grid-cols-2 scrn-1000:grid-cols-3 gap-6 scrn-1000:gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
               {item.pdfs.map((pdf, i) => {
                 const isExternal = pdf.file.startsWith('http');
                 const href = isExternal ? pdf.file : `/pdfs/${pdf.file}`;
