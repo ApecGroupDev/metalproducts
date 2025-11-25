@@ -7,7 +7,7 @@ import { CheckCircleIcon as CheckCircle } from "lucide-react";
 const WhyChooseSection: React.FC = () => {
   return (
     <section className="bg-[#fafafa] text-[#111] py-28">
-      <div className="max-w-[1440px] mx-auto px-6 scrn-800:px-12 space-y-24">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 space-y-24">
 
         {/* WHY CHOOSE US */}
         <motion.div
@@ -17,12 +17,12 @@ const WhyChooseSection: React.FC = () => {
           viewport={{ once: true }}
           className="space-y-10"
         >
-          <h2 className="text-4xl scrn-600:text-5xl font-extrabold text-center">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-center">
             Why Choose Metal Products USA for Your Tank Needs?
           </h2>
           <div className="h-[4px] w-24 bg-[#c62931] mx-auto rounded-full"></div>
 
-          <div className="grid scrn-1000:grid-cols-2 gap-10 max-w-5xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
             <div className="space-y-4">
               <Feature text="Heritage of excellence — Building Trust Since 1941" />
               <Feature text="Made in the USA — manufactured in Suwanee, GA" />
@@ -44,12 +44,12 @@ const WhyChooseSection: React.FC = () => {
           viewport={{ once: true }}
           className="space-y-10"
         >
-          <h2 className="text-4xl scrn-600:text-5xl font-extrabold text-center">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-center">
             Our Core Tank Manufacturing Services
           </h2>
           <div className="h-[4px] w-24 bg-[#c62931] mx-auto rounded-full"></div>
 
-          <div className="grid scrn-600:grid-cols-2 scrn-1000:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               { title: "Above Ground Gas Tanks", desc: "Corrosion-resistant, secure, industry-grade" },
               { title: "Underground Storage Tanks", desc: "EPA-compliant and engineered for underground conditions" },
@@ -70,12 +70,12 @@ const WhyChooseSection: React.FC = () => {
           viewport={{ once: true }}
           className="space-y-10"
         >
-          <h2 className="text-4xl scrn-600:text-5xl font-extrabold text-center">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-center">
             Industries We Serve
           </h2>
           <div className="h-[4px] w-24 bg-[#c62931] mx-auto rounded-full"></div>
 
-          <div className="grid scrn-600:grid-cols-2 scrn-1000:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               { title: "Energy & Petroleum", desc: "Fueling stations, refineries, and service depots" },
               { title: "Agriculture", desc: "Fuel, chemical, and grain storage solutions" },

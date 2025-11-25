@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const AboutSection: React.FC = () => {
   return (
     <section className="relative bg-[#fafafa] py-24 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8 flex flex-col-reverse scrn-1200:flex-row items-center gap-16">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse xl:flex-row items-center gap-16">
 
         {/* Left: Text Content */}
         <motion.div
@@ -15,13 +15,13 @@ const AboutSection: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="max-w-xl text-center scrn-1000:text-left"
+          className="max-w-xl text-center lg:text-left"
         >
-          <h2 className="text-4xl scrn-500:text-5xl font-extrabold text-[#111] leading-tight">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#111] leading-tight">
             Quality Tank Manufacturing <br /> Since 1941
           </h2>
 
-          <div className="mt-4 h-[4px] w-24 bg-[#c62931] mx-auto scrn-1000:mx-0 rounded-full"></div>
+          <div className="mt-4 h-[4px] w-24 bg-[#c62931] mx-auto lg:mx-0 rounded-full"></div>
 
           <p className="mt-8 text-gray-700 text-lg leading-relaxed">
             Welcome to <span className="font-semibold text-[#c62931]">Metal Products USA</span>,
@@ -43,9 +43,9 @@ const AboutSection: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="relative w-full scrn-1200:w-[50%] flex justify-center"
+          className="relative w-full xl:w-[50%] flex justify-center"
         >
-          <div className="relative w-full scrn-600:w-4/5 scrn-1200:w-[85%]">
+          <div className="relative w-full sm:w-4/5 xl:w-[85%]">
             <Image
               src="/images/backgrounds/home/About_Tank.webp"
               alt="Industrial Metal Tanks"
