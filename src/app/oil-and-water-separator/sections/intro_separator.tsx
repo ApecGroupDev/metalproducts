@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const Intro_Separator: React.FC = () => {
   return (
     <section className="bg-[#f8f8f8] text-[#111] py-24">
-      <div className="max-w-[1440px] mx-auto px-6 scrn-750:px-12">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -15,7 +15,7 @@ const Intro_Separator: React.FC = () => {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-12"
         >
-          <h2 className="text-3xl scrn-750:text-4xl font-extrabold mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
             Trusted Oil-Water Separation Since 1941
           </h2>
           <div className="h-[3px] w-24 bg-[#c62931] mx-auto rounded-full"></div>
@@ -27,7 +27,7 @@ const Intro_Separator: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9 }}
           viewport={{ once: true }}
-          className="text-center scrn-750:text-left max-w-5xl mx-auto text-gray-700 text-lg scrn-750:text-xl leading-relaxed space-y-6"
+          className="text-center md:text-left max-w-5xl mx-auto text-gray-700 text-lg md:text-xl leading-relaxed space-y-6"
         >
           <p>
             When it comes to managing <span className="font-semibold text-[#c62931]">oily wastewater</span> and 
