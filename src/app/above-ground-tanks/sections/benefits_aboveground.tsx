@@ -14,7 +14,7 @@ const benefits = [
 const Benefits_AboveGround: React.FC = () => {
   return (
     <section className="bg-white text-[#111] py-24">
-      <div className="max-w-[1440px] mx-auto px-6 scrn-750:px-12">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -23,14 +23,14 @@ const Benefits_AboveGround: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl scrn-750:text-4xl font-extrabold mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
             Who Benefits from Our Separators
           </h2>
           <div className="h-[3px] w-24 bg-[#c62931] mx-auto rounded-full"></div>
         </motion.div>
 
         {/* Benefit Cards */}
-        <div className="grid scrn-750:grid-cols-2 scrn-1000:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, i) => (
             <motion.div
               key={i}
