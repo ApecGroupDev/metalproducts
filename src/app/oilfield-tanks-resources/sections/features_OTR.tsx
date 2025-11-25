@@ -26,7 +26,7 @@ const Features_OTR: React.FC = () => {
 
   return (
     <section className="relative bg-[#fafafa] overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-6 scrn-800:px-12 flex flex-col scrn-1200:flex-row items-start gap-16">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 flex flex-col xl:flex-row items-start gap-16">
 
         {/* Left Column: Why Our Oilfield Tanks Stand Out */}
         <motion.div 
@@ -34,9 +34,9 @@ const Features_OTR: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="scrn-1200:w-1/2 space-y-8"
+          className="xl:w-1/2 space-y-8"
         >
-          <h2 className="text-4xl scrn-600:text-5xl font-extrabold text-[#111] leading-tight">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#111] leading-tight">
             Why Our Oilfield Tanks Stand Out
           </h2>
           <div className="h-[4px] w-24 bg-[#c62931] rounded-full"></div>
@@ -54,9 +54,9 @@ const Features_OTR: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="scrn-1200:w-1/2 space-y-8 relative"
+          className="xl:w-1/2 space-y-8 relative"
         >
-          <h2 className="text-4xl scrn-600:text-5xl font-extrabold text-[#111] leading-tight">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#111] leading-tight">
             Features Designed for Harsh Conditions
           </h2>
           <div className="h-[4px] w-24 bg-[#c62931] rounded-full"></div>
@@ -68,7 +68,7 @@ const Features_OTR: React.FC = () => {
           </div>
 
           {/* Optional Image overlay */}
-          <div className="absolute top-0 right-0 -z-10 w-64 scrn-1200:w-80 opacity-20">
+          <div className="absolute top-0 right-0 -z-10 w-64 xl:w-80 opacity-20">
             <Image
               src="/images/backgrounds/resources/Oilfield-Tank.webp"
               alt="Oilfield Tank"

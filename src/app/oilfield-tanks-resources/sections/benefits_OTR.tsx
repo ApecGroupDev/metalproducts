@@ -17,17 +17,17 @@ import {
 const Benefits_OTR: React.FC = () => {
   return (
     <section className="bg-[#fafafa] text-[#111] py-24">
-      <div className="max-w-[1440px] mx-auto px-6 scrn-800:px-12">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="grid scrn-750:grid-cols-2 gap-16 items-start"
+          className="grid md:grid-cols-2 gap-16 items-start"
         >
           {/* LEFT COLUMN — Who Benefits */}
           <div>
-            <h2 className="text-4xl scrn-600:text-5xl font-extrabold mb-4">
+            <h2 className="text-4xl sm:text-5xl font-extrabold mb-4">
               Who Benefits from Our Oilfield Tanks
             </h2>
             <div className="h-[4px] w-20 bg-[#c62931] rounded-full mb-10"></div>
@@ -43,7 +43,7 @@ const Benefits_OTR: React.FC = () => {
 
           {/* RIGHT COLUMN — Addressing Common Concerns */}
           <div>
-            <h2 className="text-4xl scrn-600:text-5xl font-extrabold mb-4">
+            <h2 className="text-4xl sm:text-5xl font-extrabold mb-4">
               Addressing Common Concerns
             </h2>
             <div className="h-[4px] w-20 bg-[#c62931] rounded-full mb-10"></div>

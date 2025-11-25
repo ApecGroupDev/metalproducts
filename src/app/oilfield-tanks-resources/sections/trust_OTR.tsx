@@ -7,7 +7,7 @@ import { ShieldCheck, Award, Handshake, Building2, MapPin } from "lucide-react";
 const Trust_OTR: React.FC = () => {
   return (
     <section className="bg-white text-[#111] py-24">
-      <div className="max-w-[1440px] mx-auto px-6 scrn-800:px-12">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ const Trust_OTR: React.FC = () => {
           </p>
 
           {/* Feature Grid */}
-          <div className="grid scrn-600:grid-cols-2 scrn-1000:grid-cols-4 gap-8 text-left mb-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-left mb-16">
             <TrustPoint icon={ShieldCheck} text="Trust informed by history — since 1941" />
             <TrustPoint icon={Award} text="UL-listed manufacturing standards" />
             <TrustPoint icon={Handshake} text="PEI memberships and industry partnerships" />

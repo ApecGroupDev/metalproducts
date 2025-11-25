@@ -38,7 +38,7 @@ const faqs = [
 const FAQ_OTR: React.FC = () => {
   return (
     <section className="relative bg-[#f5f5f5] py-24 border-gray-300">
-      <div className="max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <Accordion items={faqs} title="FAQs" />
       </div>
     </section>

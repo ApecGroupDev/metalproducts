@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 const Intro_OTR: React.FC = () => {
   return (
-    <section className="relative py-24 scrn-1000:py-32 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8 text-center scrn-1000:text-left">
+    <section className="relative py-24 lg:py-32 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left">
 
         {/* Heading */}
         <motion.h2
@@ -14,7 +14,7 @@ const Intro_OTR: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="text-4xl scrn-600:text-5xl font-extrabold text-[#c62931] leading-tight"
+          className="text-4xl sm:text-5xl font-extrabold text-[#c62931] leading-tight"
         >
           Built for Oilfield Toughness Since 1941
         </motion.h2>
@@ -25,7 +25,7 @@ const Intro_OTR: React.FC = () => {
           whileInView={{ opacity: 1, scaleX: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="h-[4px] w-24 bg-[#c62931] mx-auto scrn-1000:mx-0 mt-5 rounded-full"
+          className="h-[4px] w-24 bg-[#c62931] mx-auto lg:mx-0 mt-5 rounded-full"
         ></motion.div>
 
         {/* Paragraph 1 */}
@@ -34,7 +34,7 @@ const Intro_OTR: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="mt-8 text-gray-800 text-lg scrn-600:text-xl leading-relaxed mx-auto scrn-1000:mx-0"
+          className="mt-8 text-gray-800 text-lg sm:text-xl leading-relaxed mx-auto lg:mx-0"
         >
           When the job demands rugged, dependable storage in harsh oilfield environments, you need a tank that’s up to the task. At
           <span className="font-semibold text-[#c62931]"> Metal Products Company</span>, we’ve been
@@ -48,7 +48,7 @@ const Intro_OTR: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true, amount: 0.3 }} 
-          className="mt-6 text-gray-800 text-lg scrn-600:text-xl leading-relaxed mx-auto scrn-1000:mx-0"
+          className="mt-6 text-gray-800 text-lg sm:text-xl leading-relaxed mx-auto lg:mx-0"
         >
           Made in the USA, our tanks are built to handle the toughest conditions—whether you’re storing drilling fluids,
           crude oil, or delivery supplies. With decades of experience, we’re the partner you can count on to keep operations
