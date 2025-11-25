@@ -15,17 +15,17 @@ const ContactInsights: React.FC = () => {
 
   return (
     <section className="relative py-12 text-gray-800 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8 space-y-12">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
 
         {/* Row: What to Expect + Why Customers Trust Us */}
-        <div className="grid scrn-1000:grid-cols-2 gap-20 items-start border-b border-gray-200 pb-12">
+        <div className="grid lg:grid-cols-2 gap-20 items-start border-b border-gray-200 pb-12">
           {/* Section 1: What to Expect */}
-          <motion.div {...fadeUp(0)} className="text-center scrn-1000:text-left relative">
-            <div className="absolute -left-6 top-2 hidden scrn-1000:block w-[4px] h-24 bg-[#c62931] rounded-full"></div>
+          <motion.div {...fadeUp(0)} className="text-center lg:text-left relative">
+            <div className="absolute -left-6 top-2 hidden lg:block w-[4px] h-24 bg-[#c62931] rounded-full"></div>
             <h2 className="text-4xl font-extrabold text-[#222] mb-8 tracking-tight">
               What to Expect When You Reach Out
             </h2>
-            <div className="space-y-5 max-w-xl mx-auto scrn-1000:mx-0">
+            <div className="space-y-5 max-w-xl mx-auto lg:mx-0">
               {[
                 'A fast, friendly response from a knowledgeable team member.',
                 'Dialogue tailored to your needs — whether spec details, compliance questions, or design insights.',
@@ -34,21 +34,21 @@ const ContactInsights: React.FC = () => {
               ].map((point, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[#c62931] flex-shrink-0 mt-1" />
-                  <p className="text-lg scrn-600:text-xl leading-relaxed text-gray-700">{point}</p>
+                  <p className="text-lg sm:text-xl leading-relaxed text-gray-700">{point}</p>
                 </div>
               ))}
             </div>
           </motion.div>
 
           {/* Section 2: Why Customers Trust Us */}
-          <motion.div {...fadeUp(0.15)} className="text-center scrn-1000:text-left">
+          <motion.div {...fadeUp(0.15)} className="text-center lg:text-left">
             <div className="inline-block mb-4 px-3 py-1 bg-[#c62931]/10 text-[#c62931] text-sm font-semibold rounded-full uppercase tracking-wide">
               Trusted Since 1941
             </div>
             <h2 className="text-4xl font-extrabold text-[#222] mb-8 tracking-tight">
               Why Customers Trust Us
             </h2>
-            <div className="space-y-5 max-w-xl mx-auto scrn-1000:mx-0">
+            <div className="space-y-5 max-w-xl mx-auto lg:mx-0">
               {[
                 'Building Trust Since 1941 — a legacy of manufacturing excellence.',
                 'Made in the USA — precision-built in Suwanee, GA.',
@@ -71,7 +71,7 @@ const ContactInsights: React.FC = () => {
         </div>
 
         {/* Section 3: Testimonials */}
-        <motion.div {...fadeUp(0.3)} className="text-center scrn-1000:text-left">
+        <motion.div {...fadeUp(0.3)} className="text-center lg:text-left">
           <div className="inline-block mb-5 px-3 py-1 bg-[#c62931]/10 text-[#c62931] text-sm font-semibold rounded-full uppercase tracking-wide">
             Client Feedback
           </div>
@@ -79,7 +79,7 @@ const ContactInsights: React.FC = () => {
             Still Unsure? Here’s How We’ve Helped Others
           </h2>
 
-          <div className="grid scrn-700:grid-cols-2 gap-10 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
             {[
               '“Our technicians appreciated the clear specification guidance when we ordered a custom Fireguard® tank — it showed that Metal Products USA understood our facility’s needs.”',
               '“We needed a rush turn for underground tanks — Metal Products responded quickly and made it happen, keeping our project on schedule.”',
