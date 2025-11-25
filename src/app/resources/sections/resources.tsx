@@ -216,11 +216,11 @@ const ResourcesMain: React.FC = () => {
 
   return (
     <section className="relative bg-gradient-to-b from-gray-50 to-gray-100 py-32">
-      <div className="max-w-[1440px] mx-auto flex flex-col scrn-800:flex-row scrn-800:gap-16 px-6 scrn-1000:px-8">
+      <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row md:gap-16 px-6 lg:px-8">
 
         {/* --- Sidebar --- */}
         <aside
-          className="scrn-800:sticky flex flex-col z-50 scrn-800:w-[280px] bg-white/90 backdrop-blur-sm border border-gray-200 shadow-lg rounded-3xl p-6 h-fit top-32 transition-all"
+          className="md:sticky flex flex-col z-50 md:w-[280px] bg-white/90 backdrop-blur-sm border border-gray-200 shadow-lg rounded-3xl p-6 h-fit top-32 transition-all"
         >
           <h2 id="resources-title" className="text-xl font-semibold mb-5 text-[#c62931]">
             Resources
@@ -244,7 +244,7 @@ const ResourcesMain: React.FC = () => {
         </aside>
 
         {/* --- Main Content --- */}
-        <div className="scrn-800:w-3/4 space-y-32">
+        <div className="md:w-3/4 space-y-32">
           {resources.map((item, index) => (
             <motion.div
               key={index}
@@ -259,7 +259,7 @@ const ResourcesMain: React.FC = () => {
               className="bg-white rounded-3xl shadow-md overflow-hidden relative group"
             >
               {/* Banner */}
-              <div className="relative w-full h-64 scrn-900:h-120 overflow-hidden group">
+              <div className="relative w-full h-64 scrn:h-120 overflow-hidden group">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -268,7 +268,7 @@ const ResourcesMain: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent transition-all duration-500" />
                 <div className="absolute bottom-8 left-8 bg-black/40 p-3 rounded-md">
-                  <h3 className="text-white text-2xl scrn-1000:text-3xl font-semibold mb-1 tracking-wide">
+                  <h3 className="text-white text-2xl lg:text-3xl font-semibold mb-1 tracking-wide">
                     {item.title}
                   </h3>
                   <p className="italic text-red-400 text-sm font-bold uppercase tracking-wider">
@@ -278,8 +278,8 @@ const ResourcesMain: React.FC = () => {
               </div>
 
               {/* Content */}
-              <div className="p-8 scrn-900:p-12">
-                <p className="text-gray-600 leading-relaxed text-base scrn-900:text-lg mb-6 max-w-[900px]">
+              <div className="p-8 lg:p-12">
+                <p className="text-gray-600 leading-relaxed text-base lg:text-lg mb-6 max-w-[900px]">
                   {item.description}
                 </p>
 
