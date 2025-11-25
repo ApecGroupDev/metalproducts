@@ -17,7 +17,7 @@ const FooterNew: React.FC = () => {
       <div className="h-1 bg-gradient-to-r from-[#c62931] via-red-700 to-[#c62931]" />
 
       {/* Main Content */}
-      <div className="max-w-[1440px] mx-auto px-6 scrn-600:px-10 md:px-20 py-16 grid grid-cols-1 scrn-750:grid-cols-3 gap-10 scrn-750:gap-12 items-start text-center md:text-left">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-20 py-16 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 items-start text-center md:text-left">
 
         {/* Logo + About */}
         <div className="flex flex-col items-center md:items-start space-y-5">
@@ -85,7 +85,7 @@ const FooterNew: React.FC = () => {
 
       {/* Bottom Bar */}
       <div className="bg-[#0E0E0E] py-5">
-        <div className="max-w-[1440px] mx-auto px-6 scrn-600:px-10 flex flex-col scrn-750:flex-row items-center justify-between gap-3 text-center md:text-left">
+        <div className="max-w-[1440px] mx-auto px-6 sm:px-10 flex flex-col md:flex-row items-center justify-between gap-3 text-center md:text-left">
           <p className="text-xs md:text-sm text-gray-500">
             © 2024–2025 <span className="text-white font-medium">Metal Products Company</span>. All rights reserved.
           </p>

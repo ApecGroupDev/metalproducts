@@ -41,7 +41,7 @@ const Header: React.FC = () => {
       <div className="h-[2px] bg-gradient-to-r from-[#c62931] via-[#c62931]/70 to-transparent" />
 
       {/* Desktop Header */}
-      <div className="hidden scrn-750:flex items-center justify-between max-w-[2560px] mx-auto px-8 scrn-1000:px-16 py-2">
+      <div className="hidden md:flex items-center justify-between max-w-[2560px] mx-auto px-8 lg:px-16 py-2">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image
@@ -49,12 +49,12 @@ const Header: React.FC = () => {
             alt="Metal Products USA Logo"
             width={230}
             height={70}
-            className="h-14 scrn-1000:h-16 w-auto transition-transform duration-300 hover:scale-105"
+            className="h-14 lg:h-16 w-auto transition-transform duration-300 hover:scale-105"
           />
         </Link>
 
-        {/* Navigation */}
-        <nav className="flex items-center space-x-10 scrn-1000:space-x-14 font-medium tracking-wide">
+        {/* Navigation */} 
+        <nav className="flex items-center space-x-10 lg:space-x-14 font-medium tracking-wide">
           {navLinks.map(({ label, path }) => {
             const isActive =
               path === "/" ? pathname === "/" : pathname.startsWith(path);
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
               <Link
                 key={path}
                 href={path}
-                className={`relative uppercase text-sm scrn-1000:text-base transition-all duration-300 ${isActive
+                className={`relative uppercase text-sm lg:text-base transition-all duration-300 ${isActive
                   ? "text-[#c62931]"
                   : "text-[#111] hover:text-[#c62931]"
                   }`}
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile Header */}
-      <div className="scrn-750:hidden flex items-center justify-between px-6 py-3 bg-white/90 backdrop-blur-md">
+      <div className="md:hidden flex items-center justify-between px-6 py-3 bg-white/90 backdrop-blur-md">
         <Link href="/">
           <Image
             src="/images/logos/Logo_MPC_Main.png"
@@ -118,7 +118,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Nav */}
       <div
-        className={`scrn-750:hidden absolute top-full left-0 right-0 bg-white border-t border-gray-200 shadow-lg transform transition-all duration-300 ${isOpen
+        className={`md:hidden absolute top-full left-0 right-0 bg-white border-t border-gray-200 shadow-lg transform transition-all duration-300 ${isOpen
           ? "opacity-100 scale-y-100"
           : "opacity-0 scale-y-0 pointer-events-none"
           } origin-top`}

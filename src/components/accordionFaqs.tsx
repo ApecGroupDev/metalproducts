@@ -25,10 +25,10 @@ const Accordion: React.FC<AccordionProps> = ({ items, title }) => {
       {/* Top Accent */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-[4px] bg-[#c62931] rounded-full"></div>
 
-      <div className="max-w-[1440px] mx-auto px-4 scrn-600:px-6 scrn-1000:px-8 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Title */}
         {title && (
-          <h2 className="text-center text-4xl scrn-800:text-5xl font-extrabold text-[#c62931] tracking-tight mb-12">
+          <h2 className="text-center text-4xl md:text-5xl font-extrabold text-[#c62931] tracking-tight mb-12">
             {title}
           </h2>
         )}
@@ -41,24 +41,24 @@ const Accordion: React.FC<AccordionProps> = ({ items, title }) => {
               <div
                 key={index}
                 className={`group transition-all duration-500 rounded-xl border overflow-hidden ${isActive
-                    ? 'bg-gradient-to-r from-white via-[#fff8f8] to-white border-[#c62931]/40 shadow-md'
-                    : 'bg-white border-gray-200 hover:border-[#c62931]/40 hover:shadow-md'
+                  ? 'bg-gradient-to-r from-white via-[#fff8f8] to-white border-[#c62931]/40 shadow-md'
+                  : 'bg-white border-gray-200 hover:border-[#c62931]/40 hover:shadow-md'
                   }`}
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full flex justify-between items-center text-left px-6 py-5 scrn-600:px-8 scrn-600:py-6 focus:outline-none transition-all duration-300"
+                  className="w-full flex justify-between items-center text-left px-6 py-5 sm:px-8 sm:py-6 focus:outline-none transition-all duration-300"
                 >
                   <h3
-                    className={`text-lg scrn-600:text-xl font-semibold transition-colors ${isActive ? 'text-[#c62931]' : 'text-gray-900 group-hover:text-[#c62931]'
+                    className={`text-lg sm:text-xl font-semibold transition-colors ${isActive ? 'text-[#c62931]' : 'text-gray-900 group-hover:text-[#c62931]'
                       }`}
                   >
                     {item.question}
                   </h3>
                   <ChevronDown
                     className={`w-6 h-6 transition-transform duration-300 ${isActive
-                        ? 'text-[#c62931] rotate-180'
-                        : 'text-gray-500 group-hover:text-[#c62931]'
+                      ? 'text-[#c62931] rotate-180'
+                      : 'text-gray-500 group-hover:text-[#c62931]'
                       }`}
                   />
                 </button>
@@ -68,8 +68,8 @@ const Accordion: React.FC<AccordionProps> = ({ items, title }) => {
                   className={`transition-all duration-500 ease-in-out ${isActive ? 'max-h-[300px] opacity-100' : 'max-h-0 opacity-0'
                     } overflow-hidden`}
                 >
-                  <div className="px-6 scrn-600:px-8 pb-6 text-gray-700 bg-gray-50 border-t border-gray-100">
-                    <p className="text-base scrn-600:text-lg leading-relaxed">
+                  <div className="px-6 sm:px-8 pb-6 text-gray-700 bg-gray-50 border-t border-gray-100">
+                    <p className="text-base sm:text-lg leading-relaxed">
                       {item.answer}
                     </p>
                   </div>
