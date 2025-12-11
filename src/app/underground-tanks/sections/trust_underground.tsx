@@ -55,10 +55,6 @@ const Trust_Underground: React.FC = () => {
             </ul>
           </motion.div>
 
-          {/* test push content */}
-
-          {/* 2nd test push content */}
-
           {/* Right Side – Case Study Highlight */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
