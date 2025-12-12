@@ -55,6 +55,8 @@ const Trust_Underground: React.FC = () => {
             </ul>
           </motion.div>
 
+          {/* Merge pull request trigger */}
+
           {/* Right Side – Case Study Highlight */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
