@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-const Home: React.FC = () => {
+const OilfieldTanksResources: React.FC = () => {
   return (
     <div className='flex flex-col'>
       {/* Sections */}
@@ -36,4 +36,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default OilfieldTanksResources;
