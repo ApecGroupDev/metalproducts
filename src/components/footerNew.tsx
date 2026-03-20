@@ -90,9 +90,9 @@ const FooterNew: React.FC = () => {
             © 2024–2025 <span className="text-white font-medium">Metal Products Company</span>. All rights reserved.
           </p>
           <div className="flex space-x-4 text-xs md:text-sm text-gray-500 justify-center md:justify-end">
-            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
             <span className="text-gray-700">|</span>
-            <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
+            <Link href="/terms-of-use" className="hover:text-white transition-colors">Terms of Use</Link>
           </div>
         </div>
       </div>
