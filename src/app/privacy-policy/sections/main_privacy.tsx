@@ -210,8 +210,8 @@ const PrivacyContent: React.FC = () => {
           className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm"
         >
           <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-            <span className="font-semibold text-gray-900">Metal Products USA</span> ("we," "our,"
-            or "us") respects your privacy and is committed to protecting any information you share
+            <span className="font-semibold text-gray-900">Metal Products USA</span> (&quot;we,&quot; &quot;our,&quot;
+            or &quot;us&quot;) respects your privacy and is committed to protecting any information you share
             with us through our website. This Privacy Policy explains how we collect, use, and
             protect your information when you visit{' '}
             <a href="https://www.metalproductsusa.com" className="text-[#c62931] hover:underline">
