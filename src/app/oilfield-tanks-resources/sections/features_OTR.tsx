@@ -29,7 +29,7 @@ const Features_OTR: React.FC = () => {
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 flex flex-col xl:flex-row items-start gap-16">
 
         {/* Left Column: Why Our Oilfield Tanks Stand Out */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -65,17 +65,6 @@ const Features_OTR: React.FC = () => {
             {harshConditionFeatures.map((feature, i) => (
               <Feature key={i} text={feature} />
             ))}
-          </div>
-
-          {/* Optional Image overlay */}
-          <div className="absolute top-0 right-0 -z-10 w-64 xl:w-80 opacity-20">
-            <Image
-              src="/images/backgrounds/resources/Oilfield-Tank.webp"
-              alt="Oilfield Tank"
-              width={300}
-              height={300}
-              className="object-contain"
-            />
           </div>
         </motion.div>
       </div>
