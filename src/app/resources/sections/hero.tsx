@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
               Learn More
             </button>
             <Link
-              href="/contact-us"
+              href="/contact"
               className="px-8 py-3 border border-white text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300"
             >
               Contact Us
