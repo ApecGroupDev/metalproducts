@@ -2,6 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import PrivacyHero from './sections/hero_privacy';
 import PrivacyContent from './sections/main_privacy';
+import PrivacyPolicySchema from '@/components/schema/PrivacySchema';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Metal Products USA',
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 const PrivacyPolicyPage: React.FC = () => {
   return (
     <div className="flex flex-col">
+      <PrivacyPolicySchema />
       <PrivacyHero />
       <PrivacyContent />
     </div>
