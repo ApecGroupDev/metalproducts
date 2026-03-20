@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FileText, Ban, Globe, AlertTriangle, RefreshCw, Scale, Mail, ShieldAlert, Tag } from 'lucide-react';
+import { FileText, Ban, Globe, RefreshCw, Scale, Mail, ShieldAlert, Tag } from 'lucide-react';
 
 const sections = [
   {
