@@ -2,6 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import TermsHero from './sections/hero_terms';
 import TermsContent from './sections/main_terms';
+import TermsOfUseSchema from '@/components/schema/TermsSchema';
 
 export const metadata: Metadata = {
   title: 'Terms of Use | Metal Products USA',
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 const TermsOfUsePage: React.FC = () => {
   return (
     <div className="flex flex-col">
+      <TermsOfUseSchema />
       <TermsHero />
       <TermsContent />
     </div>
