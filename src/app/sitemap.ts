@@ -1,10 +1,11 @@
 // app/sitemap.ts
-import type { MetadataRoute } from 'next'
+import type { MetadataRoute } from "next";
 
-export const revalidate = 86400 // Re-generate daily
+export const revalidate = 86400; // Re-generate daily
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.metalproductsusa.com'
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || "https://www.metalproductsusa.com";
 
   return [
     {
@@ -16,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: `${baseUrl}/above-ground-tank`,
+      url: `${baseUrl}/above-ground-tanks`,
       lastModified: new Date(),
     },
     {
@@ -35,5 +36,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/underground-tanks`,
       lastModified: new Date(),
     },
-  ]
+  ];
 }
