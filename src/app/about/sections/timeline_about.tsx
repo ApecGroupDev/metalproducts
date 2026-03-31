@@ -2,7 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const history = [
   {
@@ -49,86 +48,91 @@ const history = [
 
 const Timeline_About: React.FC = () => {
   return (
-    <section className="bg-[#f8f8f8] text-[#111] py-28">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
+    <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
+
+        .tl-display { font-family: 'Oswald', sans-serif; }
+        .tl-serif   { font-family: 'Libre Baskerville', serif; }
+        .tl-mono    { font-family: 'Space Mono', monospace; }
+
+        .tl-paper-grid {
+          background-image:
+            linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+          background-size: 52px 52px;
+        }
+
+        .tl-card {
+          border-top: 2px solid rgba(198,41,49,0.2);
+          transition: border-color 0.3s, transform 0.3s;
+          position: relative;
+        }
+        .tl-card::before {
+          content: '';
+          position: absolute;
+          top: -2px; left: 0;
+          width: 0; height: 2px;
+          background: #c62931;
+          transition: width 0.4s cubic-bezier(0.77,0,0.18,1);
+        }
+        .tl-card:hover::before { width: 100%; }
+        .tl-card:hover { transform: translateY(-4px); }
+      `}</style>
+
+      <div className="absolute inset-0 tl-paper-grid pointer-events-none" />
+      <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#c62931] opacity-[0.05] blur-[80px] pointer-events-none" />
+      <div className="absolute top-0 left-16 bottom-0 w-px bg-gradient-to-b from-transparent via-black/[0.05] to-transparent pointer-events-none" />
+      <div className="absolute top-0 right-16 bottom-0 w-px bg-gradient-to-b from-transparent via-black/[0.05] to-transparent pointer-events-none" />
+
+      <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-16">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="mb-16 border-b border-black/[0.07] pb-10"
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-            Our Journey Through the Decades
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-5 h-px bg-[#c62931]" />
+            <span className="tl-mono text-[#c62931] text-xs tracking-[0.45em] uppercase">
+              Our History
+            </span>
+          </div>
+          <h2 className="tl-display font-bold text-[#1a1a1a] uppercase leading-[0.9] text-[clamp(2.4rem,4vw,3.6rem)]">
+            Our Journey Through
+            <br />
+            <span className="text-[#c62931]">the Decades</span>
           </h2>
-          <div className="h-[3px] w-24 bg-[#c62931] mx-auto rounded-full"></div>
         </motion.div>
 
-        {/* Timeline */}
-        <div className="relative before:content-[''] before:absolute before:top-0 before:bottom-0 before:left-3 md:before:left-1/2 before:w-[2px] before:bg-[#e0e0e0]">
+        {/* Timeline Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
           {history.map((item, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 0.7, delay: i * 0.05 }}
               viewport={{ once: true }}
-              className={`relative lg:w-1/2 px-4 py-12 lg:py-6 ${i % 2 === 0
-                ? "lg:pr-20 lg:text-right lg:left-0"
-                : "lg:pl-20 lg:text-left lg:left-1/2"
-                }`}
+              className="tl-card pt-5"
             >
-              <div className="absolute left-0 md:left-[calc(50%-10px)] top-10 w-5 h-5 bg-[#c62931] rounded-full border-[3px] border-white shadow-md"></div>
-              <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300">
-                <h3 className="text-[#c62931] font-semibold text-3xl tracking-wide mb-1">
-                  {item.period}
-                </h3>
-                <h4 className="text-xl md:text-2xl font-bold mb-3">
-                  {item.title}
-                </h4>
-                <p className="text-gray-700 leading-relaxed text-base md:text-lg">
-                  {item.text}
-                </p>
-              </div>
+              <span className="tl-mono text-[#c62931] text-xs tracking-widest">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <h3 className="tl-display font-bold text-[#c62931] text-2xl uppercase mt-2 mb-1">
+                {item.period}
+              </h3>
+              <h4 className="tl-display font-semibold text-[#1a1a1a] uppercase text-lg mb-3 leading-tight">
+                {item.title}
+              </h4>
+              <p className="tl-mono text-[#555] text-sm leading-7">
+                {item.text}
+              </p>
             </motion.div>
           ))}
         </div>
-
-        {/* Team Image Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="mt-20 relative"
-        >
-          <div className="max-w-[1440px] mx-auto px-6 md:px-12 text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold mb-2">
-              The Team Behind the Legacy
-            </h3>
-            <p className="text-gray-700 text-base md:text-lg max-w-2xl mx-auto">
-              Behind every decade of innovation is a team dedicated to craftsmanship,
-              safety, and excellence. Our people have powered Metal Products’ success
-              for over 80 years — and continue to drive our mission forward today.
-            </p>
-          </div>
-
-          <div className="relative max-w-[1440px] mx-auto px-6 md:px-12">
-            <div className="overflow-hidden rounded-2xl shadow-md border border-gray-200">
-              <div className="relative w-full h-[400px] md:h-[500px]">
-                <Image
-                  src="/images/about/Team_About.webp"
-                  alt="Metal Products USA Team"
-                  fill
-                  sizes="(max-width: 750px) 100vw, 1440px"
-                  className="object-cover hover:scale-[1.02] transition-transform duration-700"
-                  priority
-                />
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
