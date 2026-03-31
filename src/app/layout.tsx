@@ -3,6 +3,8 @@ import { Raleway } from "next/font/google";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
+import Header from "@/components/header";
+import FooterNew from "@/components/footerNew";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -39,8 +41,10 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-[#efefef]">
+        <Header />
         {/* Render children */}
         <div className="max-w-[2560px] mx-auto">{children}</div>
+        <FooterNew />
         {/* Google Analytics */}
         <Script
           strategy="afterInteractive"

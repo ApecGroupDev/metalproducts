@@ -2,7 +2,6 @@ import React from "react";
 import Hero from "@/app/home/sections/hero";
 import History from "@/app/home/sections/history";
 import Resources from "@/app/home/sections/resources";
-import HomePageLayout from "./layouts/homepageLayout";
 import type { Metadata } from "next";
 import AboutSection from "./home/sections/about";
 import WhyChooseSection from "./home/sections/whyChoose";
@@ -23,20 +22,18 @@ export const metadata: Metadata = {
 
 const Home: React.FC = () => {
   return (
-    <HomePageLayout>
-      <div className="flex flex-col">
-        {/* Sections */}
-        <HomeSchema />
-        <Hero />
-        <AboutSection />
-        <History />
-        <WhyChooseSection />
-        <Resources />
-        <FAQTrust />
-        <ContactCTA />
-        <FAQSection />
-      </div>
-    </HomePageLayout>
+    <div className="flex flex-col">
+      {/* Sections */}
+      <HomeSchema />
+      <Hero />
+      <AboutSection />
+      <History />
+      <WhyChooseSection />
+      <Resources />
+      <FAQTrust />
+      <ContactCTA />
+      <FAQSection />
+    </div>
   );
 };
 
