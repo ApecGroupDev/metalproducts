@@ -63,8 +63,8 @@ const Trust_Underground: React.FC = () => {
             viewport={{ once: true }}
           >
             <p className="ugt-serif italic text-[#999] text-base border-l-2 border-[#c62931]/40 pl-4 mb-8 leading-relaxed">
-              "With more than 80 years of manufacturing excellence, Metal
-              Products Company has earned a reputation for reliability."
+              “With more than 80 years of manufacturing excellence, Metal
+              Products Company has earned a reputation for reliability.”
             </p>
 
             <div className="space-y-4">

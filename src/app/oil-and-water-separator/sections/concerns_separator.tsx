@@ -89,7 +89,7 @@ const Concerns_Separator: React.FC = () => {
               className="sepcon-card pl-5 py-4"
             >
               <p className="sepcon-serif italic text-white/90 text-base mb-3">
-                "{item.question}"
+                “{item.question}”
               </p>
               <p className="sepcon-mono text-white/60 text-sm leading-7">
                 {item.answer}

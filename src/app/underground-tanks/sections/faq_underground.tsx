@@ -68,7 +68,7 @@ const FAQ_Underground: React.FC = () => {
         className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-16"
       >
         <p className="ugf-serif italic text-[#999] text-sm max-w-[280px] leading-7 border-l-2 border-[#c62931]/40 pl-4 mb-10">
-          "Common questions about underground tanks."
+          “Common questions about underground tanks.”
         </p>
 
         <Accordion items={faqs} title="Underground Tank FAQs" />

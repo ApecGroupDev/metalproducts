@@ -95,8 +95,8 @@ const Trust_Separator: React.FC = () => {
               Case in Point
             </h3>
             <p className="sept-serif italic text-[#888] text-sm leading-7 border-l-2 border-[#c62931]/30 pl-4 mb-6">
-              "A regional trucking fleet in Texas recently installed our
-              separator and passed stormwater inspections with ease."
+              “A regional trucking fleet in Texas recently installed our
+              separator and passed stormwater inspections with ease.”
             </p>
             <p className="sept-mono text-[#555] text-sm leading-7">
               Thanks to our precise design and built-in reliability, clients
