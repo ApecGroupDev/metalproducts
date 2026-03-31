@@ -67,8 +67,8 @@ const Commitment_About: React.FC = () => {
 
           {/* Pull quote */}
           <p className="commit-serif italic text-white/40 text-sm max-w-[220px] leading-7 border-l-2 border-[#c62931]/40 pl-4 self-end mb-1">
-            "Every tank we produce is backed by heritage, engineering, and
-            trust."
+            &quot;Every tank we produce is backed by heritage, engineering, and
+            trust.&quot;
           </p>
         </motion.div>
 
@@ -106,8 +106,8 @@ const Commitment_About: React.FC = () => {
             </div>
 
             <p className="commit-mono text-white/50 text-sm leading-8">
-              We are proud to participate in today's robust economy — helping
-              businesses fuel their growth with tanks built to last.
+              We are proud to participate in today&apos;s robust economy —
+              helping businesses fuel their growth with tanks built to last.
             </p>
           </motion.div>
 

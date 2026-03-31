@@ -47,8 +47,8 @@ const Team_About: React.FC = () => {
               <span className="text-[#c62931]">the Legacy</span>
             </h3>
             <p className="tm-serif italic text-[#888] text-sm max-w-[320px] leading-7 border-l-2 border-[#c62931]/30 pl-4 mt-6">
-              "Behind every decade of innovation is a team dedicated to
-              craftsmanship, safety, and excellence."
+              &quot;Behind every decade of innovation is a team dedicated to
+              craftsmanship, safety, and excellence.&quot;
             </p>
           </div>
 

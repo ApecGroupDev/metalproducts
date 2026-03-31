@@ -100,8 +100,9 @@ const Hero_About: React.FC = () => {
               A Legacy of American Manufacturing
             </p>
             <p className="about-h-mono text-white/70 text-lg leading-7 max-w-lg">
-              Our roots began in wartime America, and over the decades, we've
-              grown into one of the nation's most respected tank manufacturers.
+              Our roots began in wartime America, and over the decades,
+              we&apos;ve grown into one of the nation&apos;s most respected tank
+              manufacturers.
             </p>
           </div>
 

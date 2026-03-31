@@ -67,7 +67,8 @@ const FAQ_About: React.FC = () => {
       >
         {/* Pull quote */}
         <p className="faq-about-serif italic text-[#888] text-sm max-w-[280px] leading-7 border-l-2 border-[#c62931]/30 pl-4 mb-10">
-          "Questions about our history and operations? Find answers here."
+          &quot;Questions about our history and operations? Find answers
+          here.&quot;
         </p>
 
         <Accordion items={faqs} title="About Us FAQs" />
