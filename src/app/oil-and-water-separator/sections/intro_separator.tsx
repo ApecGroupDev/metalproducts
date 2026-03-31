@@ -1,49 +1,76 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const Intro_Separator: React.FC = () => {
   return (
-    <section className="bg-[#f8f8f8] text-[#111] py-24">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
-        {/* Header */}
+    <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
+
+        .sepi-display { font-family: 'Oswald', sans-serif; }
+        .sepi-serif   { font-family: 'Libre Baskerville', serif; }
+        .sepi-mono    { font-family: 'Space Mono', monospace; }
+
+        .sepi-paper-grid {
+          background-image:
+            linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+          background-size: 52px 52px;
+        }
+      `}</style>
+
+      <div className="absolute inset-0 sepi-paper-grid pointer-events-none" />
+      <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#c62931] opacity-[0.05] blur-[80px] pointer-events-none" />
+      <div className="absolute top-0 left-16 bottom-0 w-px bg-gradient-to-b from-transparent via-black/[0.05] to-transparent pointer-events-none" />
+      <div className="absolute top-0 right-16 bottom-0 w-px bg-gradient-to-b from-transparent via-black/[0.05] to-transparent pointer-events-none" />
+
+      <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-16">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 36 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto mb-12"
+          className="max-w-4xl"
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-            Trusted Oil-Water Separation Since 1941
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-6 h-px bg-[#c62931]" />
+            <span className="sepi-mono text-[#c62931] text-xs tracking-[0.45em] uppercase">
+              Our Legacy
+            </span>
+          </div>
+
+          <h2 className="sepi-display font-bold text-[#1a1a1a] uppercase leading-[0.92] text-[clamp(2.4rem,4.5vw,4rem)] mb-6">
+            Trusted Oil-Water
+            <br />
+            <span className="text-[#c62931]">Separation Since 1941</span>
           </h2>
-          <div className="h-[3px] w-24 bg-[#c62931] mx-auto rounded-full"></div>
-        </motion.div>
 
-        {/* Description */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
-          viewport={{ once: true }}
-          className="text-center md:text-left max-w-5xl mx-auto text-gray-700 text-lg md:text-xl leading-relaxed space-y-6"
-        >
-          <p>
-            When it comes to managing <span className="font-semibold text-[#c62931]">oily wastewater</span> and 
-            <span className="font-semibold text-[#c62931]"> stormwater runoff</span>, nothing beats decades of expertise 
-            paired with precision engineering. At <span className="font-semibold">Metal Products Company</span>, 
-            we’ve been building dependable, <span className="font-semibold">USA-made oil-water separators</span> since 1941. 
-            That legacy of reliability ensures your facility gets a system engineered for both 
-            <span className="font-semibold"> compliance and durability</span>.
+          <p className="sepi-serif italic text-[#999] text-base border-l-2 border-[#c62931]/40 pl-4 mb-10 max-w-lg leading-relaxed">
+            “Decades of expertise paired with precision engineering.”
           </p>
 
-          <p>
-            Our separators are expertly crafted to remove oils, fuels, and hydrocarbons from water streams — 
-            helping you meet environmental standards and avoid costly fines. Built in 
-            <span className="font-semibold"> Suwanee, GA</span> and shipped nationwide, these separators 
-            stand up to tough industrial conditions with ease.
-          </p>
+          <div className="sepi-mono text-[#555] text-sm leading-8 space-y-5 max-w-3xl">
+            <p>
+              When it comes to managing{" "}
+              <span className="text-[#c62931] font-bold">oily wastewater</span>{" "}
+              and
+              <span className="text-[#c62931] font-bold">
+                {" "}
+                stormwater runoff
+              </span>
+              , nothing beats decades of expertise paired with precision
+              engineering. At Metal Products Company, we’ve been building
+              dependable, USA-made oil-water separators since 1941.
+            </p>
+            <p>
+              Our separators are expertly crafted to remove oils, fuels, and
+              hydrocarbons from water streams — helping you meet environmental
+              standards and avoid costly fines. Built in Suwanee, GA and shipped
+              nationwide.
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>
