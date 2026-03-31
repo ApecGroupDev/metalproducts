@@ -124,7 +124,7 @@ const CTA: React.FC = () => {
 
           {/* Pull quote */}
           <p className="cta-c-serif italic text-white/40 text-sm max-w-[220px] leading-7 border-l-2 border-[#c62931]/40 pl-4 self-end mb-1">
-            "Your project deserves tanks built with experience."
+            &quot;Your project deserves tanks built with experience.&quot;
           </p>
         </motion.div>
 
