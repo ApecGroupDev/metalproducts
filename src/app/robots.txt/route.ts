@@ -1,5 +1,5 @@
 // app/robots.txt/route.ts
-import { NextResponse } from 'next/server'
+import { NextResponse } from "next/server";
 
 export function GET() {
   const body = `
@@ -21,12 +21,12 @@ Disallow: /pdfs/64358249435378456110422c_900126_rev2002.pdf
 # Everything else allowed
 Allow: /
 
-Sitemap: ${process.env.NEXT_PUBLIC_SITE_URL || 'https://www.metalproductsusa.com'}/sitemap.xml
-  `.trim()
+Sitemap: ${process.env.NEXT_PUBLIC_SITE_URL || "https://www.metalproductsusa.com"}/sitemap.xml
+  `.trim();
 
   return new NextResponse(body, {
     headers: {
-      'Content-Type': 'text/plain',
+      "Content-Type": "text/plain",
     },
-  })
+  });
 }

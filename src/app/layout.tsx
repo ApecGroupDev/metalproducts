@@ -1,29 +1,33 @@
-import '../styles/globals.css';
-import { Raleway } from 'next/font/google';
-import type { Metadata } from 'next'
-import { Analytics } from '@vercel/analytics/next';
-import Script from 'next/script';
+import "../styles/globals.css";
+import { Raleway } from "next/font/google";
+import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 
 const raleway = Raleway({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-raleway',
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-raleway",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.metalproductsusa.com'),
+  metadataBase: new URL("https://www.metalproductsusa.com"),
   icons: {
     icon: [
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
     ],
-    apple: '/apple-touch-icon.png',
+    apple: "/apple-touch-icon.png",
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={`${raleway.variable} text-gray-800`}>
       <head>
@@ -34,11 +38,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           content="ab17f-mm4AqpK64XXFbo8c1RFFRPUqDxVcIQ4YVOI80"
         />
       </head>
-      <body className='min-h-screen bg-[#efefef]'>
+      <body className="min-h-screen bg-[#efefef]">
         {/* Render children */}
-        <div className='max-w-[2560px] mx-auto'>
-          {children}
-        </div>
+        <div className="max-w-[2560px] mx-auto">{children}</div>
         {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
@@ -52,7 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', 'G-5Y0YVX1DPN');
           `}
         </Script>
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>
   );
