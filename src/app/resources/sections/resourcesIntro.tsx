@@ -5,53 +5,71 @@ import { motion } from "framer-motion";
 
 const ResourcesIntro: React.FC = () => {
   return (
-    <section className="relative py-24 lg:py-32 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 text-center lg:text-left">
+    <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
 
-        {/* Heading */}
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true, amount: 0.3 }}
-          className="text-4xl sm:text-5xl font-extrabold text-[#c62931] leading-tight"
-        >
-          Your Source for Product Information & Support
-        </motion.h2>
+        .resi-display { font-family: 'Oswald', sans-serif; }
+        .resi-serif   { font-family: 'Libre Baskerville', serif; }
+        .resi-mono    { font-family: 'Space Mono', monospace; }
 
-        {/* Divider */}
+        .resi-paper-grid {
+          background-image:
+            linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+          background-size: 52px 52px;
+        }
+      `}</style>
+
+      <div className="absolute inset-0 resi-paper-grid pointer-events-none" />
+      <div className="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-[#c62931] opacity-[0.05] blur-[80px] pointer-events-none" />
+      <div className="absolute top-0 left-16 bottom-0 w-px bg-gradient-to-b from-transparent via-black/[0.05] to-transparent pointer-events-none" />
+      <div className="absolute top-0 right-16 bottom-0 w-px bg-gradient-to-b from-transparent via-black/[0.05] to-transparent pointer-events-none" />
+
+      <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-16">
         <motion.div
-          initial={{ opacity: 0, scaleX: 0 }}
-          whileInView={{ opacity: 1, scaleX: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          viewport={{ once: true, amount: 0.3 }}
-          className="h-[4px] w-24 bg-[#c62931] mx-auto lg:mx-0 mt-5 rounded-full"
-        ></motion.div>
-
-        {/* Paragraph 1 */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 36 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          viewport={{ once: true, amount: 0.3 }}
-          className="mt-8 text-gray-800 text-lg sm:text-xl leading-relaxed mx-auto lg:mx-0"
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          viewport={{ once: true }}
+          className="max-w-4xl"
         >
-          Explore our collection of downloadable resources designed to help you get the most out of your 
-          <span className="font-semibold text-[#c62931]"> Metal Products Company </span>
-          solutions. From tank specifications and installation guides to safety sheets and certifications, everything you need is right here.
-        </motion.p>
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-6 h-px bg-[#c62931]" />
+            <span className="resi-mono text-[#c62931] text-xs tracking-[0.45em] uppercase">
+              Resources
+            </span>
+          </div>
 
-        {/* Paragraph 2 */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true, amount: 0.3 }}
-          className="mt-6 text-gray-800 text-lg sm:text-xl leading-relaxed mx-auto lg:mx-0"
-        >
-          Whether you’re a contractor, engineer, or operator, our resource library provides quick access to the technical documents
-          and reference materials you need to plan, build, and maintain your tank systems with confidence.
-        </motion.p>
+          <h2 className="resi-display font-bold text-[#1a1a1a] uppercase leading-[0.92] text-[clamp(2.4rem,4.5vw,4rem)] mb-6">
+            Product Information
+            <br />
+            <span className="text-[#c62931]">& Support</span>
+          </h2>
+
+          <p className="resi-serif italic text-[#999] text-base border-l-2 border-[#c62931]/40 pl-4 mb-10 max-w-lg leading-relaxed">
+            &quot;Everything you need to plan, build, and maintain your tank
+            systems.&quot;
+          </p>
+
+          <div className="resi-mono text-[#555] text-sm leading-8 space-y-5 max-w-3xl">
+            <p>
+              Explore our collection of downloadable resources designed to help
+              you get the most out of your
+              <span className="text-[#c62931] font-bold">
+                {" "}
+                Metal Products Company{" "}
+              </span>
+              solutions. From tank specifications and installation guides to
+              safety sheets and certifications.
+            </p>
+            <p>
+              Whether you’re a contractor, engineer, or operator, our resource
+              library provides quick access to the technical documents and
+              reference materials you need.
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
