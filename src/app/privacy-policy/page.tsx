@@ -1,16 +1,16 @@
-import React from 'react';
-import { Metadata } from 'next';
-import PrivacyHero from './sections/hero_privacy';
-import PrivacyContent from './sections/main_privacy';
-import PrivacyPolicySchema from '@/components/schema/PrivacySchema';
+import React from "react";
+import { Metadata } from "next";
+import PrivacyHero from "./sections/hero_privacy";
+import PrivacyContent from "./sections/main_privacy";
+import PrivacyPolicySchema from "@/components/schema/PrivacySchema";
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Metal Products USA',
+  title: "Privacy Policy | Metal Products USA",
   description:
-    'Learn how Metal Products USA collects, uses, and protects your personal information when you visit our website.',
-  robots: 'index,follow',
+    "Learn how Metal Products USA collects, uses, and protects your personal information when you visit our website.",
+  robots: "index,follow",
   alternates: {
-    canonical: 'https://www.metalproductsusa.com/privacy-policy',
+    canonical: "https://www.metalproductsusa.com/privacy-policy",
   },
 };
 
