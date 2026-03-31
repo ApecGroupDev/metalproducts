@@ -1,14 +1,64 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Hero_Underground: React.FC = () => {
   return (
-    <section className="relative bg-[#f5f5f5] overflow-hidden">
-      {/* Background Image - Workshop (Desktop + Mobile Unified) */}
+    <section className="relative overflow-hidden py-40 flex flex-col">
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
+
+        .ugt-h-display { font-family: 'Oswald', sans-serif; }
+        .ugt-h-serif   { font-family: 'Libre Baskerville', serif; }
+        .ugt-h-mono    { font-family: 'Space Mono', monospace; }
+
+        .ugt-hero-text-shadow {
+          text-shadow:
+            0 2px 6px rgba(0,0,0,0.5),
+            0 4px 16px rgba(0,0,0,0.3);
+        }
+
+        @keyframes ugt-fade-up {
+          from { opacity: 0; transform: translateY(28px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        .ugt-fade-up-1 { animation: ugt-fade-up 0.8s ease 0.2s both; }
+        .ugt-fade-up-2 { animation: ugt-fade-up 0.9s ease 0.45s both; }
+        .ugt-fade-up-3 { animation: ugt-fade-up 0.8s ease 0.7s both; }
+        .ugt-fade-up-4 { animation: ugt-fade-up 0.7s ease 0.9s both; }
+
+        .ugt-cta-primary {
+          position: relative;
+          overflow: hidden;
+          background: #c62931;
+          color: #fff;
+          transition: background 0.3s;
+        }
+        .ugt-cta-primary:hover { background: #a91f27; }
+
+        .ugt-cta-ghost {
+          border: 1px solid rgba(255,255,255,0.4);
+          color: #fff;
+          transition: background 0.3s, border-color 0.3s;
+        }
+        .ugt-cta-ghost:hover {
+          background: rgba(255,255,255,0.08);
+          border-color: rgba(255,255,255,0.7);
+        }
+
+        @keyframes ugt-line-grow {
+          from { transform: scaleX(0); }
+          to   { transform: scaleX(1); }
+        }
+        .ugt-line-grow {
+          transform-origin: left;
+          animation: ugt-line-grow 1.2s cubic-bezier(0.77,0,0.18,1) 0.8s both;
+        }
+      `}</style>
+
+      {/* Background */}
       <div className="absolute inset-0">
         <Image
           src="/images/backgrounds/tanks/Hero_Underground.webp"
@@ -17,53 +67,80 @@ const Hero_Underground: React.FC = () => {
           className="object-cover object-center"
           priority
         />
-        {/* Gradient overlays for text contrast & brand tone */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/45 to-transparent"></div>
-        <div className="absolute inset-0 bg-[rgba(198,41,49,0.15)] mix-blend-multiply"></div>
       </div>
 
-      {/* Main Container */}
-      <div className="relative z-20 max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center justify-between px-6 md:px-12 pt-32 pb-20 lg:pt-48 lg:pb-32">
+      {/* Cinematic Overlay */}
+      <div className="absolute inset-0 z-10 pointer-events-none">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
+        <div className="absolute left-[20%] top-[40%] w-[600px] h-[600px] bg-[#c62931]/20 blur-[120px] opacity-60" />
+      </div>
 
-        {/* Text Section */}
-        <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          className="text-center lg:text-left max-w-4xl"
-        >
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-tight drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">
-            Underground Storage Tanks Built for Industry
-          </h1>
-          <div className="mt-6 h-[4px] w-28 bg-[#c62931] mx-auto lg:mx-0 rounded-full"></div>
+      {/* Content */}
+      <div className="relative z-20 flex-1 max-w-[1440px] mx-auto w-full px-6 md:px-16 flex flex-col justify-center">
+        <div className="max-w-[100%]">
+          <div className="ugt-fade-up-1 flex items-center gap-3 mb-7 ugt-hero-text-shadow">
+            <div className="w-6 h-px bg-[#c62931]" />
+            <span className="ugt-h-mono text-[#c62931] text-lg font-semibold tracking-[0.45em] uppercase">
+              Underground Tanks
+            </span>
+          </div>
 
-          <p className="mt-8 text-gray-200 text-lg md:text-xl font-light max-w-3xl mx-auto lg:mx-0 leading-relaxed">
-            <span className='text-xl md:text-2xl font-semibold'>Trusted Underground Storage Solutions Since 1941</span><br /><br />
-            When it comes to protecting underground assets and ensuring regulatory compliance, nothing beats decades of manufacturing mastery.
-            At <span className="font-semibold">Metal Products Company</span>, we’ve been <span className="font-semibold">building and delivering
-              robust underground storage tanks</span> since <span className="font-semibold">1941</span> — a legacy of performance you can count on.
-            Engineered for resilience and crafted in the U.S., our tanks stand up to harsh environmental conditions while keeping safety top of mind.
-          </p>
-          <p className="mt-8 text-gray-200 text-lg md:text-xl font-light max-w-3xl mx-auto lg:mx-0 leading-relaxed">
-            Whether you’re installing at gas stations, industrial sites, or government facilities, our tanks are designed to meet
-            <span className="font-semibold"> EPA standards</span> and deliver long-lasting performance.
-          </p>
+          <div className="ugt-fade-up-2 ugt-hero-text-shadow">
+            <h1 className="ugt-h-display font-bold text-white uppercase leading-[0.9] text-[clamp(3rem,7vw,6rem)]">
+              Built for
+              <br />
+              <em className="not-italic text-[#c62931]">Industry</em>
+            </h1>
+          </div>
 
-          <div className="mt-10 flex flex-col sm:flex-row items-center lg:items-start gap-4 justify-center lg:justify-start">
+          <div className="mt-7 mb-7 h-[2px] w-52 bg-gradient-to-r from-[#c62931] to-transparent ugt-line-grow" />
+
+          <div className="ugt-fade-up-3 ugt-hero-text-shadow">
+            <p className="ugt-h-serif italic text-white/70 text-2xl mb-4 tracking-wide">
+              Trusted. EPA-Compliant. Resilient.
+            </p>
+            <p className="ugt-h-mono text-white/70 text-lg leading-7 max-w-lg">
+              Engineered for resilience and crafted in the U.S., our underground
+              tanks meet EPA standards.
+            </p>
+          </div>
+
+          <div className="ugt-fade-up-3 flex gap-6 mt-8 mb-10 ugt-hero-text-shadow">
+            <div className="border-l-2 border-[#c62931] pl-3">
+              <div className="ugt-h-display text-white text-2xl font-semibold">
+                80+
+              </div>
+              <div className="ugt-h-mono text-white/60 text-[10px] tracking-widest uppercase mt-1">
+                Yrs Experience
+              </div>
+            </div>
+            <div className="border-l-2 border-white/30 pl-3">
+              <div className="ugt-h-display text-white text-2xl font-semibold">
+                EPA
+              </div>
+              <div className="ugt-h-mono text-white/60 text-[10px] tracking-widest uppercase mt-1">
+                Compliant
+              </div>
+            </div>
+          </div>
+
+          <div className="ugt-fade-up-4 flex flex-col sm:flex-row gap-4">
             <button
-              onClick={() => window.scrollBy({ top: window.innerHeight, behavior: 'smooth' })}
-              className="px-8 py-3 bg-[#c62931] text-white font-semibold rounded-full shadow-md hover:bg-[#a91f27] transition-all duration-300"
+              onClick={() =>
+                window.scrollBy({ top: window.innerHeight, behavior: "smooth" })
+              }
+              className="ugt-cta-primary ugt-h-mono inline-flex items-center justify-center gap-3 px-8 py-4 text-sm tracking-widest uppercase"
             >
               Learn More
             </button>
             <Link
               href="/contact"
-              className="px-8 py-3 border border-white text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300"
+              className="ugt-cta-ghost ugt-h-mono inline-flex items-center justify-center gap-2 px-8 py-4 text-sm tracking-widest uppercase"
             >
               Contact Us
             </Link>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

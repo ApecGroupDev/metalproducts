@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const benefits = [
   "Gas stations & convenience stores needing secure underground storage",
@@ -13,42 +13,72 @@ const benefits = [
 
 const Benefits_Underground: React.FC = () => {
   return (
-    <section className="bg-white text-[#111] py-24">
-      <div className="max-w-[1440px] mx-auto px-6 md:px-12">
-        {/* Header */}
+    <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+        .ugb-display { font-family: 'Oswald', sans-serif; }
+        .ugb-mono    { font-family: 'Space Mono', monospace; }
+
+        .ugb-paper-grid {
+          background-image:
+            linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+          background-size: 52px 52px;
+        }
+
+        .ugb-card {
+          border-left: 2px solid rgba(198,41,49,0.3);
+          transition: border-color 0.3s, transform 0.3s;
+        }
+        .ugb-card:hover {
+          border-color: #c62931;
+          transform: translateX(6px);
+        }
+      `}</style>
+
+      <div className="absolute inset-0 ugb-paper-grid pointer-events-none" />
+      <div className="absolute top-0 left-16 bottom-0 w-px bg-gradient-to-b from-transparent via-black/[0.05] to-transparent pointer-events-none" />
+      <div className="absolute top-0 right-16 bottom-0 w-px bg-gradient-to-b from-transparent via-black/[0.05] to-transparent pointer-events-none" />
+
+      <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-            Who Benefits from Our Tanks
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-5 h-px bg-[#c62931]" />
+            <span className="ugb-mono text-[#c62931] text-xs tracking-[0.45em] uppercase">
+              Industries Served
+            </span>
+          </div>
+          <h2 className="ugb-display font-bold text-[#1a1a1a] uppercase leading-[0.9] text-[clamp(2.4rem,4vw,3.6rem)]">
+            Who Benefits from
+            <br />
+            <span className="text-[#c62931]">Our Tanks</span>
           </h2>
-          <div className="h-[3px] w-24 bg-[#c62931] mx-auto rounded-full"></div>
         </motion.div>
 
-        {/* Benefit Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-4">
           {benefits.map((benefit, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 0.6,
+                delay: i * 0.08,
+                ease: [0.22, 1, 0.36, 1],
+              }}
               viewport={{ once: true }}
-              className="group bg-[#f8f8f8] p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:border-[#c62931]/40 transition-all duration-300"
+              className="ugb-card pl-5 py-4"
             >
-              <div className="flex items-start gap-3">
-                {/* Accent Line */}
-                <div className="w-[5px] h-10 bg-[#c62931] rounded-full mt-1 group-hover:h-12 transition-all duration-300"></div>
-
-                {/* Text */}
-                <p className="text-gray-800 leading-relaxed font-medium">
-                  {benefit}
-                </p>
-              </div>
+              <p className="ugb-mono text-[#555] text-sm leading-7">
+                {benefit}
+              </p>
             </motion.div>
           ))}
         </div>
