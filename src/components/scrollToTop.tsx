@@ -5,7 +5,7 @@ const ScrollToTopButton = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
@@ -13,9 +13,9 @@ const ScrollToTopButton = () => {
     <button
       onClick={scrollToTop}
       aria-label="scroll to top button"
-      className='text-white text-3xl font-black rounded-full px-5 py-3 hover:scale-150'
+      className="text-white text-3xl font-black rounded-full px-5 py-3 hover:scale-150"
     >
-      <FaArrowUpLong/>
+      <FaArrowUpLong />
     </button>
   );
 };
