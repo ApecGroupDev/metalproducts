@@ -297,8 +297,8 @@ const PrivacyContent: React.FC = () => {
             <span className="text-[#c62931]">Your Information</span>
           </h2>
           <p className="priv-serif italic text-[#888] text-sm max-w-[400px] leading-7 border-l-2 border-[#c62931]/30 pl-4">
-            "Metal Products USA respects your privacy and is committed to
-            protecting any information you share with us."
+            `&quot;Metal Products USA respects your privacy and is committed to
+            protecting any information you share with us.`&quot;
           </p>
         </motion.div>
 
