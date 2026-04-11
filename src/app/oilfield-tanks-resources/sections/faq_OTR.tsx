@@ -41,9 +41,7 @@ const FAQ_OTR: React.FC = () => {
   return (
     <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-
-        .otrfaq-serif { font-family: 'Libre Baskerville', serif; }
+        .otrfaq-serif { font-family: var(--font-libre), serif; }
 
         .otrfaq-paper-grid {
           background-image:

@@ -15,11 +15,9 @@ const Trust_OTR: React.FC = () => {
   return (
     <section className="relative bg-[#111] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .otrt-display { font-family: 'Oswald', sans-serif; }
-        .otrt-serif   { font-family: 'Libre Baskerville', serif; }
-        .otrt-mono    { font-family: 'Space Mono', monospace; }
+        .otrt-display { font-family: var(--font-oswald), sans-serif; }
+        .otrt-serif   { font-family: var(--font-libre), serif; }
+        .otrt-mono    { font-family: var(--font-space-mono), monospace; }
 
         .otrt-paper-grid {
           background-image:
