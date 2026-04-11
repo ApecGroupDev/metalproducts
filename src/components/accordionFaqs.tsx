@@ -25,11 +25,9 @@ const Accordion: React.FC<AccordionProps> = ({ items, title, variant = 'light' }
   return (
     <div className="relative">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .faq-display { font-family: 'Oswald', sans-serif; }
-        .faq-serif   { font-family: 'Libre Baskerville', serif; }
-        .faq-mono    { font-family: 'Space Mono', monospace; }
+        .faq-display { font-family: var(--font-oswald), sans-serif; }
+        .faq-serif   { font-family: var(--font-libre), serif; }
+        .faq-mono    { font-family: var(--font-space-mono), monospace; }
 
         .faq-item-light {
           border-top: 2px solid rgba(198,41,49,0.15);

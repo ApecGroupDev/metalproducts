@@ -59,10 +59,8 @@ export default function ContactForm() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
-
-        .cf-mono { font-family: 'Space Mono', monospace; }
-        .cf-display { font-family: 'Oswald', sans-serif; }
+        .cf-mono { font-family: var(--font-space-mono), monospace; }
+        .cf-display { font-family: var(--font-oswald), sans-serif; }
 
         .cf-input {
           border-bottom: 1px solid rgba(0,0,0,0.15);
@@ -75,7 +73,7 @@ export default function ContactForm() {
         .cf-btn {
           background: #c62931;
           color: #fff;
-          font-family: 'Space Mono', monospace;
+          font-family: var(--font-space-mono), monospace;
           font-size: 11px;
           letter-spacing: 0.4em;
           text-transform: uppercase;
