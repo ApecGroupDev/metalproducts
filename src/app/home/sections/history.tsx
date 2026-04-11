@@ -9,15 +9,13 @@ const History: React.FC = () => {
   return (
     <section className="relative bg-[#f7f4f0] py-24 lg:py-36 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .hist-display { font-family: 'Oswald', sans-serif; }
-        .hist-serif   { font-family: 'Libre Baskerville', serif; }
-        .hist-mono    { font-family: 'Space Mono', monospace; }
+        .hist-display { font-family: var(--font-oswald), sans-serif; }
+        .hist-serif   { font-family: var(--font-libre), serif; }
+        .hist-mono    { font-family: var(--font-space-mono), monospace; }
 
         /* Large watermark year */
         .watermark-year {
-          font-family: 'Oswald', sans-serif;
+          font-family: var(--font-oswald), sans-serif;
           font-size: clamp(8rem, 20vw, 18rem);
           font-weight: 700;
           color: rgba(0,0,0,0.04);
@@ -46,7 +44,7 @@ const History: React.FC = () => {
           background: transparent;
           border: 1px solid rgba(198,41,49,0.6);
           color: #c62931;
-          font-family: 'Space Mono', monospace;
+          font-family: var(--font-space-mono), monospace;
           font-size: 12px;
           letter-spacing: 0.4em;
           text-transform: uppercase;

@@ -47,11 +47,9 @@ const FAQTrust: React.FC = () => {
   return (
     <section className="relative bg-[#f7f4f0] py-28 overflow-hidden border-t border-black/[0.07]">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .faq-display { font-family: 'Oswald', sans-serif; }
-        .faq-serif   { font-family: 'Libre Baskerville', serif; }
-        .faq-mono    { font-family: 'Space Mono', monospace; }
+        .faq-display { font-family: var(--font-oswald), sans-serif; }
+        .faq-serif   { font-family: var(--font-libre), serif; }
+        .faq-mono    { font-family: var(--font-space-mono), monospace; }
 
         /* Linen paper grid */
         .faq-paper-grid {

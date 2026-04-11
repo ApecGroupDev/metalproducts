@@ -32,10 +32,8 @@ const Resources: React.FC = () => {
   return (
     <section className="relative bg-[#f7f4f0] py-28 overflow-hidden border-b border-black/[0.07]">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
-
-        .res-display { font-family: 'Oswald', sans-serif; }
-        .res-mono    { font-family: 'Space Mono', monospace; }
+        .res-display { font-family: var(--font-oswald), sans-serif; }
+        .res-mono    { font-family: var(--font-space-mono), monospace; }
 
         /* Paper grid */
         .res-paper-grid {
@@ -91,7 +89,7 @@ const Resources: React.FC = () => {
         .res-card-num {
           position: absolute;
           top: 20px; left: 20px;
-          font-family: 'Oswald', sans-serif;
+          font-family: var(--font-oswald), sans-serif;
           font-size: 11px;
           font-weight: 600;
           color: rgba(255,255,255,0.3);
@@ -111,7 +109,7 @@ const Resources: React.FC = () => {
 
         /* Title */
         .res-card-title {
-          font-family: 'Oswald', sans-serif;
+          font-family: var(--font-oswald), sans-serif;
           font-weight: 700;
           color: #fff;
           text-transform: uppercase;
@@ -138,7 +136,7 @@ const Resources: React.FC = () => {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          font-family: 'Space Mono', monospace;
+          font-family: var(--font-space-mono), monospace;
           font-size: 11px;
           letter-spacing: 0.35em;
           text-transform: uppercase;

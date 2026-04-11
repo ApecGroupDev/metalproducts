@@ -8,11 +8,9 @@ const Hero: React.FC = () => {
   return (
     <section className="relative overflow-hidden py-40 flex flex-col">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .h-display  { font-family: 'Oswald', sans-serif; }
-        .h-serif    { font-family: 'Libre Baskerville', serif; }
-        .h-mono     { font-family: 'Space Mono', monospace; }
+        .h-display  { font-family: var(--font-oswald), sans-serif; }
+        .h-serif    { font-family: var(--font-libre), serif; }
+        .h-mono     { font-family: var(--font-space-mono), monospace; }
 
         .hero-text-shadow {
           text-shadow:
@@ -136,7 +134,7 @@ const Hero: React.FC = () => {
               textAnchor="middle"
               fill="rgba(255,255,255,0.7)"
               fontSize="10"
-              fontFamily="'Space Mono', monospace"
+              style={{ fontFamily: 'var(--font-space-mono), monospace' }}
               letterSpacing="4"
             >
               EST.
@@ -147,7 +145,7 @@ const Hero: React.FC = () => {
               textAnchor="middle"
               fill="#fff"
               fontSize="30"
-              fontFamily="'Oswald', sans-serif"
+              style={{ fontFamily: 'var(--font-oswald), sans-serif' }}
               fontWeight="700"
               letterSpacing="2"
             >
@@ -159,7 +157,7 @@ const Hero: React.FC = () => {
               textAnchor="middle"
               fill="rgba(255,255,255,0.6)"
               fontSize="8"
-              fontFamily="'Space Mono', monospace"
+              style={{ fontFamily: 'var(--font-space-mono), monospace' }}
               letterSpacing="5"
             >
               USA

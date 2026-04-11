@@ -8,11 +8,9 @@ const WhyChooseSection: React.FC = () => {
   return (
     <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .wc-display { font-family: 'Oswald', sans-serif; }
-        .wc-serif   { font-family: 'Libre Baskerville', serif; }
-        .wc-mono    { font-family: 'Space Mono', monospace; }
+        .wc-display { font-family: var(--font-oswald), sans-serif; }
+        .wc-serif   { font-family: var(--font-libre), serif; }
+        .wc-mono    { font-family: var(--font-space-mono), monospace; }
 
         /* Fine linen-paper grid */
         .paper-grid {
@@ -69,7 +67,7 @@ const WhyChooseSection: React.FC = () => {
 
         /* Number counter badge */
         .num-badge {
-          font-family: 'Oswald', sans-serif;
+          font-family: var(--font-oswald), sans-serif;
           font-size: 11px;
           font-weight: 600;
           color: rgba(198,41,49,0.4);
@@ -82,7 +80,7 @@ const WhyChooseSection: React.FC = () => {
           width: 32px; height: 32px;
           border: 1px solid rgba(198,41,49,0.25);
           display: flex; align-items: center; justify-content: center;
-          font-family: 'Oswald', sans-serif;
+          font-family: var(--font-oswald), sans-serif;
           font-size: 13px; font-weight: 700;
           color: #c62931;
           margin-bottom: 10px;
