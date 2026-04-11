@@ -8,11 +8,9 @@ const Commitment_About: React.FC = () => {
   return (
     <section className="relative bg-[#111] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .commit-display { font-family: 'Oswald', sans-serif; }
-        .commit-serif   { font-family: 'Libre Baskerville', serif; }
-        .commit-mono    { font-family: 'Space Mono', monospace; }
+        .commit-display { font-family: var(--font-oswald), sans-serif; }
+        .commit-serif   { font-family: var(--font-libre), serif; }
+        .commit-mono    { font-family: var(--font-space-mono), monospace; }
 
         .commit-paper-grid {
           background-image:
