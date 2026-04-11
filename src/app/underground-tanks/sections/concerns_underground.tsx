@@ -25,11 +25,9 @@ const Concerns_Underground: React.FC = () => {
   return (
     <section className="relative bg-[#111] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .ugcn-display { font-family: 'Oswald', sans-serif; }
-        .ugcn-serif   { font-family: 'Libre Baskerville', serif; }
-        .ugcn-mono    { font-family: 'Space Mono', monospace; }
+        .ugcn-display { font-family: var(--font-oswald), sans-serif; }
+        .ugcn-serif   { font-family: var(--font-libre), serif; }
+        .ugcn-mono    { font-family: var(--font-space-mono), monospace; }
 
         .ugcn-paper-grid {
           background-image:

@@ -42,10 +42,8 @@ const FAQ_Underground: React.FC = () => {
   return (
     <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .ugf-serif { font-family: 'Libre Baskerville', serif; }
-        .ugf-mono  { font-family: 'Space Mono', monospace; }
+        .ugf-serif { font-family: var(--font-libre), serif; }
+        .ugf-mono  { font-family: var(--font-space-mono), monospace; }
 
         .ugf-paper-grid {
           background-image:

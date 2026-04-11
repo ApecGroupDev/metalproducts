@@ -56,10 +56,8 @@ const PDFs_Underground: React.FC = () => {
   return (
     <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
-
-        .ugpdf-display { font-family: 'Oswald', sans-serif; }
-        .ugpdf-mono    { font-family: 'Space Mono', monospace; }
+        .ugpdf-display { font-family: var(--font-oswald), sans-serif; }
+        .ugpdf-mono    { font-family: var(--font-space-mono), monospace; }
 
         .ugpdf-paper-grid {
           background-image:

@@ -17,10 +17,8 @@ const Features_Underground: React.FC = () => {
   return (
     <section className="relative bg-[#111] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
-
-        .ugft-display { font-family: 'Oswald', sans-serif; }
-        .ugft-mono    { font-family: 'Space Mono', monospace; }
+        .ugft-display { font-family: var(--font-oswald), sans-serif; }
+        .ugft-mono    { font-family: var(--font-space-mono), monospace; }
 
         .ugft-paper-grid {
           background-image:

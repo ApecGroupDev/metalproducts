@@ -31,10 +31,8 @@ const Choose_Underground: React.FC = () => {
   return (
     <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
-
-        .ugc-display { font-family: 'Oswald', sans-serif; }
-        .ugc-mono    { font-family: 'Space Mono', monospace; }
+        .ugc-display { font-family: var(--font-oswald), sans-serif; }
+        .ugc-mono    { font-family: var(--font-space-mono), monospace; }
 
         .ugc-paper-grid {
           background-image:
