@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { Raleway } from "next/font/google";
+import { Raleway, Oswald, Space_Mono, Libre_Baskerville } from "next/font/google";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
@@ -13,13 +13,34 @@ const raleway = Raleway({
   display: "swap",
 });
 
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-oswald",
+  display: "swap",
+});
+
+const spaceMono = Space_Mono({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-space-mono",
+  display: "swap",
+});
+
+const libreBaskerville = Libre_Baskerville({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-libre",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.metalproductsusa.com"),
   icons: {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-48x48.png", sizes: "48x48", type: "image/png" },
     ],
     apple: "/apple-touch-icon.png",
   },
@@ -31,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${raleway.variable} text-gray-800`}>
+    <html lang="en" className={`${raleway.variable} ${oswald.variable} ${spaceMono.variable} ${libreBaskerville.variable} text-gray-800`}>
       <head>
         <link rel="manifest" href="/site.webmanifest" />
         {/* Google Search Console */}
