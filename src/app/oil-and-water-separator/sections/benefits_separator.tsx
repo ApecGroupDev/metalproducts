@@ -15,10 +15,8 @@ const Benefits_Separator: React.FC = () => {
   return (
     <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
-
-        .sepb-display { font-family: 'Oswald', sans-serif; }
-        .sepb-mono    { font-family: 'Space Mono', monospace; }
+        .sepb-display { font-family: var(--font-oswald), sans-serif; }
+        .sepb-mono    { font-family: var(--font-space-mono), monospace; }
 
         .sepb-paper-grid {
           background-image:

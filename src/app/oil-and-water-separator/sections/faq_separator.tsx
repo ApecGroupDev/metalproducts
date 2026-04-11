@@ -41,10 +41,8 @@ const FAQ_Separator: React.FC = () => {
   return (
     <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .sepf-serif { font-family: 'Libre Baskerville', serif; }
-        .sepf-mono  { font-family: 'Space Mono', monospace; }
+        .sepf-serif { font-family: var(--font-libre), serif; }
+        .sepf-mono  { font-family: var(--font-space-mono), monospace; }
 
         .sepf-paper-grid {
           background-image:
