@@ -8,11 +8,9 @@ const Hero: React.FC = () => {
   return (
     <section className="relative overflow-hidden py-40 flex flex-col">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .contact-h-display { font-family: 'Oswald', sans-serif; }
-        .contact-h-serif   { font-family: 'Libre Baskerville', serif; }
-        .contact-h-mono    { font-family: 'Space Mono', monospace; }
+        .contact-h-display { font-family: var(--font-oswald), sans-serif; }
+        .contact-h-serif   { font-family: var(--font-libre), serif; }
+        .contact-h-mono    { font-family: var(--font-space-mono), monospace; }
 
         .contact-hero-text-shadow {
           text-shadow:

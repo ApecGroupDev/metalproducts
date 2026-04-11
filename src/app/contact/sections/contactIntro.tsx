@@ -7,11 +7,9 @@ const ContactIntro: React.FC = () => {
   return (
     <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .ci-display { font-family: 'Oswald', sans-serif; }
-        .ci-serif   { font-family: 'Libre Baskerville', serif; }
-        .ci-mono    { font-family: 'Space Mono', monospace; }
+        .ci-display { font-family: var(--font-oswald), sans-serif; }
+        .ci-serif   { font-family: var(--font-libre), serif; }
+        .ci-mono    { font-family: var(--font-space-mono), monospace; }
 
         .ci-paper-grid {
           background-image:

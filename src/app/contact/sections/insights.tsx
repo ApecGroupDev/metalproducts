@@ -8,11 +8,9 @@ const ContactInsights: React.FC = () => {
   return (
     <section className="relative bg-[#111] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .ins-display { font-family: 'Oswald', sans-serif; }
-        .ins-serif   { font-family: 'Libre Baskerville', serif; }
-        .ins-mono    { font-family: 'Space Mono', monospace; }
+        .ins-display { font-family: var(--font-oswald), sans-serif; }
+        .ins-serif   { font-family: var(--font-libre), serif; }
+        .ins-mono    { font-family: var(--font-space-mono), monospace; }
 
         .ins-paper-grid {
           background-image:

@@ -7,11 +7,9 @@ const GoogleMaps: React.FC = () => {
   return (
     <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .gm-display { font-family: 'Oswald', sans-serif; }
-        .gm-serif   { font-family: 'Libre Baskerville', serif; }
-        .gm-mono    { font-family: 'Space Mono', monospace; }
+        .gm-display { font-family: var(--font-oswald), sans-serif; }
+        .gm-serif   { font-family: var(--font-libre), serif; }
+        .gm-mono    { font-family: var(--font-space-mono), monospace; }
 
         .gm-paper-grid {
           background-image:

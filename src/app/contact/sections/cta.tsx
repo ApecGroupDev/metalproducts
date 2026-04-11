@@ -54,11 +54,9 @@ const CTA: React.FC = () => {
   return (
     <section className="relative bg-[#111] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Space+Mono:wght@400;700&display=swap');
-
-        .cta-c-display { font-family: 'Oswald', sans-serif; }
-        .cta-c-serif   { font-family: 'Libre Baskerville', serif; }
-        .cta-c-mono    { font-family: 'Space Mono', monospace; }
+        .cta-c-display { font-family: var(--font-oswald), sans-serif; }
+        .cta-c-serif   { font-family: var(--font-libre), serif; }
+        .cta-c-mono    { font-family: var(--font-space-mono), monospace; }
 
         .cta-c-paper-grid {
           background-image:
@@ -78,7 +76,7 @@ const CTA: React.FC = () => {
         .cta-c-btn-primary {
           background: #c62931;
           color: #fff;
-          font-family: 'Space Mono', monospace;
+          font-family: var(--font-space-mono), monospace;
           font-size: 11px;
           letter-spacing: 0.4em;
           text-transform: uppercase;
