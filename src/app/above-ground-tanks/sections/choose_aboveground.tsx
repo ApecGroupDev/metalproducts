@@ -25,10 +25,8 @@ const Choose_AboveGround: React.FC = () => {
   return (
     <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
-
-        .agc-display { font-family: 'Oswald', sans-serif; }
-        .agc-mono    { font-family: 'Space Mono', monospace; }
+        .agc-display { font-family: var(--font-oswald), sans-serif; }
+        .agc-mono    { font-family: var(--font-space-mono), monospace; }
 
         .agc-paper-grid {
           background-image:

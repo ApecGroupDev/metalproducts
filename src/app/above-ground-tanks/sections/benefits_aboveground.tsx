@@ -15,10 +15,8 @@ const Benefits_AboveGround: React.FC = () => {
   return (
     <section className="relative bg-[#f7f4f0] py-28 overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
-
-        .agb-display { font-family: 'Oswald', sans-serif; }
-        .agb-mono    { font-family: 'Space Mono', monospace; }
+        .agb-display { font-family: var(--font-oswald), sans-serif; }
+        .agb-mono    { font-family: var(--font-space-mono), monospace; }
 
         .agb-paper-grid {
           background-image:
