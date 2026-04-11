@@ -14,10 +14,8 @@ const FooterNew: React.FC = () => {
   return (
     <footer className="relative text-gray-300 bg-[#111] overflow-hidden">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
-
-        .ft-display { font-family: 'Oswald', sans-serif; }
-        .ft-mono    { font-family: 'Space Mono', monospace; }
+        .ft-display { font-family: var(--font-oswald), sans-serif; }
+        .ft-mono    { font-family: var(--font-space-mono), monospace; }
 
         .ft-paper-grid {
           background-image:

@@ -71,10 +71,8 @@ const Header: React.FC = () => {
       }`}
     >
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
-
-        .hd-display { font-family: 'Oswald', sans-serif; }
-        .hd-mono { font-family: 'Space Mono', monospace; }
+        .hd-display { font-family: var(--font-oswald), sans-serif; }
+        .hd-mono { font-family: var(--font-space-mono), monospace; }
 
         .hd-nav-link {
           position: relative;
