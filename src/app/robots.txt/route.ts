@@ -11,6 +11,7 @@ Disallow: /register
 Disallow: /cart
 Disallow: /checkout
 Disallow: /*?*
+Disallow: /pdfs/
 
 # Block specific files from indexing
 Disallow: /pdfs/Flameshield_Product_Sheet.pdf
