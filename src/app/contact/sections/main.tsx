@@ -78,7 +78,6 @@ const MainContact: React.FC = () => {
           {/* Stats row */}
           <div className="mt-10 grid grid-cols-3 gap-6">
             {[
-              /* eslint-disable @typescript-eslint/no-unused-vars */
               { val: "80+", label: "Years" },
               { val: "100%", label: "US Made" },
               { val: "∞", label: "Industries" },
