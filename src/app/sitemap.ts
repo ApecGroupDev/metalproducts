@@ -36,5 +36,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/underground-tanks`,
       lastModified: new Date(),
     },
+    {
+      url: `${baseUrl}/resources`,
+      lastModified: new Date(),
+    },
   ];
 }
