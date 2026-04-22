@@ -1,10 +1,15 @@
 import "../styles/globals.css";
-import { Raleway, Oswald, Space_Mono, Libre_Baskerville } from "next/font/google";
+import {
+  Raleway,
+  Oswald,
+  Space_Mono,
+  Libre_Baskerville,
+} from "next/font/google";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 import Header from "@/components/header";
-import FooterNew from "@/components/footerNew";
+import FooterNew from "@/components/footer";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -52,7 +57,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${raleway.variable} ${oswald.variable} ${spaceMono.variable} ${libreBaskerville.variable} text-gray-800`}>
+    <html
+      lang="en"
+      className={`${raleway.variable} ${oswald.variable} ${spaceMono.variable} ${libreBaskerville.variable} text-gray-800`}
+    >
       <head>
         <link rel="manifest" href="/site.webmanifest" />
         {/* Google Search Console */}

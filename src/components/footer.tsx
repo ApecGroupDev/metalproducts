@@ -151,7 +151,7 @@ const FooterNew: React.FC = () => {
               className="font-semibold transition-opacity hover:opacity-80"
             >
               <span style={{ color: "#FF6A00" }}>Orange</span>
-              <span className="text-white/40">Labs Dev.</span>
+              <span className="text-white/40">Labs-Dev.</span>
             </a>
           </p>
         </div>
