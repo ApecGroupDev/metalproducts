@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Get high-quality above ground gas tanks made for tough jobs. Corrosion-resistant, secure, and easy to maintain.",
   robots: "index,follow",
   alternates: {
-    canonical: "https://www.metalproductsusa.com/above-ground-tank",
+    canonical: "https://www.metalproductsusa.com/above-ground-tanks",
   },
 };
 
